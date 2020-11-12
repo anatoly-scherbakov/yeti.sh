@@ -6,7 +6,11 @@ draft: false
 
 Generally, the AWS infrastructure in the company I work at is managed by [Terraform](https://http://terraform.io/), which I am quite happy with. But, recently I yielded to the temptation to try out [Serverless framework](https://serverless.com). This article describes a few thoughts derived from the experience.
 
+<!--more-->
+
 **TL;DR:** I do not believe I will use Serverless framework for any further projects.
+
+![](serverless.png)
 
 # The Problem: PDF generator
 
@@ -22,7 +26,7 @@ For each message, the function will:
 
 and put it on an **S3 bucket**. That's all.
 
-![sls.png](/images/serverless/sls.png)
+![sls.png](sls.png)
 
 # Why Serverless?
 
@@ -80,7 +84,7 @@ resources:
 
 The syntax of `resources` section is an injection of [AWS CloudFormation](https://aws.amazon.com/cloudformation/) syntax, and is therefore prescribed by AWS, not by Serverless. In particular, S3 bucket creation is described at [AWS::S3::Bucket](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html) page at AWS CloudFormation documentation — just scroll to the **YAML** heading.
 
-![AWS CloudFormation](/images/serverless/aws-cloudformation.svg)
+![AWS CloudFormation](aws-cloudformation.svg)
 
 Launched [back in 2011](https://aws.amazon.com/blogs/aws/cloudformation-create-your-aws-stack-from-a-recipe/), AWS CloudFormation is an Infrastructure As Code solution from, and specific to, Amazon Web Services.
 
@@ -123,8 +127,6 @@ provider:
 - An inline IAM policy is created and attached to every Lambda in the project;
 
 - The policy allows to upload files onto the bucket and all of its (virtual) subdirectories.
-
-
 
 ### Another way to rewrite this
 
@@ -234,7 +236,7 @@ This string interpolation syntax, which looks much more familiar that `Fn::GetAt
 
 The other systems in our company's infrastructure rely upon Terraform, and I'd like to make the SQS queue available to those systems. They will write into it.
 
-![Terraform](/images/serverless/terraform.svg)
+![Terraform](terraform.svg)
 
 Serverless authors suggest [to use AWS Systems Manager (SSM) Parameter Store](https://www.serverless.com/blog/definitive-guide-terraform-serverless) for that goal.
 
@@ -315,7 +317,7 @@ Lambda functions are the gods around which all other resources (API Gateways, S3
 
 This is not exactly how I would view the systems I am working on. To my opinion, serverless functions are but a gear of a complex system which may also feature instances, containers, databases, VPCs, — many of which may play a more important role than a particular Lambda function.
 
-![](/images/serverless/lambda-in-crown.png)
+![](lambda-in-crown.png)
 
 ### CloudFormation and YAML
 
