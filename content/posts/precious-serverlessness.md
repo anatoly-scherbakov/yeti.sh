@@ -64,3 +64,15 @@ instance_price / serverless_price × 100%
 | db.t3.large  | 60%               | 68%                            |
 
 You can interpret this table like this: in order to get Aurora performance similar to RDS instance `db.t3.medium` for the same or lower price, you need to keep the Aurora DB online for 60% (or less) of the whole time.
+
+## Caveats
+
+- On production, when a user sends a request while Aurora cluster is paused, the cluster will require a few seconds to start, which means increased latency for the user.
+- We have noticed issues with auto scaling Aurora databases which I might describe in another post in more detail.
+
+## Conclusion
+
+There are reasons why one could still prefer Aurora over RDS (because of better throughput on the same hardware, etc). I would suggest this as a takeout from this post in case your pattern of load is predictable and stable:
+
+- On production, use Aurora Provisioned (or RDS if you want to save more) — to ensure minimum latency and optimal price;
+- On dev/staging/preprod, use Aurora Serverless so that your databases are only spinned up when you are playing with them.
