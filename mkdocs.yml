@@ -1,0 +1,42 @@
+site_name: yeti.sh
+repo_url: https://github.com/anatoly-scherbakov/yeti.sh
+repo_name: yeti.sh
+edit_uri: website/edit/master/yeti.sh/docs/
+copyright: Copyright &copy; 2021 Anatoly Scherbakov
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      guess_lang: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+
+  # Hide Table of Contents
+  # Source: https://github.com/squidfunk/mkdocs-material/issues/478#issuecomment-578723876
+  - toc:
+      toc_depth: "1-1"
+
+plugins:
+  - search
+  - octadocs
+  - macros:
+      modules:
+        - octadocs.macros
+
+
+theme:
+  name: material
+  custom_dir: templates
+  features:
+    - header.autohide
+    - navigation.sections
+    - navigation.indexes
+extra_css:
+  - stylesheets/flake8-codes.css
