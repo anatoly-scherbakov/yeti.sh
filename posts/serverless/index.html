@@ -1,0 +1,768 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>A scoop of the Serverless Framework - yeti.sh</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/flake8-codes.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-problem-pdf-generator" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="yeti.sh" class="md-header__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            yeti.sh
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A scoop of the Serverless Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/anatoly-scherbakov/yeti.sh/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeti.sh
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="yeti.sh" class="md-nav__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    yeti.sh
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/anatoly-scherbakov/yeti.sh/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeti.sh
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      <label class="md-nav__link" for="__nav_1">
+        Posts
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Posts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Posts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" checked>
+      
+      <label class="md-nav__link" for="__nav_1_1">
+        A scoop of the Serverless Framework
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="A scoop of the Serverless Framework" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          A scoop of the Serverless Framework
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        A scoop of the Serverless Framework
+      </a>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avoid-peewee-floatfield/" class="md-nav__link">
+        Avoid Peewee Floatfield
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deadletter-to-sentry/" class="md-nav__link">
+        Deadletter queue to Sentry
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redshift-drop-multiple-tables/" class="md-nav__link">
+        How to remove multiple tables in Redshift by wildcard
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_5" type="checkbox" id="__nav_1_5" >
+      
+      <label class="md-nav__link" for="__nav_1_5">
+        Making Choices Chainable
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Making Choices Chainable" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Making Choices Chainable
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chainable-choice/" class="md-nav__link">
+        Making Choices Chainable
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../precious-serverlessness/" class="md-nav__link">
+        Precious Serverlessness
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lambda-dist-info/" class="md-nav__link">
+        Python + λ - .dist-info = DistributionNotFound
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/anatoly-scherbakov/yeti.sh/website/edit/master/yeti.sh/docs/posts/serverless/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <p>Generally, the AWS infrastructure in the company I work at is managed by <a href="https://http://terraform.io/">Terraform</a>, which I am quite happy with. But, recently I yielded to the temptation to try out <a href="https://serverless.com">Serverless framework</a>. This article describes a few thoughts derived from the experience.</p>
+<!--more-->
+
+<p><strong>TL;DR:</strong> I do not believe I will use Serverless framework for any further projects.</p>
+<p><img alt="" src="serverless.png" /></p>
+<h1 id="the-problem-pdf-generator">The Problem: PDF generator</h1>
+<p>We need an <strong>AWS Lambda function</strong> that will be triggered by messages delivered via an <strong>SQS queue</strong>.</p>
+<p>For each message, the function will:</p>
+<ul>
+<li>
+<p>run headless Chrome browser,</p>
+</li>
+<li>
+<p>fetch certain web page,</p>
+</li>
+<li>
+<p>generate a PDF from it,</p>
+</li>
+</ul>
+<p>and put it on an <strong>S3 bucket</strong>. That's all.</p>
+<p><img alt="sls.png" src="sls.png" /></p>
+<h1 id="why-serverless">Why Serverless?</h1>
+<p>I figured out the best tool for the job was <a href="https://github.com/puppeteer/puppeteer">Puppeteer</a>, which required Node.js. I am not a Node developer, therefore I turned to the Web for examples. The Web benevolently granted me with one: <a href="https://github.com/Swizec/serverlesshandbook.dev/blob/master/src/pages/serverless-chrome-puppeteer.mdx">Serverless Chrome Puppeteer</a> built (what a surprise!) on Serverless.</p>
+<h1 id="implementing-the-configuration">Implementing the configuration</h1>
+<p>Using Serverless, we will:</p>
+<ul>
+<li>
+<p>Create an SQS queue we will be listening for requests,</p>
+</li>
+<li>
+<p>create the Lambda function itself,</p>
+</li>
+<li>
+<p>and create an S3 bucket to write result files to.</p>
+</li>
+</ul>
+<p>Let's start from the last point.</p>
+<h2 id="create-an-s3-bucket-take-1">Create an S3 bucket, take 1</h2>
+<p>You may already know that Serverless is configured via single <a href="https://yaml.org/">YAML</a> file — <code>serverless.yml</code>.</p>
+<p>One possible way to create an S3 bucket and grant your serverless function access to it looks <a href="https://www.serverless.com/framework/docs/providers/aws/events/s3/">like this</a>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">functions</span><span class="p">:</span>
+  <span class="nt">resize</span><span class="p">:</span>
+    <span class="nt">handler</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">exporter.handler</span>
+    <span class="nt">events</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">s3</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">photos</span>
+</code></pre></div>
+<p>This will immediately:</p>
+<ul>
+<li>
+<p>create an S3 bucket named <code>photos</code>,</p>
+</li>
+<li>
+<p>and grant access to Lambda using an inline IAM access policy.</p>
+</li>
+</ul>
+<p>This is very concise, but does not fit our use case. We do not need to trigger function by S3 events. We will have to use a completely different method.</p>
+<h2 id="create-an-s3-bucket-take-2">Create an S3 bucket, take 2</h2>
+<p>The previous example was based on <code>functions</code> section, but what we actually need is <code>resources</code> section, like in <a href="https://stackoverflow.com/q/41572237/1245471">an example</a> here. Here is what I could come up with:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">resources</span><span class="p">:</span>
+  <span class="nt">Resources</span><span class="p">:</span>
+    <span class="nt">UploadBucket</span><span class="p">:</span>
+      <span class="nt">Type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">AWS::S3::Bucket</span>
+      <span class="nt">Properties</span><span class="p">:</span>
+        <span class="nt">BucketName</span><span class="p">:</span> <span class="s">&quot;my-app-pdf-exports&quot;</span>
+        <span class="nt">AccessControl</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Private</span>
+        <span class="nt">VersioningConfiguration</span><span class="p">:</span>
+          <span class="nt">Status</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Enabled</span>
+</code></pre></div>
+<p>The syntax of <code>resources</code> section is an injection of <a href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a> syntax, and is therefore prescribed by AWS, not by Serverless. In particular, S3 bucket creation is described at <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html">AWS::S3::Bucket</a> page at AWS CloudFormation documentation — just scroll to the <strong>YAML</strong> heading.</p>
+<p><img alt="AWS CloudFormation" src="aws-cloudformation.svg" /></p>
+<p>Launched <a href="https://aws.amazon.com/blogs/aws/cloudformation-create-your-aws-stack-from-a-recipe/">back in 2011</a>, AWS CloudFormation is an Infrastructure As Code solution from, and specific to, Amazon Web Services.</p>
+<p>Serverless Framework is a wrapper on top of AWS CloudFormation and operates by creating and manipulating CloudFormation stacks.</p>
+<blockquote>
+<p><strong>Takeout 1.</strong> In certain situations designed by the authors of the framework (or its plugins), the resource descriptions required to get up and running are <strong>quite concise and minimalistic</strong>. That is arguably why Serverless was created, I would say.</p>
+<p>However, when particular situation is not directly supported, the user is forced to resort to native CloudFormation syntax, which is a bit more verbose.</p>
+<p>This means instead of one language (AWS CF or Serverless) the user has to work with both.</p>
+</blockquote>
+<h2 id="grant-access-for-lambda-to-s3-bucket">Grant access for Lambda to S3 bucket</h2>
+<p>I implemented that in the <code>provider</code> section of the configuration file.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">provider</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">aws</span>
+  <span class="nt">runtime</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nodejs12.x</span>
+  <span class="l l-Scalar l-Scalar-Plain">...</span>
+
+  <span class="nt">iamRoleStatements</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Effect</span><span class="p">:</span> <span class="s">&quot;Allow&quot;</span>
+      <span class="nt">Action</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&quot;s3:PutObject&quot;</span>
+      <span class="nt">Resource</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Fn::GetAtt</span><span class="p p-Indicator">:</span>              <span class="c1"># Root</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">UploadBucket</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Arn</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Fn::Join</span><span class="p p-Indicator">:</span>                <span class="c1"># Subdirectories</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;&#39;</span>
+            <span class="p p-Indicator">-</span> <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Fn::GetAtt</span><span class="p p-Indicator">:</span>
+                  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">UploadBucket</span>
+                  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Arn</span>
+              <span class="p p-Indicator">-</span> <span class="s">&quot;/*&quot;</span>
+</code></pre></div>
+<h3 id="what-is-done-here">What is done here?</h3>
+<ul>
+<li>
+<p>An inline IAM policy is created and attached to every Lambda in the project;</p>
+</li>
+<li>
+<p>The policy allows to upload files onto the bucket and all of its (virtual) subdirectories.</p>
+</li>
+</ul>
+<h3 id="another-way-to-rewrite-this">Another way to rewrite this</h3>
+<p>In Terraform the declaration would be like this:</p>
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="s2">&quot;aws_iam_policy_document&quot;</span> <span class="s2">&quot;my-app-lambda-to-bucket-access&quot;</span> <span class="p">{</span>
+  <span class="n">statement</span> <span class="p">{</span>
+    <span class="n">actions</span> <span class="o">=</span> <span class="p">[</span>
+      <span class="s2">&quot;s3:PutObject&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="n">resources</span> <span class="o">=</span> <span class="p">[</span>
+      <span class="n">aws_s3_bucket</span><span class="o">.</span><span class="n">upload_bucket</span><span class="o">.</span><span class="n">arn</span><span class="p">,</span>        <span class="c1"># Root</span>
+      <span class="s2">&quot;${aws_s3_bucket.upload_bucket.arn}/*&quot;</span><span class="p">,</span> <span class="c1"># Subdirectories</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Comparing these two snippets, I must say that I genuinely like YAML markup language and use it in many places, but — in my humble opinion — in CloudFormation it was mercilessly abused. YAML was not meant to be a programming language, it was conceived to store configuration.</p>
+<p>How easy is this to parse the <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-join.html">Fn::Join</a> function call visually and understand this function accepts two arguments — a delimiter and a list of values to join using that delimiter?</p>
+<p>Compared to the trivial Terraform counterpart, this causes unnecessary headache and eye bleeding.</p>
+<blockquote>
+<p><strong>Takeout 2.</strong> Human-readability of CloudFormation (and, therefore, Serverless) syntax is noticeably limited by its YAML form.</p>
+</blockquote>
+<h2 id="call-lambda-on-sqs-events">Call Lambda on SQS events</h2>
+<p>This usecase is handled by Serverless natively, and <a href="https://www.serverless.com/framework/docs/providers/aws/events/sqs/">here is how:</a></p>
+<div class="highlight"><pre><span></span><code><span class="nt">functions</span><span class="p">:</span>
+  <span class="nt">compute</span><span class="p">:</span>
+    <span class="nt">handler</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">handler.compute</span>
+    <span class="nt">events</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">sqs</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">arn:aws:sqs:region:XXXXXX:MyFirstQueue</span>
+        <span class="l l-Scalar l-Scalar-Plain">...</span>
+</code></pre></div>
+<p>The argument for <code>sqs</code> is the queue ARN. As the page says,</p>
+<blockquote>
+<p>Serverless won't create a new queue for you.</p>
+</blockquote>
+<p>Meaning, we will need to revert to CloudFormation once again.</p>
+<h2 id="create-an-sqs-queue-and-listen-to-it">Create an SQS queue and listen to it</h2>
+<p>Like this:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">resources</span><span class="p">:</span>
+  <span class="nt">Resources</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">...</span>
+
+    <span class="l l-Scalar l-Scalar-Plain">TriggerQueue</span><span class="p p-Indicator">:</span>
+      <span class="nt">Type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">AWS::SQS::Queue</span>
+      <span class="nt">Properties</span><span class="p">:</span>
+        <span class="nt">QueueName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-app-pdf-trigger</span>
+        <span class="nt">VisibilityTimeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3600</span>
+
+<span class="nt">functions</span><span class="p">:</span>
+  <span class="nt">exporter</span><span class="p">:</span>
+    <span class="nt">handler</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dist/exporter.handler</span>
+    <span class="nt">memorySize</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2560</span>
+    <span class="nt">timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">300</span>
+
+    <span class="nt">events</span><span class="p">:</span>
+      <span class="l l-Scalar l-Scalar-Plain">...</span>
+      <span class="l l-Scalar l-Scalar-Plain">- sqs</span><span class="p p-Indicator">:</span>
+          <span class="nt">arn</span><span class="p">:</span>
+            <span class="l l-Scalar l-Scalar-Plain">Fn::GetAtt</span><span class="p p-Indicator">:</span>
+              <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">TriggerQueue</span>
+              <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Arn</span>
+</code></pre></div>
+<p>Here, we split the work.</p>
+<ul>
+<li>
+<p>In CF, we manually create the queue,</p>
+</li>
+<li>
+<p>and Serverless adds the IAM machinery and the event trigger for us behind the scenes.</p>
+</li>
+</ul>
+<p>Like someone said at <a href="https://forum.serverless.com/t/creating-sqs-queue-through-serverless-yml/1053/3">this forum topic</a>:</p>
+<blockquote>
+<p>Yeah, but if i wanted to write CloudFormation… then i would just write CloudFormation. Serverless is great because it saves you having to write CloudFormation.</p>
+</blockquote>
+<p>Seems that not exactly.</p>
+<h2 id="pass-bucket-name-to-the-lambda-function">Pass bucket name to the Lambda function</h2>
+<p>The usual way to do that is via environment variables of the Lambda function. Like this:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">functions</span><span class="p">:</span>
+  <span class="nt">exporter</span><span class="p">:</span>
+    <span class="nt">handler</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dist/exporter.handler</span>
+    <span class="nt">memorySize</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2560</span>
+    <span class="nt">timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">300</span>
+    <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="nt">environment</span><span class="p">:</span>
+      <span class="nt">BUCKET_NAME</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${self:resources.Resources.UploadBucket.Properties.BucketName}</span>
+</code></pre></div>
+<p>This string interpolation syntax, which looks much more familiar that <code>Fn::GetAtt</code>, is a blessing of Serverless itself, not a CloudFormation feature. <code>Fn::GetAtt</code> will not even work here, because CloudFormation does not consider <code>BucketName</code>  to be one of exportable attributes of an S3 bucket.</p>
+<h2 id="export-sqs-queue-url-to-terraform">Export SQS queue URL to Terraform</h2>
+<p>The other systems in our company's infrastructure rely upon Terraform, and I'd like to make the SQS queue available to those systems. They will write into it.</p>
+<p><img alt="Terraform" src="terraform.svg" /></p>
+<p>Serverless authors suggest <a href="https://www.serverless.com/blog/definitive-guide-terraform-serverless">to use AWS Systems Manager (SSM) Parameter Store</a> for that goal.</p>
+<blockquote>
+<p>By the way, — author of the article suggests to create a shared MySQL database used by multiple services, which I would advise strongly against.</p>
+</blockquote>
+<p>But the idea to use SSM is sound. Creating an SSM value:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">resources</span><span class="p">:</span>
+  <span class="nt">Resources</span><span class="p">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="l l-Scalar l-Scalar-Plain">TriggerQueueURL</span><span class="p p-Indicator">:</span>
+      <span class="nt">Type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">AWS::SSM::Parameter</span>
+      <span class="nt">Properties</span><span class="p">:</span>
+        <span class="nt">Name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">online-reporting-pdf-incoming-queue</span>
+        <span class="nt">Type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">String</span>
+        <span class="nt">Value</span><span class="p">:</span>
+          <span class="nt">Ref</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">TriggerQueue</span>
+</code></pre></div>
+<p>The <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html">Ref</a> function to return URL of the SQS queue is the third method to get attribute of a resource we've met in this short tutorial. ☺</p>
+<blockquote>
+<p><strong>Takeout 3.</strong> In Serverless, there are at least three (those which I know about) methods to fetch attribute value of a resource:</p>
+<ul>
+<li>
+<p>String interpolation</p>
+</li>
+<li>
+<p><code>Fn::GetAtt</code></p>
+</li>
+<li>
+<p><code>Fn::Ref</code></p>
+</li>
+</ul>
+<p>Knowing where to use what requires diving into AWS CF and Serverless documentation. I did not research any IDE tools which would help here.</p>
+</blockquote>
+<p>Terraform side will look like this:</p>
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="n">aws_ssm_parameter</span> <span class="n">pdf</span><span class="o">-</span><span class="n">exporter</span><span class="o">-</span><span class="n">requests</span><span class="o">-</span><span class="n">queue</span> <span class="p">{</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;online-reporting-pdf-incoming-queue&quot;</span>
+<span class="p">}</span>
+
+
+<span class="n">resource</span> <span class="n">aws_lambda_function</span> <span class="n">pdf</span><span class="o">-</span><span class="k">export</span><span class="o">-</span><span class="n">trigger</span> <span class="p">{</span>
+  <span class="o">...</span>
+
+  <span class="n">environment</span> <span class="p">{</span>
+    <span class="n">variables</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="o">...</span>
+      <span class="n">REQUESTS_QUEUE</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">aws_ssm_parameter</span><span class="o">.</span><span class="n">pdf</span><span class="o">-</span><span class="n">exporter</span><span class="o">-</span><span class="n">requests</span><span class="o">-</span><span class="n">queue</span><span class="o">.</span><span class="n">value</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Easy peasy.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>The service was deployed and works. However, what are the typical tasks Serverless Framework is good for?</p>
+<h2 id="pros">Pros</h2>
+<ul>
+<li>
+<p>Serverless <a href="https://serverless-stack.com/chapters/configure-multiple-aws-profiles.html">supports deploy to multiple environments</a> for dev, staging, and production. — We currently handle them with a few <code>make</code> files, but there are tools like <a href="https://terragrunt.gruntwork.io/">Terragrunt</a> for that, which I am planning to try out.</p>
+</li>
+<li>
+<p>Serverless builds deployment packages for your language. — We handle that by <code>make</code> as well, and that's not much code.</p>
+</li>
+<li>
+<p>Serverless features local development. — Development with <a href="https://github.com/tiangolo/fastapi">FastAPI</a> is easy: just a CLI command and you have your service running.</p>
+</li>
+<li>
+<p>Serverless creates dashboards for your Lambda functions. — But, these are very similar to native Cloudwatch dashboards, from what I can see. The only missing is <strong>Cold Starts</strong> chart, which I do not currently know how to replicate, but I'll get to that in a while.</p>
+</li>
+<li>
+<p>Numerous <a href="https://www.serverless.com/plugins/">plugins</a> are available. — Terraform provides <a href="https://registry.terraform.io/">modules</a> which do essentially the same but are very easy to create. We are using modules routinely to reduce boilerplate and to simplify our resource description files.</p>
+</li>
+</ul>
+<h2 id="cons">Cons</h2>
+<h3 id="function-centric-world-view">Function-centric world view</h3>
+<p>Serverless imposes a very function-centric view of your application.</p>
+<p>Lambda functions are the gods around which all other resources (API Gateways, S3 buckets, SNS topics) are orbiting.</p>
+<p>This is not exactly how I would view the systems I am working on. To my opinion, serverless functions are but a gear of a complex system which may also feature instances, containers, databases, VPCs, — many of which may play a more important role than a particular Lambda function.</p>
+<p><img alt="" src="lambda-in-crown.png" /></p>
+<h3 id="cloudformation-and-yaml">CloudFormation and YAML</h3>
+<p>Terraform was released in 2014, and its authors were able to learn on the experience of the predecessors. That's probably why Terraform HCL syntax is much more human and machine readable, and enjoys rich support from IDEs.</p>
+<h3 id="incompleteness">Incompleteness</h3>
+<p>Serverless can be used <a href="https://www.serverless.com/blog/definitive-guide-terraform-serverless/">with Terraform</a>:</p>
+<ul>
+<li>
+<p>Terraform manages common pieces of infrastructure which are used by different functions,</p>
+</li>
+<li>
+<p>Functions and the infrastructure directly connected to them is managed by Serverless.</p>
+</li>
+</ul>
+<p>But, I must confess I fail to see the point. Supporting two competing IaC systems seems redundant, especially if we remember that Terraform can do both of these tasks equally well.</p>
+<h1 id="summary">Summary</h1>
+<p>As a result of all this, I do not see the place of Serverless in my projects in foreseeable future.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        
+        <a href="../avoid-peewee-floatfield/" class="md-footer__link md-footer__link--next" aria-label="Next: Avoid Peewee Floatfield" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Avoid Peewee Floatfield
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Anatoly Scherbakov
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.sections", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>
