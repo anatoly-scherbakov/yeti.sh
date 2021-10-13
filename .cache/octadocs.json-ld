@@ -2,13 +2,42 @@
   {
     "@graph": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#unsignedByte",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
+        "@id": "https://ns.octadocs.io/IndexPage",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "http://schema.org/WebPage"
+          },
+          {
+            "@id": "_:https://ns.octadocs.io//b0"
+          }
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#unsignedByte"
+            "@id": "https://ns.octadocs.io/IndexPage"
+          }
+        ]
+      },
+      {
+        "@id": "_:https://ns.octadocs.io//b0",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "https://ns.octadocs.io/Page"
+          },
+          {
+            "@id": "http://schema.org/WebPage"
+          },
+          {
+            "@id": "https://ns.octadocs.io/IndexPage"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+          {
+            "@id": "https://ns.octadocs.io/IndexPage"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "_:https://ns.octadocs.io//b0"
           }
         ]
       },
@@ -24,6 +53,30 @@
         ]
       },
       {
+        "@id": "http://www.w3.org/2002/07/owl#backwardCompatibleWith",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+          }
+        ]
+      },
+      {
+        "@id": "local:pro",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:pro"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/url",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/url"
+          }
+        ]
+      },
+      {
         "@id": "http://www.w3.org/2000/01/rdf-schema#label",
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
@@ -32,233 +85,68 @@
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#normalizedString",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#normalizedString"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#negativeInteger",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#negativeInteger"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Thing"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Thing"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#hexBinary",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#hexBinary"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/precious-serverlessness.md",
+        "@id": "local:posts/deadletter-to-sentry.md",
         "@type": [
           "http://schema.org/WebPage"
         ],
         "http://schema.org/about": [
           {
-            "@id": "local:posts/precious-serverlessness.md"
+            "@id": "local:posts/deadletter-to-sentry.md"
           }
         ],
         "http://schema.org/name": [
           {
-            "@value": "Precious Serverlessness"
+            "@value": "Deadletter queue to Sentry"
           }
         ],
         "http://schema.org/subjectOf": [
           {
-            "@id": "local:posts/precious-serverlessness.md"
+            "@id": "local:posts/deadletter-to-sentry.md"
           }
         ],
         "http://schema.org/url": [
           {
-            "@value": "/posts/precious-serverlessness/"
+            "@value": "/posts/deadletter-to-sentry/"
           }
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "local:posts/precious-serverlessness.md"
+            "@id": "local:posts/deadletter-to-sentry.md"
           }
         ],
         "https://ns.octadocs.io/about": [
           {
-            "@id": "local:posts/precious-serverlessness.md"
+            "@id": "local:posts/deadletter-to-sentry.md"
           }
         ]
       },
       {
-        "@id": "local:posts/lambda-dist-info.md",
-        "@type": [
-          "http://schema.org/WebPage"
-        ],
-        "http://schema.org/about": [
-          {
-            "@id": "local:posts/lambda-dist-info.md"
-          }
-        ],
-        "http://schema.org/name": [
-          {
-            "@value": "Python + λ - .dist-info = DistributionNotFound"
-          }
-        ],
-        "http://schema.org/subjectOf": [
-          {
-            "@id": "local:posts/lambda-dist-info.md"
-          }
-        ],
-        "http://schema.org/url": [
-          {
-            "@value": "/posts/lambda-dist-info/"
-          }
-        ],
+        "@id": "local:pricing",
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "local:posts/lambda-dist-info.md"
-          }
-        ],
-        "https://ns.octadocs.io/about": [
-          {
-            "@id": "local:posts/lambda-dist-info.md"
+            "@id": "local:pricing"
           }
         ]
       },
       {
-        "@id": "local:posts/chainable-choice",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "local:posts/chainable-choice"
-          }
-        ],
-        "https://ns.octadocs.io/isParentOf": [
-          {
-            "@id": "local:posts/chainable-choice/index.md"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+        "@id": "http://www.w3.org/2001/XMLSchema#date",
         "@type": [
           "http://www.w3.org/2002/07/owl#DataRange"
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#time",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#time"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/subjectOf",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/subjectOf"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/Directory",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/Directory"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#hasValue",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#hasValue"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/isParentOf",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/isParentOf"
+            "@id": "http://www.w3.org/2001/XMLSchema#date"
           }
         ]
       },
       {
         "@id": "local:posts/chainable-choice/index.md",
         "@type": [
-          "http://schema.org/WebPage",
-          "https://ns.octadocs.io/IndexPage",
           {
             "@id": "_:https://ns.octadocs.io//b0"
-          }
+          },
+          "https://ns.octadocs.io/IndexPage",
+          "http://schema.org/WebPage"
         ],
         "http://schema.org/about": [
           {
@@ -292,226 +180,29 @@
         ]
       },
       {
-        "@id": "_:https://ns.octadocs.io//b0",
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "https://ns.octadocs.io/Page"
-          },
-          {
-            "@id": "https://ns.octadocs.io/IndexPage"
-          },
-          {
-            "@id": "http://schema.org/WebPage"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "https://ns.octadocs.io/IndexPage"
-          }
-        ],
+        "@id": "https://marketplace.atlassian.com/apps/284/confluence-command-line-interface-cli?hosting=cloud&tab=overview",
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "_:https://ns.octadocs.io//b0"
+            "@id": "https://marketplace.atlassian.com/apps/284/confluence-command-line-interface-cli?hosting=cloud&tab=overview"
           }
         ]
       },
       {
-        "@id": "http://www.w3.org/2002/07/owl#Thing",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
-          },
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Thing"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Thing"
-          }
-        ],
+        "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2002/07/owl#Thing"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
           }
         ]
       },
       {
-        "@id": "local:date",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "local:date"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/Page",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/Page"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/isChildOf",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/isChildOf"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#nonPositiveInteger",
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
         "@type": [
           "http://www.w3.org/2002/07/owl#DataRange"
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#nonPositiveInteger"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype",
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#DataRange"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#DataRange"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/url",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/url"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "local:posts"
-          }
-        ],
-        "https://ns.octadocs.io/isParentOf": [
-          {
-            "@id": "local:posts/precious-serverlessness.md"
-          },
-          {
-            "@id": "local:posts/deadletter-to-sentry.md"
-          },
-          {
-            "@id": "local:posts/serverless"
-          },
-          {
-            "@id": "local:posts/redshift-drop-multiple-tables.md"
-          },
-          {
-            "@id": "local:posts/lambda-dist-info.md"
-          },
-          {
-            "@id": "local:posts/chainable-choice"
-          },
-          {
-            "@id": "local:posts/avoid-peewee-floatfield.md"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#float",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#float"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#sameAs",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#sameAs"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/fileName",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/fileName"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#unsignedInt",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#int",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#int"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#deprecated",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#deprecated"
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
           }
         ]
       },
@@ -524,13 +215,220 @@
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#date",
+        "@id": "local:rate",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:rate"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/title",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/title"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#hexBinary",
         "@type": [
           "http://www.w3.org/2002/07/owl#DataRange"
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#date"
+            "@id": "http://www.w3.org/2001/XMLSchema#hexBinary"
+          }
+        ]
+      },
+      {
+        "@id": "http://schema.org/url",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://schema.org/url"
+          }
+        ]
+      },
+      {
+        "@id": "local:knowledge-as-code/index.md",
+        "@type": [
+          {
+            "@id": "_:https://ns.octadocs.io//b0"
+          },
+          "http://schema.org/WebPage",
+          "https://ns.octadocs.io/IndexPage"
+        ],
+        "http://schema.org/about": [
+          {
+            "@id": "local:knowledge-as-code/index.md"
+          }
+        ],
+        "http://schema.org/name": [
+          {
+            "@value": "Knowledge as Code"
+          }
+        ],
+        "http://schema.org/subjectOf": [
+          {
+            "@id": "local:knowledge-as-code/index.md"
+          }
+        ],
+        "http://schema.org/url": [
+          {
+            "@value": "/knowledge-as-code/"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:knowledge-as-code/index.md"
+          }
+        ],
+        "https://ns.octadocs.io/about": [
+          {
+            "@id": "local:knowledge-as-code/index.md"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#string"
+          }
+        ]
+      },
+      {
+        "@id": "http://schema.org/name",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://schema.org/name"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#byte",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#byte"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString"
+          }
+        ]
+      },
+      {
+        "@id": "https://github.com/jsinglet/confluence-command-line",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://github.com/jsinglet/confluence-command-line"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#long",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#long"
+          }
+        ]
+      },
+      {
+        "@id": "local:because",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:because"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#unsignedShort",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#unsignedShort"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+          }
+        ]
+      },
+      {
+        "@id": "local:knowledge-as-code",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:knowledge-as-code"
+          }
+        ],
+        "https://ns.octadocs.io/isParentOf": [
+          {
+            "@id": "local:knowledge-as-code/index.md"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/subjectOf",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/subjectOf"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#sameAs",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#sameAs"
+          }
+        ]
+      },
+      {
+        "@id": "local:date",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:date"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#range",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#range"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/position",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/position"
           }
         ]
       },
@@ -539,6 +437,14 @@
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
             "@id": "http://www.w3.org/2002/07/owl#priorVersion"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
           }
         ]
       },
@@ -583,46 +489,589 @@
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+        "@id": "https://ns.octadocs.io/",
         "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
+          "http://schema.org/WebPage"
+        ],
+        "http://schema.org/about": [
+          {
+            "@id": "https://ns.octadocs.io/"
+          }
+        ],
+        "http://schema.org/subjectOf": [
+          {
+            "@id": "https://ns.octadocs.io/"
+          }
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+            "@id": "https://ns.octadocs.io/"
+          }
+        ],
+        "https://ns.octadocs.io/about": [
+          {
+            "@id": "https://ns.octadocs.io/"
           }
         ]
       },
       {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Class",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Class"
+          }
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
           }
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#anyURI",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
+        "@id": "local:decision",
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+            "@id": "local:decision"
           }
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#byte",
+        "@id": "local:",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:"
+          }
+        ],
+        "https://ns.octadocs.io/isParentOf": [
+          {
+            "@id": "local:knowledge-as-code"
+          },
+          {
+            "@id": "local:confluence-cli.md"
+          },
+          {
+            "@id": "local:posts"
+          }
+        ]
+      },
+      {
+        "@id": "local:confluence-cli.md",
+        "@type": [
+          "http://schema.org/WebPage"
+        ],
+        "http://schema.org/about": [
+          {
+            "@id": "local:confluence-cli.md"
+          }
+        ],
+        "http://schema.org/name": [
+          {
+            "@value": "Choose a Confluence CLI"
+          }
+        ],
+        "http://schema.org/subjectOf": [
+          {
+            "@id": "local:confluence-cli.md"
+          }
+        ],
+        "http://schema.org/url": [
+          {
+            "@value": "/confluence-cli/"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:confluence-cli.md"
+          }
+        ],
+        "https://ns.octadocs.io/about": [
+          {
+            "@id": "local:confluence-cli.md"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#unsignedLong",
         "@type": [
           "http://www.w3.org/2002/07/owl#DataRange"
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#byte"
+            "@id": "http://www.w3.org/2001/XMLSchema#unsignedLong"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#base64Binary",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#base64Binary"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#deprecated",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#deprecated"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#int"
+          }
+        ]
+      },
+      {
+        "@id": "https://github.com/proctorlabs/confluence-cli",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://github.com/proctorlabs/confluence-cli"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#unsignedInt",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#unsignedByte",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#unsignedByte"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#time",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#time"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/about",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/about"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+          }
+        ]
+      },
+      {
+        "@id": "local:author",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:author"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:posts"
+          }
+        ],
+        "https://ns.octadocs.io/isParentOf": [
+          {
+            "@id": "local:posts/stop-all-executions.md"
+          },
+          {
+            "@id": "local:posts/avoid-peewee-floatfield.md"
+          },
+          {
+            "@id": "local:posts/serverless"
+          },
+          {
+            "@id": "local:posts/chainable-choice"
+          },
+          {
+            "@id": "local:posts/deadletter-to-sentry.md"
+          },
+          {
+            "@id": "local:posts/precious-serverlessness.md"
+          },
+          {
+            "@id": "local:posts/redshift-drop-multiple-tables.md"
+          },
+          {
+            "@id": "local:posts/lambda-dist-info.md"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#incompatibleWith",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#incompatibleWith"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/isChildOf",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/isChildOf"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#double"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/lambda-dist-info.md",
+        "@type": [
+          "http://schema.org/WebPage"
+        ],
+        "http://schema.org/about": [
+          {
+            "@id": "local:posts/lambda-dist-info.md"
+          }
+        ],
+        "http://schema.org/name": [
+          {
+            "@value": "Python + λ - .dist-info = DistributionNotFound"
+          }
+        ],
+        "http://schema.org/subjectOf": [
+          {
+            "@id": "local:posts/lambda-dist-info.md"
+          }
+        ],
+        "http://schema.org/url": [
+          {
+            "@value": "/posts/lambda-dist-info/"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:posts/lambda-dist-info.md"
+          }
+        ],
+        "https://ns.octadocs.io/about": [
+          {
+            "@id": "local:posts/lambda-dist-info.md"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/precious-serverlessness.md",
+        "@type": [
+          "http://schema.org/WebPage"
+        ],
+        "http://schema.org/about": [
+          {
+            "@id": "local:posts/precious-serverlessness.md"
+          }
+        ],
+        "http://schema.org/name": [
+          {
+            "@value": "Precious Serverlessness"
+          }
+        ],
+        "http://schema.org/subjectOf": [
+          {
+            "@id": "local:posts/precious-serverlessness.md"
+          }
+        ],
+        "http://schema.org/url": [
+          {
+            "@value": "/posts/precious-serverlessness/"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:posts/precious-serverlessness.md"
+          }
+        ],
+        "https://ns.octadocs.io/about": [
+          {
+            "@id": "local:posts/precious-serverlessness.md"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#hasValue",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#hasValue"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#language",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#language"
+          }
+        ]
+      },
+      {
+        "@id": "local:draft",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:draft"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#short",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#short"
+          }
+        ]
+      },
+      {
+        "@id": "http://schema.org/about",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://schema.org/about"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#AnnotationProperty"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#normalizedString",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#normalizedString"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#inverseOf",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#inverseOf"
+          }
+        ]
+      },
+      {
+        "@id": "local:contra",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:contra"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#negativeInteger",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#negativeInteger"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonPositiveInteger",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#nonPositiveInteger"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          },
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#float"
+          }
+        ]
+      },
+      {
+        "@id": "local:programming-language",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:programming-language"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/isParentOf",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/isParentOf"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/stop-all-executions.md",
+        "@type": [
+          "http://schema.org/WebPage"
+        ],
+        "http://schema.org/about": [
+          {
+            "@id": "local:posts/stop-all-executions.md"
+          }
+        ],
+        "http://schema.org/name": [
+          {
+            "@value": "Stop All Executions"
+          }
+        ],
+        "http://schema.org/subjectOf": [
+          {
+            "@id": "local:posts/stop-all-executions.md"
+          }
+        ],
+        "http://schema.org/url": [
+          {
+            "@value": "/posts/stop-all-executions/"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:posts/stop-all-executions.md"
+          }
+        ],
+        "https://ns.octadocs.io/about": [
+          {
+            "@id": "local:posts/stop-all-executions.md"
           }
         ]
       },
@@ -663,45 +1112,240 @@
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#long",
+        "@id": "https://ns.octadocs.io/Page",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/Page"
+          }
+        ]
+      },
+      {
+        "@id": "local:trial",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:trial"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal",
         "@type": [
           "http://www.w3.org/2002/07/owl#DataRange"
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#long"
+            "@id": "http://www.w3.org/2001/XMLSchema#decimal"
           }
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#Name",
+        "@id": "http://www.w3.org/2000/01/rdf-schema#domain",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#domain"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/template",
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+          {
+            "@id": "http://schema.org/WebPage"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/template"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Restriction",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Restriction"
+          }
+        ]
+      },
+      {
+        "@id": "local:source",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:source"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
         "@type": [
           "http://www.w3.org/2002/07/owl#DataRange"
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#Name"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
           }
         ]
       },
       {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Class",
+        "@id": "local:posts/serverless",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:posts/serverless"
+          }
+        ],
+        "https://ns.octadocs.io/isParentOf": [
+          {
+            "@id": "local:posts/serverless/index.md"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#token",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#token"
+          }
+        ]
+      },
+      {
+        "@id": "http://schema.org/subjectOf",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://schema.org/subjectOf"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/fileName",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "https://ns.octadocs.io/fileName"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#DataRange",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "http://www.w3.org/2002/07/owl#Class"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
           }
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#DataRange"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Nothing",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          },
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Nothing"
+          },
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Nothing"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Nothing"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/chainable-choice",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "local:posts/chainable-choice"
+          }
+        ],
+        "https://ns.octadocs.io/isParentOf": [
+          {
+            "@id": "local:posts/chainable-choice/index.md"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
+        "http://www.w3.org/2002/07/owl#sameAs": [
+          {
+            "@id": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Class",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
             "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
           }
-        ]
-      },
-      {
-        "@id": "http://schema.org/url",
+        ],
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+          }
+        ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://schema.org/url"
+            "@id": "http://www.w3.org/2002/07/owl#Class"
           }
         ]
       },
@@ -750,10 +1394,13 @@
         ]
       },
       {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#range",
+        "@id": "http://www.w3.org/2001/XMLSchema#Name",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#DataRange"
+        ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#range"
+            "@id": "http://www.w3.org/2001/XMLSchema#Name"
           }
         ]
       },
@@ -769,111 +1416,21 @@
         ]
       },
       {
-        "@id": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+        "@id": "http://schema.org/WebPage",
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2002/07/owl#AnnotationProperty"
+            "@id": "http://schema.org/WebPage"
           }
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI",
         "@type": [
           "http://www.w3.org/2002/07/owl#DataRange"
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#DataRange",
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#DataRange"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#short",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#short"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#string"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#inverseOf",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#inverseOf"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/deadletter-to-sentry.md",
-        "@type": [
-          "http://schema.org/WebPage"
-        ],
-        "http://schema.org/about": [
-          {
-            "@id": "local:posts/deadletter-to-sentry.md"
-          }
-        ],
-        "http://schema.org/name": [
-          {
-            "@value": "Deadletter queue to Sentry"
-          }
-        ],
-        "http://schema.org/subjectOf": [
-          {
-            "@id": "local:posts/deadletter-to-sentry.md"
-          }
-        ],
-        "http://schema.org/url": [
-          {
-            "@value": "/posts/deadletter-to-sentry/"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "local:posts/deadletter-to-sentry.md"
-          }
-        ],
-        "https://ns.octadocs.io/about": [
-          {
-            "@id": "local:posts/deadletter-to-sentry.md"
+            "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
           }
         ]
       },
@@ -886,75 +1443,10 @@
         ]
       },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#token",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
+        "@id": "https://ns.octadocs.io/Directory",
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2001/XMLSchema#token"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#unsignedLong",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#unsignedLong"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Nothing",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Nothing"
-          },
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
-          },
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Thing"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Nothing"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Nothing"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
-          }
-        ]
-      },
-      {
-        "@id": "local:",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "local:"
-          }
-        ],
-        "https://ns.octadocs.io/isParentOf": [
-          {
-            "@id": "local:posts"
+            "@id": "https://ns.octadocs.io/Directory"
           }
         ]
       },
@@ -967,44 +1459,20 @@
         ]
       },
       {
-        "@id": "http://www.w3.org/2002/07/owl#Class",
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype",
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+            "@id": "http://www.w3.org/2002/07/owl#DataRange"
           }
         ],
         "http://www.w3.org/2002/07/owl#equivalentClass": [
           {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+            "@id": "http://www.w3.org/2002/07/owl#DataRange"
           }
         ],
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "http://www.w3.org/2002/07/owl#Class"
-          }
-        ]
-      },
-      {
-        "@id": "http://schema.org/about",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://schema.org/about"
-          }
-        ]
-      },
-      {
-        "@id": "http://schema.org/name",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://schema.org/name"
-          }
-        ]
-      },
-      {
-        "@id": "http://schema.org/subjectOf",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://schema.org/subjectOf"
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
           }
         ]
       },
@@ -1020,171 +1488,10 @@
         ]
       },
       {
-        "@id": "https://ns.octadocs.io/title",
+        "@id": "local:choices",
         "http://www.w3.org/2002/07/owl#sameAs": [
           {
-            "@id": "https://ns.octadocs.io/title"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#unsignedShort",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#unsignedShort"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/IndexPage",
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "_:https://ns.octadocs.io//b0"
-          },
-          {
-            "@id": "http://schema.org/WebPage"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/IndexPage"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/position",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/position"
-          }
-        ]
-      },
-      {
-        "@id": "http://schema.org/WebPage",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://schema.org/WebPage"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/",
-        "@type": [
-          "http://schema.org/WebPage"
-        ],
-        "http://schema.org/about": [
-          {
-            "@id": "https://ns.octadocs.io/"
-          }
-        ],
-        "http://schema.org/subjectOf": [
-          {
-            "@id": "https://ns.octadocs.io/"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/"
-          }
-        ],
-        "https://ns.octadocs.io/about": [
-          {
-            "@id": "https://ns.octadocs.io/"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#backwardCompatibleWith",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#language",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#language"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/about",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/about"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#domain",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#domain"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#double",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#double"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#versionInfo",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+            "@id": "local:choices"
           }
         ]
       },
@@ -1198,579 +1505,164 @@
             "@id": "http://www.w3.org/2001/XMLSchema#integer"
           }
         ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/template",
-        "http://www.w3.org/2000/01/rdf-schema#domain": [
-          {
-            "@id": "http://schema.org/WebPage"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "https://ns.octadocs.io/template"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#base64Binary",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#DataRange"
-        ],
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2001/XMLSchema#base64Binary"
-          }
-        ]
-      },
-      {
-        "@id": "local:draft",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "local:draft"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/serverless",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "local:posts/serverless"
-          }
-        ],
-        "https://ns.octadocs.io/isParentOf": [
-          {
-            "@id": "local:posts/serverless/index.md"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#incompatibleWith",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#incompatibleWith"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Restriction",
-        "http://www.w3.org/2002/07/owl#sameAs": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Restriction"
-          }
-        ]
       }
     ]
   },
   {
     "@graph": [
       {
-        "@id": "local:posts/deadletter-to-sentry.md",
+        "@id": "local:confluence-cli.md",
         "@type": [
           "https://ns.octadocs.io/Page"
         ],
         "https://ns.octadocs.io/subjectOf": [
           {
-            "@id": "local:posts/deadletter-to-sentry.md"
+            "@id": "local:confluence-cli.md"
           }
         ],
         "https://ns.octadocs.io/title": [
           {
-            "@value": "Deadletter queue to Sentry"
+            "@value": "Choose a Confluence CLI"
           }
         ],
         "https://ns.octadocs.io/url": [
           {
-            "@value": "/posts/deadletter-to-sentry/"
+            "@value": "/confluence-cli/"
+          }
+        ],
+        "local:choices": [
+          {
+            "@id": "_:local:confluence-cli.md/b0"
+          }
+        ],
+        "local:decision": [
+          {
+            "@id": "_:local:confluence-cli.md/b6"
+          }
+        ]
+      },
+      {
+        "@id": "_:local:confluence-cli.md/b6",
+        "local:because": [
+          {
+            "@value": "None of these suffice. Going to use Python API."
+          }
+        ]
+      },
+      {
+        "@id": "_:local:confluence-cli.md/b0",
+        "https://github.com/jsinglet/confluence-command-line": [
+          {
+            "@id": "_:local:confluence-cli.md/b1"
+          }
+        ],
+        "https://github.com/proctorlabs/confluence-cli": [
+          {
+            "@id": "_:local:confluence-cli.md/b2"
+          }
+        ],
+        "https://marketplace.atlassian.com/apps/284/confluence-command-line-interface-cli?hosting=cloud&tab=overview": [
+          {
+            "@id": "_:local:confluence-cli.md/b3"
+          }
+        ]
+      },
+      {
+        "@id": "_:local:confluence-cli.md/b1",
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@value": "jsinglet/confluence-command-line"
+          }
+        ],
+        "local:contra": [
+          {
+            "@value": "The tool is unmaintained since 2018."
+          },
+          {
+            "@value": "The only supported command is `create-skeleton`, which can help me but not entirely,"
+          }
+        ],
+        "local:programming-language": [
+          {
+            "@value": "Python"
+          }
+        ]
+      },
+      {
+        "@id": "_:local:confluence-cli.md/b3",
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@value": "Confluence Command Line Interface (CLI)"
+          }
+        ],
+        "local:author": [
+          {
+            "@value": "Bob Swift Atlassian Apps"
+          }
+        ],
+        "local:contra": [
+          {
+            "@value": "I do not have rights to install this app on our Confluence Cloud."
+          }
+        ],
+        "local:pricing": [
+          {
+            "@id": "_:local:confluence-cli.md/b4"
+          },
+          {
+            "@id": "_:local:confluence-cli.md/b5"
+          }
+        ]
+      },
+      {
+        "@id": "_:local:confluence-cli.md/b4",
+        "local:trial": [
+          {
+            "@value": "30 days"
+          }
+        ]
+      },
+      {
+        "@id": "_:local:confluence-cli.md/b5",
+        "local:rate": [
+          {
+            "@value": "@5/mo"
+          }
+        ]
+      },
+      {
+        "@id": "_:local:confluence-cli.md/b2",
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@value": "proctorlabs/confluence-cli"
+          }
+        ],
+        "local:author": [
+          {
+            "@value": "proctorlabs"
+          }
+        ],
+        "local:contra": [
+          {
+            "@value": "There are forks but none of them shows independent development."
+          },
+          {
+            "@value": "Repo is archived and unsupported."
+          }
+        ],
+        "local:pro": [
+          {
+            "@value": "There is a ready-to-use Docker command."
+          }
+        ],
+        "local:programming-language": [
+          {
+            "@value": "Go"
           }
         ]
       }
     ],
-    "@id": "local:posts/deadletter-to-sentry.md"
-  },
-  {
-    "@graph": [
-      {
-        "@id": "local:posts/serverless/index.md",
-        "@type": [
-          "https://ns.octadocs.io/Page"
-        ],
-        "https://ns.octadocs.io/subjectOf": [
-          {
-            "@id": "local:posts/serverless/index.md"
-          }
-        ],
-        "https://ns.octadocs.io/title": [
-          {
-            "@value": "A scoop of the Serverless Framework"
-          }
-        ],
-        "https://ns.octadocs.io/url": [
-          {
-            "@value": "/posts/serverless/"
-          }
-        ],
-        "local:date": [
-          {
-            "@value": "2020-11-02 20:02:06+07:00"
-          }
-        ],
-        "local:draft": [
-          {
-            "@value": false
-          }
-        ]
-      }
-    ],
-    "@id": "local:posts/serverless/index.md"
-  },
-  {
-    "@graph": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#unsignedByte",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#NCName",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#NMTOKEN",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#rational",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#unsignedShort",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#normalizedString",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#negativeInteger",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#backwardCompatibleWith",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#DataRange",
-        "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#language",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#short",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#float",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#hexBinary",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#unsignedInt",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#int",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#deprecated",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#date",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#time",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#priorVersion",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#token",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#double",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#versionInfo",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#unsignedLong",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#integer",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Nothing",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#anyURI",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#byte",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#base64Binary",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#long",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#Name",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2000/01/rdf-schema#Class",
-        "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "http://www.w3.org/2002/07/owl#Class"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#incompatibleWith",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AnnotationProperty"
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Thing",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2002/07/owl#equivalentClass": [
-          {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
-          }
-        ]
-      },
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#nonPositiveInteger",
-        "@type": [
-          "http://www.w3.org/2000/01/rdf-schema#Datatype"
-        ]
-      }
-    ],
-    "@id": "inference"
-  },
-  {
-    "@graph": [
-      {
-        "@id": "local:posts/chainable-choice/index.md",
-        "@type": [
-          "https://ns.octadocs.io/Page"
-        ],
-        "https://ns.octadocs.io/subjectOf": [
-          {
-            "@id": "local:posts/chainable-choice/index.md"
-          }
-        ],
-        "https://ns.octadocs.io/title": [
-          {
-            "@value": "Making Choices Chainable"
-          }
-        ],
-        "https://ns.octadocs.io/url": [
-          {
-            "@value": "/posts/chainable-choice/"
-          }
-        ],
-        "local:date": [
-          {
-            "@value": "2021-02-25 20:07:53.372391+07:00"
-          }
-        ]
-      }
-    ],
-    "@id": "local:posts/chainable-choice/index.md"
-  },
-  {
-    "@graph": [
-      {
-        "@id": "local:posts/precious-serverlessness.md",
-        "@type": [
-          "https://ns.octadocs.io/Page"
-        ],
-        "https://ns.octadocs.io/subjectOf": [
-          {
-            "@id": "local:posts/precious-serverlessness.md"
-          }
-        ],
-        "https://ns.octadocs.io/title": [
-          {
-            "@value": "Precious Serverlessness"
-          }
-        ],
-        "https://ns.octadocs.io/url": [
-          {
-            "@value": "/posts/precious-serverlessness/"
-          }
-        ],
-        "local:date": [
-          {
-            "@value": "2020-12-25 18:53:07+07:00"
-          }
-        ],
-        "local:draft": [
-          {
-            "@value": false
-          }
-        ]
-      }
-    ],
-    "@id": "local:posts/precious-serverlessness.md"
-  },
-  {
-    "@graph": [
-      {
-        "@id": "local:posts/redshift-drop-multiple-tables.md",
-        "@type": [
-          "https://ns.octadocs.io/Page"
-        ],
-        "https://ns.octadocs.io/subjectOf": [
-          {
-            "@id": "local:posts/redshift-drop-multiple-tables.md"
-          }
-        ],
-        "https://ns.octadocs.io/title": [
-          {
-            "@value": "How to remove multiple tables in Redshift by wildcard"
-          }
-        ],
-        "https://ns.octadocs.io/url": [
-          {
-            "@value": "/posts/redshift-drop-multiple-tables/"
-          }
-        ],
-        "local:date": [
-          {
-            "@value": "2021-05-24"
-          }
-        ]
-      }
-    ],
-    "@id": "local:posts/redshift-drop-multiple-tables.md"
-  },
-  {
-    "@graph": [
-      {
-        "@id": "local:posts/lambda-dist-info.md",
-        "@type": [
-          "https://ns.octadocs.io/Page"
-        ],
-        "https://ns.octadocs.io/subjectOf": [
-          {
-            "@id": "local:posts/lambda-dist-info.md"
-          }
-        ],
-        "https://ns.octadocs.io/title": [
-          {
-            "@value": "Python + λ - .dist-info = DistributionNotFound"
-          }
-        ],
-        "https://ns.octadocs.io/url": [
-          {
-            "@value": "/posts/lambda-dist-info/"
-          }
-        ],
-        "local:date": [
-          {
-            "@value": "2020-12-29 19:06:47+07:00"
-          }
-        ],
-        "local:draft": [
-          {
-            "@value": false
-          }
-        ]
-      }
-    ],
-    "@id": "local:posts/lambda-dist-info.md"
+    "@id": "local:confluence-cli.md"
   },
   {
     "@graph": [
@@ -1811,181 +1703,494 @@
   {
     "@graph": [
       {
-        "@id": "local:posts/deadletter-to-sentry.md",
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "deadletter-to-sentry.md"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:posts"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts",
-        "@type": [
-          "https://ns.octadocs.io/Directory"
-        ],
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "posts"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:"
-          }
-        ]
-      },
-      {
-        "@id": "local:",
-        "@type": [
-          "https://ns.octadocs.io/Directory"
-        ]
-      },
-      {
-        "@id": "local:posts/serverless/index.md",
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "index.md"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:posts/serverless"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/serverless",
-        "@type": [
-          "https://ns.octadocs.io/Directory"
-        ],
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "serverless"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:posts"
-          }
-        ]
-      },
-      {
         "@id": "local:posts/chainable-choice/index.md",
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "index.md"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:posts/chainable-choice"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/precious-serverlessness.md",
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "precious-serverlessness.md"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:posts"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/redshift-drop-multiple-tables.md",
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "redshift-drop-multiple-tables.md"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:posts"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/lambda-dist-info.md",
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "lambda-dist-info.md"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:posts"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/avoid-peewee-floatfield.md",
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "avoid-peewee-floatfield.md"
-          }
-        ],
-        "https://ns.octadocs.io/isChildOf": [
-          {
-            "@id": "local:posts"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/",
-        "https://ns.octadocs.io/fileName": [
-          {
-            "@value": "octadocs.yaml"
-          }
-        ]
-      },
-      {
-        "@id": "local:posts/chainable-choice",
         "@type": [
-          "https://ns.octadocs.io/Directory"
+          "https://ns.octadocs.io/Page"
         ],
-        "https://ns.octadocs.io/fileName": [
+        "https://ns.octadocs.io/subjectOf": [
           {
-            "@value": "chainable-choice"
+            "@id": "local:posts/chainable-choice/index.md"
           }
         ],
-        "https://ns.octadocs.io/isChildOf": [
+        "https://ns.octadocs.io/title": [
           {
-            "@id": "local:posts"
+            "@value": "Making Choices Chainable"
+          }
+        ],
+        "https://ns.octadocs.io/url": [
+          {
+            "@value": "/posts/chainable-choice/"
+          }
+        ],
+        "local:date": [
+          {
+            "@value": "2021-02-25 20:07:53.372391+07:00"
           }
         ]
       }
     ],
-    "@id": "local:fs"
+    "@id": "local:posts/chainable-choice/index.md"
   },
   {
     "@graph": [
       {
-        "@id": "https://ns.octadocs.io/title",
-        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        "@id": "local:knowledge-as-code/index.md",
+        "@type": [
+          "https://ns.octadocs.io/Page"
+        ],
+        "https://ns.octadocs.io/subjectOf": [
           {
-            "@id": "http://schema.org/name"
+            "@id": "local:knowledge-as-code/index.md"
+          }
+        ],
+        "https://ns.octadocs.io/title": [
+          {
+            "@value": "Knowledge as Code"
+          }
+        ],
+        "https://ns.octadocs.io/url": [
+          {
+            "@value": "/knowledge-as-code/"
+          }
+        ]
+      }
+    ],
+    "@id": "local:knowledge-as-code/index.md"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "local:posts/lambda-dist-info.md",
+        "@type": [
+          "https://ns.octadocs.io/Page"
+        ],
+        "https://ns.octadocs.io/subjectOf": [
+          {
+            "@id": "local:posts/lambda-dist-info.md"
+          }
+        ],
+        "https://ns.octadocs.io/title": [
+          {
+            "@value": "Python + λ - .dist-info = DistributionNotFound"
+          }
+        ],
+        "https://ns.octadocs.io/url": [
+          {
+            "@value": "/posts/lambda-dist-info/"
+          }
+        ],
+        "local:date": [
+          {
+            "@value": "2020-12-29 19:06:47+07:00"
+          }
+        ],
+        "local:draft": [
+          {
+            "@value": false
+          }
+        ]
+      }
+    ],
+    "@id": "local:posts/lambda-dist-info.md"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#token",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#priorVersion",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#NCName",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#backwardCompatibleWith",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#negativeInteger",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Class",
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+          {
+            "@id": "http://www.w3.org/2002/07/owl#Class"
           }
         ]
       },
       {
-        "@id": "https://ns.octadocs.io/subjectOf",
+        "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#DataRange",
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonPositiveInteger",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Nothing",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+          {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+          }
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#unsignedLong",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#base64Binary",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#deprecated",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#int",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#unsignedInt",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#unsignedByte",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#time",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#hexBinary",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#Name",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#incompatibleWith",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2002/07/owl#rational",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#byte",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#long",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#language",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#unsignedShort",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#short",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#NMTOKEN",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#normalizedString",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      },
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer",
+        "@type": [
+          "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        ]
+      }
+    ],
+    "@id": "inference"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "local:posts/precious-serverlessness.md",
+        "@type": [
+          "https://ns.octadocs.io/Page"
+        ],
+        "https://ns.octadocs.io/subjectOf": [
+          {
+            "@id": "local:posts/precious-serverlessness.md"
+          }
+        ],
+        "https://ns.octadocs.io/title": [
+          {
+            "@value": "Precious Serverlessness"
+          }
+        ],
+        "https://ns.octadocs.io/url": [
+          {
+            "@value": "/posts/precious-serverlessness/"
+          }
+        ],
+        "local:date": [
+          {
+            "@value": "2020-12-25 18:53:07+07:00"
+          }
+        ],
+        "local:draft": [
+          {
+            "@value": false
+          }
+        ]
+      }
+    ],
+    "@id": "local:posts/precious-serverlessness.md"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "local:posts/serverless/index.md",
+        "@type": [
+          "https://ns.octadocs.io/Page"
+        ],
+        "https://ns.octadocs.io/subjectOf": [
+          {
+            "@id": "local:posts/serverless/index.md"
+          }
+        ],
+        "https://ns.octadocs.io/title": [
+          {
+            "@value": "A scoop of the Serverless Framework"
+          }
+        ],
+        "https://ns.octadocs.io/url": [
+          {
+            "@value": "/posts/serverless/"
+          }
+        ],
+        "local:date": [
+          {
+            "@value": "2020-11-02 20:02:06+07:00"
+          }
+        ],
+        "local:draft": [
+          {
+            "@value": false
+          }
+        ]
+      }
+    ],
+    "@id": "local:posts/serverless/index.md"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "https://ns.octadocs.io/position",
         "http://www.w3.org/2000/01/rdf-schema#label": [
           {
-            "@value": "Link from a Thing to the Page which describes it."
+            "@value": "Position of the page in lists and directories."
           }
         ],
         "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
           {
-            "@id": "http://schema.org/subjectOf"
+            "@id": "http://schema.org/position"
           }
         ]
       },
@@ -2019,40 +2224,6 @@
         ]
       },
       {
-        "@id": "https://ns.octadocs.io/url",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@value": "Web-accessible URL path (usually relative, without the hostname) the page will have when the site is built."
-          }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-          {
-            "@id": "http://schema.org/url"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/position",
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@value": "Position of the page in lists and directories."
-          }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-          {
-            "@id": "http://schema.org/position"
-          }
-        ]
-      },
-      {
-        "@id": "https://ns.octadocs.io/Page",
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "http://schema.org/WebPage"
-          }
-        ]
-      },
-      {
         "@id": "https://ns.octadocs.io/template",
         "http://www.w3.org/2000/01/rdf-schema#comment": [
           {
@@ -2076,6 +2247,27 @@
         ]
       },
       {
+        "@id": "https://ns.octadocs.io/url",
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@value": "Web-accessible URL path (usually relative, without the hostname) the page will have when the site is built."
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+          {
+            "@id": "http://schema.org/url"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/Page",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "http://schema.org/WebPage"
+          }
+        ]
+      },
+      {
         "@id": "https://ns.octadocs.io/isChildOf",
         "http://www.w3.org/2002/07/owl#inverseOf": [
           {
@@ -2091,6 +2283,14 @@
         "https://ns.octadocs.io/subjectOf": [
           {
             "@id": "https://ns.octadocs.io/"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/title",
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+          {
+            "@id": "http://schema.org/name"
           }
         ]
       },
@@ -2111,8 +2311,322 @@
             "@id": "https://ns.octadocs.io/subjectOf"
           }
         ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/subjectOf",
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@value": "Link from a Thing to the Page which describes it."
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+          {
+            "@id": "http://schema.org/subjectOf"
+          }
+        ]
       }
     ],
     "@id": "https://ns.octadocs.io/"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "local:confluence-cli.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "confluence-cli.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/avoid-peewee-floatfield.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "avoid-peewee-floatfield.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts"
+          }
+        ]
+      },
+      {
+        "@id": "local:",
+        "@type": [
+          "https://ns.octadocs.io/Directory"
+        ]
+      },
+      {
+        "@id": "local:knowledge-as-code/index.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "index.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:knowledge-as-code"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/chainable-choice/index.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "index.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts/chainable-choice"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/lambda-dist-info.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "lambda-dist-info.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/chainable-choice",
+        "@type": [
+          "https://ns.octadocs.io/Directory"
+        ],
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "chainable-choice"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/precious-serverlessness.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "precious-serverlessness.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts"
+          }
+        ]
+      },
+      {
+        "@id": "local:knowledge-as-code",
+        "@type": [
+          "https://ns.octadocs.io/Directory"
+        ],
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "knowledge-as-code"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/serverless/index.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "index.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts/serverless"
+          }
+        ]
+      },
+      {
+        "@id": "https://ns.octadocs.io/",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "octadocs.yaml"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts",
+        "@type": [
+          "https://ns.octadocs.io/Directory"
+        ],
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "posts"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/deadletter-to-sentry.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "deadletter-to-sentry.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/redshift-drop-multiple-tables.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "redshift-drop-multiple-tables.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/stop-all-executions.md",
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "stop-all-executions.md"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts"
+          }
+        ]
+      },
+      {
+        "@id": "local:posts/serverless",
+        "@type": [
+          "https://ns.octadocs.io/Directory"
+        ],
+        "https://ns.octadocs.io/fileName": [
+          {
+            "@value": "serverless"
+          }
+        ],
+        "https://ns.octadocs.io/isChildOf": [
+          {
+            "@id": "local:posts"
+          }
+        ]
+      }
+    ],
+    "@id": "local:fs"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "local:posts/deadletter-to-sentry.md",
+        "@type": [
+          "https://ns.octadocs.io/Page"
+        ],
+        "https://ns.octadocs.io/subjectOf": [
+          {
+            "@id": "local:posts/deadletter-to-sentry.md"
+          }
+        ],
+        "https://ns.octadocs.io/title": [
+          {
+            "@value": "Deadletter queue to Sentry"
+          }
+        ],
+        "https://ns.octadocs.io/url": [
+          {
+            "@value": "/posts/deadletter-to-sentry/"
+          }
+        ]
+      }
+    ],
+    "@id": "local:posts/deadletter-to-sentry.md"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "local:posts/redshift-drop-multiple-tables.md",
+        "@type": [
+          "https://ns.octadocs.io/Page"
+        ],
+        "https://ns.octadocs.io/subjectOf": [
+          {
+            "@id": "local:posts/redshift-drop-multiple-tables.md"
+          }
+        ],
+        "https://ns.octadocs.io/title": [
+          {
+            "@value": "How to remove multiple tables in Redshift by wildcard"
+          }
+        ],
+        "https://ns.octadocs.io/url": [
+          {
+            "@value": "/posts/redshift-drop-multiple-tables/"
+          }
+        ],
+        "local:date": [
+          {
+            "@value": "2021-05-24"
+          }
+        ]
+      }
+    ],
+    "@id": "local:posts/redshift-drop-multiple-tables.md"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "local:posts/stop-all-executions.md",
+        "@type": [
+          "https://ns.octadocs.io/Page"
+        ],
+        "https://ns.octadocs.io/subjectOf": [
+          {
+            "@id": "local:posts/stop-all-executions.md"
+          }
+        ],
+        "https://ns.octadocs.io/title": [
+          {
+            "@value": "Stop All Executions"
+          }
+        ],
+        "https://ns.octadocs.io/url": [
+          {
+            "@value": "/posts/stop-all-executions/"
+          }
+        ],
+        "local:source": [
+          {
+            "@value": "https://stackoverflow.com/a/64845077/1245471"
+          }
+        ]
+      }
+    ],
+    "@id": "local:posts/stop-all-executions.md"
   }
 ]
