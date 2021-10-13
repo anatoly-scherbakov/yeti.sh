@@ -1,7 +1,8 @@
 ---
-title: Use Material Design without NPM
+title: Use Material Design without NPM in MkDocs
 ---
 
+```html
 <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -13,3 +14,4 @@ title: Use Material Design without NPM
     <span role="button" tabindex="0" class="mdc-chip__text">Accepted</span>
   </div>
 </div>
+```

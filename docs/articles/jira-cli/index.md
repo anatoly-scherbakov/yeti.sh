@@ -1,5 +1,6 @@
 ---
 title: Comparison of CLI tools for JIRA
+date: 2021-10-13
 ---
 
 If you have to use [Atlassian JIRA](https://www.atlassian.com/software/jira) a lot, you very quickly grow tired of the multitude of routine operations in the system's UI. Wishing to improve your productivity you start looking for a CLI tool.
@@ -21,14 +22,16 @@ SELECT * WHERE {
 '''
 ) %}
 
-{{ products }}
-
 <table>
     <thead>
         <tr>
             <th>Product</th>
             <th>Language</th>
-            <th>Auth token in env</th>
+            <th>
+                <a href="criteria/auth/" target="_blank">
+                    Auth token in env
+                </a>
+            </th>
         </tr>
     </thead>
     <tbody>
