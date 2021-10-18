@@ -6,6 +6,11 @@ token-in-env:
     is: true
     because: 'https://github.com/go-jira/jira'
     comment: For a less-secure option you can also provide the API token via a JIRA_API_TOKEN environment variable
+fix-versions-support:
+    is: false
+    comment: The --override option can be used and custom commands with hard-coded JQL queries can be employed, but a normal shell option does not exist.
+jql_builder:
+    is: false
 ---
 
 ## How to install

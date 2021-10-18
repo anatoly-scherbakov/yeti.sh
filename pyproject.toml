@@ -9,6 +9,7 @@ license = "MIT"
 python = "3.8"
 mkdocs-material = "^7.1.9"
 octadocs = "^0.2.0"
+invoke = "^1.6.0"
 
 [tool.poetry.dev-dependencies]
 

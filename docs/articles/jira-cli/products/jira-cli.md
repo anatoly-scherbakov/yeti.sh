@@ -1,11 +1,16 @@
 ---
-title: jira-cli
-$id: https://pypi.org/project/jira-cli/
+title: alisaifee/jira-cli
+$id: https://github.com/alisaifee/jira-cli
 language: Python
 token-in-env:
     is: false
     because: 'https://jira-cli.readthedocs.io/en/master/intro.html#installation'
     comment: There is no mention of environment variables support.
+fix-versions-support:
+    is: true
+    comment: --fix-version option :)
+jql_builder:
+    is: false
 ---
 
 ## How to auth?

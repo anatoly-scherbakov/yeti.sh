@@ -32,6 +32,10 @@ SELECT * WHERE {
                     Auth token in env
                 </a>
             </th>
+            <th>
+                Supports <code>fixVersions</code> field
+            </th>
+            <th>CLI options → JQL query</th>
         </tr>
     </thead>
     <tbody>
@@ -45,6 +49,48 @@ SELECT * WHERE {
                     <a href="{{ source }}" title="{{ product.comment }}" target="_blank">
                         {% if product.value %}✔️{% else %}❌{% endif %}
                     </a>
+                </td>
+                <td>
+                    {% set fix_versions = query(
+                        '''
+                        SELECT * WHERE {
+                            ?item :fix-versions-support ?ref .
+                            
+                            ?ref
+                                :is ?value ;
+                                rdfs:comment ?comment .
+                        }
+                        ''',
+                        item=product.product
+                    ).first %}
+
+                    {% if fix_versions %}
+                        <a href="{{ fix_versions.item }}" title="{{ fix_versions.comment }}" target="_blank">
+                            {% if fix_versions.value %}✔️{% else %}❌{% endif %}
+                        </a>
+                    {% endif %}
+                </td>
+                <td>
+                    {% set jql_builder = query(
+                        '''
+                        SELECT * WHERE {
+                            ?item :jql_builder ?ref .
+                            
+                            ?ref :is ?value .
+
+                            OPTIONAL {
+                                ?ref rdfs:comment ?comment .
+                            }
+                        }
+                        ''',
+                        item=product.product
+                    ).first %}
+
+                    {% if jql_builder %}
+                        <a href="{{ jql_builder.item }}" title="{{ jql_builder.comment }}" target="_blank">
+                            {% if jql_builder.value %}✔️{% else %}❌{% endif %}
+                        </a>
+                    {% endif %}
                 </td>
             </tr>
         {% endfor %}
