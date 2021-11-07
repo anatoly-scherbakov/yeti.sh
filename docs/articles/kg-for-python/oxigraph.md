@@ -1,3 +1,4 @@
+---
 $id: https://github.com/oxigraph/oxigraph
 title: Oxigraph
 sparql-support:
@@ -7,3 +8,4 @@ rdflib-support:
 license:
   - MIT
   - Apache
+---

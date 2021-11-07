@@ -1,3 +1,4 @@
+---
 $id: https://www.ontotext.com/products/graphdb
 title: GraphDB
 sparql-support:
@@ -8,3 +9,4 @@ reasoning-support:
 ui-support: native
 python-client: sparqlwrapper
 license: proprietary
+---

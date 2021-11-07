@@ -1,3 +1,4 @@
+---
 $id: https://allegrograph.com/
 title: AllegroGraph
 ui-support: native
@@ -5,3 +6,4 @@ license: proprietary
 python-client: https://github.com/franzinc/agraph-python
 sparql-support:
   version: 1.1
+---

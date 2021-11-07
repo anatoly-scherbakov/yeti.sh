@@ -1,3 +1,4 @@
+---
 $id: https://jena.apache.org/documentation/fuseki2/index.html
 title: Fuseki
 sparql-support:
@@ -7,3 +8,4 @@ python-client:
   - https://github.com/blazegraph/blazegraph-python
   - sparqlwrapper
 license: Apache
+---

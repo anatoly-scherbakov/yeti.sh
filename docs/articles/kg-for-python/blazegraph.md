@@ -1,5 +1,7 @@
+---
 $id: https://blazegraph.com
 title: BlazeGraph
 sparql-support:
   version: 1.1
 license: proprietary
+---
