@@ -1,0 +1,10 @@
+$context:
+  $import: table
+$id: kg_stores_comparison
+class: KGStore
+columns:
+  - octa:title
+  - sparql-version
+  - ui
+  - python-client
+  - license
