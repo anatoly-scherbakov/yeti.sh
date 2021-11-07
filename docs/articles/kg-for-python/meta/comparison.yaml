@@ -4,7 +4,8 @@ $id: kg_stores_comparison
 class: KGStore
 columns:
   - octa:title
-  - sparql-version
+  - sparql-support
   - ui
   - python-client
   - license
+ordering: octa:title

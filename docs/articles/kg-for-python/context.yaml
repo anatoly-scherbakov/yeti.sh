@@ -12,3 +12,6 @@ sparqlwrapper:
 
 command-line-client:
   $type: $id
+
+sparql-support:
+  $type: $id

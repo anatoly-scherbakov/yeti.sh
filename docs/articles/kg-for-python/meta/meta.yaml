@@ -1,12 +1,9 @@
 - $id: KGStore
   $type: rdfs:Class
 
-- $id: SPARQLSupport
-  $type: rdfs:Class
-
 - $id: sparql-support
   domain: KGStore
-  rdfs:range: SPARQLSupport
+  label: SPARQL
 
 - $id: version
   rdfs:domain: SPARQLSupport
@@ -15,14 +12,14 @@
 - $id: native
   label: Native
 
-- $id: sparql-version
-  label: SPARQL Version
-
 - $id: ui
-  label: UI Support
+  label: UI
 
 - $id: python-client
   label: Python Client
 
 - $id: license
   label: License
+
+- $id: sparql1.1
+  label: 1.1

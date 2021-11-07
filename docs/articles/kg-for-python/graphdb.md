@@ -1,8 +1,7 @@
 ---
 $id: https://www.ontotext.com/products/graphdb
 title: GraphDB
-sparql-support:
-  version: 1.1
+sparql-support: sparql1.1
 reasoning-support:
   - owl-rl
   - owl-ql
