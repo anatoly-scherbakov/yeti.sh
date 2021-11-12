@@ -23,6 +23,7 @@ plugins:
   - octadocs
   - octadocs-table
   - octadocs-provenance
+  - octadocs-github
   - macros:
       modules:
         - octadocs.macros
