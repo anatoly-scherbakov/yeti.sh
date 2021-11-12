@@ -22,6 +22,7 @@ plugins:
   - search
   - octadocs
   - octadocs-table
+  - octadocs-provenance
   - macros:
       modules:
         - octadocs.macros

@@ -5,20 +5,19 @@
   domain: KGStore
   label: SPARQL
 
-- $id: version
-  rdfs:domain: SPARQLSupport
-  rdfs:range: xsd:string
-
 - $id: native
   label: Native
 
 - $id: ui
+  domain: KGStore
   label: UI
 
 - $id: python-client
+  domain: KGStore
   label: Python Client
 
 - $id: license
+  domain: KGStore
   label: License
 
 - $id: sparql1.1

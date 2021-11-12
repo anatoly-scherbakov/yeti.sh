@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yetish"
-version = "0.1.0"
+version = "0.1.1"
 description = "https://yeti.sh website"
 authors = ["Anatoly Scherbakov <altaisoft@gmail.com>"]
 license = "MIT"
