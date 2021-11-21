@@ -30,7 +30,8 @@ $included:
       title: "[FEATURE] Support Pydantic Models as ParamTypes"
 
   - $id: pydantic-cli
-    owl:sameAs: https://github.com/mpkocher/pydantic-cli
+    owl:sameAs:
+      $id: https://github.com/mpkocher/pydantic-cli
     updated-time: 2021-10-08
 
   - $id: typer
