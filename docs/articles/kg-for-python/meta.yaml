@@ -17,7 +17,6 @@
   label: Python Client
 
 - $id: license
-  domain: KGStore
   label: License
 
 - $id: sparql1.1

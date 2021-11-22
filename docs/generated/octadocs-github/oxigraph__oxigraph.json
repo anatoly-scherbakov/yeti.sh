@@ -85,7 +85,7 @@
   "mirror_url": null,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 37,
+  "open_issues_count": 39,
   "license": {
     "key": "other",
     "name": "Other",
@@ -102,7 +102,7 @@
   ],
   "visibility": "public",
   "forks": 20,
-  "open_issues": 37,
+  "open_issues": 39,
   "watchers": 368,
   "default_branch": "master",
   "temp_clone_token": null,
@@ -127,5 +127,6 @@
     "site_admin": false
   },
   "network_count": 20,
-  "subscribers_count": 23
+  "subscribers_count": 23,
+  "@id": "https://github.com/oxigraph/oxigraph"
 }

@@ -114,5 +114,6 @@
   "default_branch": "master",
   "temp_clone_token": null,
   "network_count": 4,
-  "subscribers_count": 4
+  "subscribers_count": 4,
+  "@id": "https://github.com/mpkocher/pydantic-cli"
 }

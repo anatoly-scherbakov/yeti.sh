@@ -103,5 +103,6 @@
   "default_branch": "master",
   "temp_clone_token": null,
   "network_count": 9,
-  "subscribers_count": 10
+  "subscribers_count": 10,
+  "@id": "https://github.com/franzinc/agraph-python"
 }

@@ -123,5 +123,6 @@
     "site_admin": false
   },
   "network_count": 2,
-  "subscribers_count": 2
+  "subscribers_count": 2,
+  "@id": "https://github.com/oxigraph/oxrdflib"
 }

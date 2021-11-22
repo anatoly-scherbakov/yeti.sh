@@ -85,7 +85,7 @@
   "mirror_url": null,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 12,
+  "open_issues_count": 13,
   "license": {
     "key": "other",
     "name": "Other",
@@ -98,7 +98,7 @@
   "topics": [],
   "visibility": "public",
   "forks": 4,
-  "open_issues": 12,
+  "open_issues": 13,
   "watchers": 13,
   "default_branch": "develop",
   "temp_clone_token": null,
@@ -123,5 +123,6 @@
     "site_admin": false
   },
   "network_count": 4,
-  "subscribers_count": 28
+  "subscribers_count": 28,
+  "@id": "https://github.com/stardog-union/pystardog"
 }

@@ -103,5 +103,6 @@
   "default_branch": "master",
   "temp_clone_token": null,
   "network_count": 63,
-  "subscribers_count": 11
+  "subscribers_count": 11,
+  "@id": "https://github.com/alisaifee/jira-cli"
 }
