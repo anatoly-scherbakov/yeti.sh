@@ -16,6 +16,12 @@
   domain: KGStore
   label: Python Client
 
+- $id: python-client-stars
+  label: ⭐
+  ∘:
+    - python-client
+    - stargazers_count
+
 - $id: license
   label: License
 

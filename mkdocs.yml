@@ -36,5 +36,10 @@ theme:
     - header.autohide
     - navigation.tabs
     - navigation.indexes
+
 extra_css:
   - stylesheets/flake8-codes.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tablesort.js
