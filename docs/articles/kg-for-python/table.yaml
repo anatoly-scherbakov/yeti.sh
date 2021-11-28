@@ -6,7 +6,10 @@ columns:
   - octa:title
   - sparql-support
   - ui
+  - source
+  - source-stars
+  - source-license
   - python-client
   - python-client-stars
-  - license
+  - python-client-license
 ordering: octa:title

@@ -16,14 +16,32 @@
   domain: KGStore
   label: Python Client
 
+- $id: source
+  label: Repo
+
+- $id: source-stars
+  label: ⭐
+  ∘:
+    - source
+    - gh:stargazers_count
+
 - $id: python-client-stars
   label: ⭐
   ∘:
     - python-client
-    - stargazers_count
+    - gh:stargazers_count
 
-- $id: license
-  label: License
+- $id: source-license
+  label: ⚖️
+  ∘:
+    - source
+    - gh:license
+
+- $id: python-client-license
+  label: ⚖️
+  ∘:
+    - python-client
+    - gh:license
 
 - $id: sparql1.1
   label: 1.1
