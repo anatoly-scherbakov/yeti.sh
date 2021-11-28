@@ -32,6 +32,7 @@ plugins:
 theme:
   name: material
   custom_dir: templates
+  logo: images/yeti.png
   features:
     - header.autohide
     - navigation.tabs

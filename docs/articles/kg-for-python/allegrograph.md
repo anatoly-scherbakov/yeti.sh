@@ -6,7 +6,8 @@ title: AllegroGraph
 ui:
     value: true
     ⇐: https://franz.com/agraph/support/documentation/current/agwebview.html
-license: proprietary
-python-client: https://github.com/franzinc/agraph-python
+python-client:
+    $id: https://github.com/franzinc/agraph-python
+    rdflib-support: false
 sparql-support: sparql1.1
 ---

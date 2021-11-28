@@ -6,6 +6,5 @@ reasoning-support:
   - owl-rl
   - owl-ql
 ui-support: native
-python-client: sparqlwrapper
-license: proprietary
+python-client: https://github.com/RDFLib/sparqlwrapper
 ---

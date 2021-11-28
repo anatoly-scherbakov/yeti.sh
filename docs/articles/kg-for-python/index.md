@@ -8,11 +8,16 @@ source:
   - https://en.wikipedia.org/wiki/Comparison_of_triplestores
   - https://www.w3.org/2001/sw/wiki/ToolTable
   - http://www.michelepasin.org/blog/2011/02/24/survey-of-pythonic-tools-for-rdf-and-linked-data-programming/
+$included:
+    - $id: rdflib
+      title: rdflib
+      octa:url: https://rdflib.dev/ 
 ---
 
-When choosing a knowledge graph engine for {{ link(local.octadocs) }} I didn't over-think it and, at the time of writing, the knowledge graph is stored and managed in-memory on the basis of {{ link(local.rdflib) }}. That is usable, but for many other applications of knowledge graphs we *would* still want a real DBMS with persistence on disk, indices and stuff. Here I present a comparison of a few KG storage systems by criteria that I found important for my purposes.
+{{ link(local.rdflib) }} seems to be a de facto standard for knowledge graph management in Python. It is also the easiest method to try playing with KGs in that language: in a few lines of code, you can create a graph in memory.
 
-!!! warning "Check this out"
-    https://www.w3.org/RDF/ has a few examples and links
+That will cease to be an acceptable method when you need on-disk persistence, especially for large datasets.
+
+Here, we will try to compare a few knowledge graph engines suitable for use in open source Python projects.
 
 {{ render(local.kg_stores_comparison) }}

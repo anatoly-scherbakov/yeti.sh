@@ -5,6 +5,8 @@ hide:
     - navigation
 ---
 
+<img src="/images/avatar.jpg" style="float:right; max-width: 256px">
+
 ## Key Expertise
 
 - Design and architecture of business automation software

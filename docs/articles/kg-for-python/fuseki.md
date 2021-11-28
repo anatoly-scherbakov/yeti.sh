@@ -4,7 +4,7 @@ title: Fuseki
 sparql-support: sparql1.1
 ui-support: native
 python-client:
-  - https://github.com/blazegraph/blazegraph-python
-  - sparqlwrapper
+    $id: https://github.com/RDFLib/sparqlwrapper
+    supports-rdflib: false
 license: Apache
 ---
