@@ -4,6 +4,7 @@ $id: kg_stores_comparison
 class: KGStore
 columns:
   - octa:title
+  - python-client-supports-rdflib
   - sparql-support
   - ui
   - source
@@ -14,5 +15,4 @@ columns:
   - python-client-updated
   - python-client-stars
   - python-client-license
-  - python-client-supports-rdflib
 ordering: octa:title
