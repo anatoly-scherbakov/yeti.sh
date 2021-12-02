@@ -4,6 +4,6 @@
   },
   "@vocab": "https://octadocs.io/github/",
   "license": {
-    "@type": "gh:License"
+    "@id": "https://schema.org/license"
   }
 }
