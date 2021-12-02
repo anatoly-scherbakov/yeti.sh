@@ -1,0 +1,5 @@
+---
+$id: https://www.oxfordsemantic.tech
+title: RDFox
+license: proprietary
+---

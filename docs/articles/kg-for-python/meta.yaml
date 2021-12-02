@@ -1,0 +1,70 @@
+- $id: KGStore
+  $type: rdfs:Class
+
+- $id: sparql-support
+  domain: KGStore
+  label: SPARQL
+
+- $id: native
+  label: Native
+
+- $id: ui
+  domain: KGStore
+  label: UI
+
+- $id: python-client
+  domain: KGStore
+  label: Python Client
+
+- $id: source
+  label: Repo
+
+- $id: source-stars
+  label: ⭐
+  ∘:
+    - source
+    - gh:stargazers_count
+
+- $id: python-client-stars
+  label: ⭐
+  ∘:
+    - python-client
+    - gh:stargazers_count
+
+- $id: source-license
+  label: ⚖️
+  ∘:
+    - source
+    - gh:license
+
+- $id: source-updated
+  label: Updated
+  ∘:
+    - source
+    - gh:updated_at
+
+- $id: python-client-updated
+  label: Updated
+  ∘:
+    - python-client
+    - gh:updated_at
+
+- $id: python-client-license
+  label: ⚖️
+  ∘:
+    - python-client
+    - gh:license
+
+- $id: sparql1.1
+  label: 1.1
+
+- $id: python-client-supports-rdflib
+  label: RDFLib support
+  ∘:
+    - python-client
+    - supports-rdflib
+
+- $id: https://github.com/RDFLib/sparqlwrapper
+  title: SPARQLWrapper
+  comment: Usable to communicate with databases which have SPARQL as single available interface.
+  supports-rdflib: false

@@ -1,4 +1,5 @@
 ---
+$id: jira-cli-tools
 title: Comparison of CLI tools for JIRA
 date: 2021-10-13
 ---

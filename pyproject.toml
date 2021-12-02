@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yetish"
-version = "0.1.0"
+version = "0.1.1"
 description = "https://yeti.sh website"
 authors = ["Anatoly Scherbakov <altaisoft@gmail.com>"]
 license = "MIT"
@@ -8,8 +8,8 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "3.8"
 mkdocs-material = "^7.1.9"
-octadocs = "^0.2.0"
 invoke = "^1.6.0"
+mkdocs = "^1.2.3"
 
 [tool.poetry.dev-dependencies]
 

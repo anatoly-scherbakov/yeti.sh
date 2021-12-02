@@ -1,0 +1,18 @@
+$context:
+  $import: table
+$id: kg_stores_comparison
+class: KGStore
+columns:
+  - octa:title
+  - sparql-support
+  - ui
+  - source
+  - source-updated
+  - source-stars
+  - source-license
+  - python-client
+  - python-client-updated
+  - python-client-stars
+  - python-client-license
+  - python-client-supports-rdflib
+ordering: octa:title
