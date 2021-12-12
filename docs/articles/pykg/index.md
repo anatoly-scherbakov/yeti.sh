@@ -14,10 +14,9 @@ $included:
       octa:url: https://rdflib.dev/ 
 ---
 
-{{ link(local.rdflib) }} seems to be a de facto standard for knowledge graph management in Python. It is also the easiest method to try playing with KGs in that language: in a few lines of code, you can create a graph in memory.
+{{ link(local.rdflib) }} <mark title="Opinion of the author">seems</mark> to be the de facto standard for knowledge graph management in Python. It is also easy to start with: in a few lines of code, one can create an in-memory graph, ingest data and query it.
 
-That will cease to be an acceptable method when you need on-disk persistence, especially for large datasets.
-
-Here, we will try to compare a few knowledge graph engines suitable for use in open source Python projects.
+This is how one may start building their KG oriented Python application, but applications require persistence and scalability - qualities found in mature knowledge graph database management systems.
 
 {{ render(local.kg_stores_comparison) }}
+

@@ -5,5 +5,5 @@ title: Oxigraph
 sparql-support: sparql1.1
 python-client:
     $id: https://github.com/oxigraph/oxrdflib
-    supports-rdflib: true
+supports-rdflib: true
 ---
