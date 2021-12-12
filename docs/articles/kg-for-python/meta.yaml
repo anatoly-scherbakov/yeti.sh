@@ -42,12 +42,14 @@
   ∘:
     - source
     - gh:updated_at
+  iolanta:hasDefaultFacet: python://octadocs.facets.DateLiteral
 
 - $id: python-client-updated
   label: Updated
   ∘:
     - python-client
     - gh:updated_at
+  iolanta:hasDefaultFacet: python://octadocs.facets.DateLiteral
 
 - $id: python-client-license
   label: ⚖️
