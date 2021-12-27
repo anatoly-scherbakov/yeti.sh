@@ -9,6 +9,7 @@ source: https://github.com/blazegraph/database
 python-client:
     $id: https://github.com/blazegraph/blazegraph-python
 supports-rdflib:
-    value: SPARQL
+    value:
+        $id: rdflib-via-sparql
     ⇐: https://github.com/RDFLib/sparqlwrapper/blob/master/test/blazegraph__wikidata__test.py
 ---

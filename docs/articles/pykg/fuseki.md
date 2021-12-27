@@ -8,7 +8,8 @@ ui-support: native
 python-client:
     $id: https://github.com/RDFLib/sparqlwrapper
 supports-rdflib:
-    value: SPARQL
+    value:
+        $id: rdflib-via-sparql
     ⇐: https://github.com/RDFLib/sparqlwrapper/blob/master/test/fuseki2__v3_8_0__stw__test.py    
 license: Apache
 ---

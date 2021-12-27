@@ -9,7 +9,8 @@ ui:
 python-client:
     $id: https://github.com/franzinc/agraph-python
 supports-rdflib:
-    value: SPARQL
+    value:
+        $id: rdflib-via-sparql
     ⇐: https://github.com/RDFLib/sparqlwrapper/blob/master/test/allegrograph__v4_14_1__mmi__test.py
 sparql-support: sparql1.1
 ---

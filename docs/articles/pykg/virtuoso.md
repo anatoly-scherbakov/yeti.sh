@@ -9,6 +9,7 @@ sparql-support: sparql1.1
 ui-support: true
 python-client: https://github.com/maparent/virtuoso-python
 supports-rdflib:
-    value: SPARQL
+    value:
+        $id: rdflib-via-sparql
     ⇐: https://github.com/RDFLib/sparqlwrapper/blob/master/test/virtuoso__v8_03_3313__dbpedia__test.py
 ---

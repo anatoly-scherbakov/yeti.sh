@@ -7,7 +7,8 @@ license: proprietary
 python-client:
     $id: https://github.com/stardog-union/pystardog
 supports-rdflib:
-    value: SPARQL
+    value:
+        $id: rdflib-via-sparql
     ⇐: https://github.com/RDFLib/sparqlwrapper/blob/master/test/stardog__lindas__test.py
 sparql-support: sparql1.1
 ui-support: true

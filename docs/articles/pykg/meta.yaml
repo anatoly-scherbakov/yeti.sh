@@ -1,10 +1,6 @@
 - $id: KGStore
   $type: rdfs:Class
 
-- $id: sparql-support
-  domain: KGStore
-  label: SPARQL
-
 - $id: native
   label: Native
 
