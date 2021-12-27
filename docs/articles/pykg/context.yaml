@@ -18,3 +18,6 @@ sparql-support:
 
 source:
   $type: $id
+
+supports-rdflib:
+  $type: $id

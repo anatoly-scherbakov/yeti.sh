@@ -1,7 +1,15 @@
 ---
+$context:
+    $import: provenance
 $id: supports-rdflib
 title: RDFLib support
 $included:
+  - $id: rdflib-native-driver
+    value: true
+    comment: There is a native storage backend for RDFLib. That promises better performance.
+  - $id: rdflib-incompatible
+    value: false
+    comment: The system is principally incompatible with RDFLib.
   - $id: rdflib-via-sparql
     label: SPARQL
     comment: The database exposes a SPARQL endpoint, which can be used to communicate with it from within RDFLib. This method is versatile (compare with SQL access to relational databases) but somewhat limited because RDFLib <code>SPARQLStore</code> and its descendant <code>SPARQLUpdateStore</code> do not support blank nodes.

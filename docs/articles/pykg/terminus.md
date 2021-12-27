@@ -11,8 +11,5 @@ ui:
 python-client:
   $id: https://github.com/terminusdb/terminusdb-client-python
   comment: There is a rich Python DSL for querying the database, similar to what I would want to see for SPARQL.
-supports-rdflib:
-    value: false
-    ⇐: https://terminusdb.com
-    comment: TerminusDB is not a SPARQL database and thus is incompatible with RDFLib.
+supports-rdflib: rdflib-incompatible
 ---

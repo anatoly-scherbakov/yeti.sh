@@ -59,4 +59,3 @@
 - $id: https://github.com/RDFLib/sparqlwrapper
   title: SPARQLWrapper
   comment: Usable to communicate with databases which have SPARQL as single available interface.
-  supports-rdflib: false
