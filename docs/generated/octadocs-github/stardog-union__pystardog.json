@@ -66,13 +66,13 @@
   "deployments_url": "https://api.github.com/repos/stardog-union/pystardog/deployments",
   "created_at": "2018-08-29T12:36:53Z",
   "updated_at": "2021-11-09T00:30:42Z",
-  "pushed_at": "2021-12-08T18:27:05Z",
+  "pushed_at": "2021-12-13T08:32:59Z",
   "git_url": "git://github.com/stardog-union/pystardog.git",
   "ssh_url": "git@github.com:stardog-union/pystardog.git",
   "clone_url": "https://github.com/stardog-union/pystardog.git",
   "svn_url": "https://github.com/stardog-union/pystardog",
   "homepage": "http://stardog.com",
-  "size": 1127,
+  "size": 1147,
   "stargazers_count": 13,
   "watchers_count": 13,
   "language": "Python",
@@ -85,7 +85,7 @@
   "mirror_url": null,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 17,
+  "open_issues_count": 20,
   "license": {
     "key": "other",
     "name": "Other",
@@ -98,7 +98,7 @@
   "topics": [],
   "visibility": "public",
   "forks": 5,
-  "open_issues": 17,
+  "open_issues": 20,
   "watchers": 13,
   "default_branch": "develop",
   "temp_clone_token": null,
@@ -123,6 +123,6 @@
     "site_admin": false
   },
   "network_count": 5,
-  "subscribers_count": 28,
+  "subscribers_count": 27,
   "@id": "https://github.com/stardog-union/pystardog"
 }
