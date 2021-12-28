@@ -1,7 +1,6 @@
 ---
 $context:
     $import: provenance
-$id: https://github.com/openlink/virtuoso-opensource
 source: https://github.com/openlink/virtuoso-opensource
 title: Virtuoso
 license: GPL

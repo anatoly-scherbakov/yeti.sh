@@ -3,6 +3,7 @@ $context:
 $included:
   - $id: KGStore
     $type: rdfs:Class
+    label: KGMS
 
   - $id: native
     label: Native

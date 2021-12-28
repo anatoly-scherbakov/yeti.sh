@@ -389,7 +389,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "octadocs"
-version = "0.2.11"
+version = "0.2.12"
 description = "MkDocs wiki made smart"
 category = "main"
 optional = false
@@ -454,6 +454,22 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 
 [package.extras]
 graphviz = ["graphviz"]
+
+[[package]]
+name = "plumbum"
+version = "1.7.2"
+description = "Plumbum: shell combinators library"
+category = "dev"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
+
+[package.dependencies]
+pywin32 = {version = "*", markers = "platform_system == \"Windows\" and platform_python_implementation != \"PyPy\""}
+
+[package.extras]
+dev = ["paramiko", "psutil", "pytest", "pytest-cov", "pytest-mock", "pytest-timeout"]
+docs = ["Sphinx (>=3.0.0)", "sphinx-rtd-theme (>=0.5.0)"]
+ssh = ["paramiko"]
 
 [[package]]
 name = "pycparser"
@@ -607,6 +623,14 @@ python-versions = "*"
 [package.dependencies]
 PyYAML = "*"
 six = "*"
+
+[[package]]
+name = "pywin32"
+version = "303"
+description = "Python for Window Extensions"
+category = "dev"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "pyyaml"
@@ -846,7 +870,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "3.8"
-content-hash = "5b29263e4bce70f4120d60c4511c58d0abff2c6e0fd4f684fbe774362f3b0f84"
+content-hash = "d24602c1ed8e0ebce7edb79ad850994f7b7861fafcf831d72d1e7b171b61d3c1"
 
 [metadata.files]
 alembic = [
@@ -1212,8 +1236,8 @@ more-itertools = [
     {file = "more_itertools-8.12.0-py3-none-any.whl", hash = "sha256:43e6dd9942dffd72661a2c4ef383ad7da1e6a3e968a927ad7a6083ab410a688b"},
 ]
 octadocs = [
-    {file = "octadocs-0.2.11-py3-none-any.whl", hash = "sha256:d74db2ed0b1a829207476846230f49db635fa76b703f16afaa8529f8d2bcbd97"},
-    {file = "octadocs-0.2.11.tar.gz", hash = "sha256:43eea6a9019b6191ba2cf160ff1c408483a283282826063e2ef5dfb97a0b0b00"},
+    {file = "octadocs-0.2.12-py3-none-any.whl", hash = "sha256:fe480261baca1929e8124d3de0a7c5449a082a28782af1d307b32b582dd5dda9"},
+    {file = "octadocs-0.2.12.tar.gz", hash = "sha256:06e64fbbb4ab0d909b12bd88173e1617cb2c6757837b7dc395089fc6aee2d778"},
 ]
 owlrl = [
     {file = "owlrl-6.0.2-py3-none-any.whl", hash = "sha256:57eca06b221edbbc682376c8d42e2ddffc99f61e82c0da02e26735592f08bacc"},
@@ -1227,6 +1251,10 @@ pipdeptree = [
     {file = "pipdeptree-2.2.0-py2-none-any.whl", hash = "sha256:e31bcb4db905fe3df15e7c41bc015a3587ef4bafdd5119b011aae32948c4a371"},
     {file = "pipdeptree-2.2.0-py3-none-any.whl", hash = "sha256:95fb603e46343651342583c337a0ee68d3ccade7a81f5cf6b2fbd8151b79ed80"},
     {file = "pipdeptree-2.2.0.tar.gz", hash = "sha256:21a89e77d6eae635685e8af5ecd56561f092f8216bb290e7ae5362885d611f60"},
+]
+plumbum = [
+    {file = "plumbum-1.7.2-py2.py3-none-any.whl", hash = "sha256:0bbf431e31da988405de2fb36c3226f09c0c9cdf69c8480f8997f4b94b7370a1"},
+    {file = "plumbum-1.7.2.tar.gz", hash = "sha256:0d1bf908076bbd0484d16412479cb97d6843069ee19f99e267e11dd980040523"},
 ]
 pycparser = [
     {file = "pycparser-2.21-py2.py3-none-any.whl", hash = "sha256:8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"},
@@ -1309,6 +1337,20 @@ python-dateutil = [
 python-frontmatter = [
     {file = "python-frontmatter-0.5.0.tar.gz", hash = "sha256:a9c2e90fc38e9f0c68d8b82299040f331ca3b8525ac7fa5f6beffef52b26c426"},
     {file = "python_frontmatter-0.5.0-py3-none-any.whl", hash = "sha256:a7dcdfdaf498d488dce98bfa9452f8b70f803a923760ceab1ebd99291d98d28a"},
+]
+pywin32 = [
+    {file = "pywin32-303-cp310-cp310-win32.whl", hash = "sha256:6fed4af057039f309263fd3285d7b8042d41507343cd5fa781d98fcc5b90e8bb"},
+    {file = "pywin32-303-cp310-cp310-win_amd64.whl", hash = "sha256:51cb52c5ec6709f96c3f26e7795b0bf169ee0d8395b2c1d7eb2c029a5008ed51"},
+    {file = "pywin32-303-cp311-cp311-win32.whl", hash = "sha256:d9b5d87ca944eb3aa4cd45516203ead4b37ab06b8b777c54aedc35975dec0dee"},
+    {file = "pywin32-303-cp311-cp311-win_amd64.whl", hash = "sha256:fcf44032f5b14fcda86028cdf49b6ebdaea091230eb0a757282aa656e4732439"},
+    {file = "pywin32-303-cp36-cp36m-win32.whl", hash = "sha256:aad484d52ec58008ca36bd4ad14a71d7dd0a99db1a4ca71072213f63bf49c7d9"},
+    {file = "pywin32-303-cp36-cp36m-win_amd64.whl", hash = "sha256:2a09632916b6bb231ba49983fe989f2f625cea237219530e81a69239cd0c4559"},
+    {file = "pywin32-303-cp37-cp37m-win32.whl", hash = "sha256:b1675d82bcf6dbc96363fca747bac8bff6f6e4a447a4287ac652aa4b9adc796e"},
+    {file = "pywin32-303-cp37-cp37m-win_amd64.whl", hash = "sha256:c268040769b48a13367221fced6d4232ed52f044ffafeda247bd9d2c6bdc29ca"},
+    {file = "pywin32-303-cp38-cp38-win32.whl", hash = "sha256:5f9ec054f5a46a0f4dfd72af2ce1372f3d5a6e4052af20b858aa7df2df7d355b"},
+    {file = "pywin32-303-cp38-cp38-win_amd64.whl", hash = "sha256:793bf74fce164bcffd9d57bb13c2c15d56e43c9542a7b9687b4fccf8f8a41aba"},
+    {file = "pywin32-303-cp39-cp39-win32.whl", hash = "sha256:7d3271c98434617a11921c5ccf74615794d97b079e22ed7773790822735cc352"},
+    {file = "pywin32-303-cp39-cp39-win_amd64.whl", hash = "sha256:79cbb862c11b9af19bcb682891c1b91942ec2ff7de8151e2aea2e175899cda34"},
 ]
 pyyaml = [
     {file = "PyYAML-6.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:d4db7c7aef085872ef65a8fd7d6d09a14ae91f691dec3e87ee5ee0539d516f53"},

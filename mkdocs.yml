@@ -1,7 +1,7 @@
 site_name: yeti.sh
 repo_url: https://github.com/anatoly-scherbakov/yeti.sh
 repo_name: yeti.sh
-edit_uri: website/edit/master/yeti.sh/docs/
+edit_uri: edit/master/docs/
 copyright: Copyright &copy; 2021 Anatoly Scherbakov
 
 markdown_extensions:
