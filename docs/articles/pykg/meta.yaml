@@ -1,61 +1,65 @@
-- $id: KGStore
-  $type: rdfs:Class
+$context:
+  $import: provenance
+$included:
+  - $id: KGStore
+    $type: rdfs:Class
 
-- $id: native
-  label: Native
+  - $id: native
+    label: Native
 
-- $id: ui
-  domain: KGStore
-  label: UI
+  - $id: ui
+    domain: KGStore
+    label: UI
 
-- $id: python-client
-  domain: KGStore
-  label: Python Client
+  - $id: python-client
+    domain: KGStore
+    label: Python Client
 
-- $id: source
-  label: Repo
+  - $id: source
+    label: Repo
 
-- $id: source-stars
-  label: ⭐
-  ∘:
-    - source
-    - gh:stargazers_count
+  - $id: source-stars
+    label: ⭐
+    ∘:
+      - source
+      - gh:stargazers_count
 
-- $id: python-client-stars
-  label: ⭐
-  ∘:
-    - python-client
-    - gh:stargazers_count
+  - $id: python-client-stars
+    label: ⭐
+    ∘:
+      - python-client
+      - gh:stargazers_count
 
-- $id: source-license
-  label: ⚖️
-  ∘:
-    - source
-    - gh:license
+  - $id: source-license
+    label: ⚖️
+    ∘:
+      - source
+      - gh:license
 
-- $id: source-updated
-  label: Updated
-  ∘:
-    - source
-    - gh:pushed_at
-  iolanta:hasDefaultFacet: python://octadocs.facets.DateLiteral
+  - $id: source-updated
+    label: Updated
+    ∘:
+      - source
+      - gh:pushed_at
+    iolanta:hasDefaultFacet: python://octadocs.facets.DateLiteral
 
-- $id: python-client-updated
-  label: Updated
-  ∘:
-    - python-client
-    - gh:pushed_at
-  iolanta:hasDefaultFacet: python://octadocs.facets.DateLiteral
+  - $id: python-client-updated
+    label: Updated
+    ∘:
+      - python-client
+      - gh:pushed_at
+    iolanta:hasDefaultFacet: python://octadocs.facets.DateLiteral
 
-- $id: python-client-license
-  label: ⚖️
-  ∘:
-    - python-client
-    - gh:license
+  - $id: python-client-license
+    label: ⚖️
+    ∘:
+      - python-client
+      - gh:license
 
-- $id: sparql1.1
-  label: 1.1
+  - $id: sparql1.1
+    value: "1.1"
+    comment: "Latest version of the language with update capabilities."
 
-- $id: https://github.com/RDFLib/sparqlwrapper
-  title: SPARQLWrapper
-  comment: Usable to communicate with databases which have SPARQL as single available interface.
+  - $id: https://github.com/RDFLib/sparqlwrapper
+    title: SPARQLWrapper
+    comment: Usable to communicate with databases which have SPARQL as single available interface.
