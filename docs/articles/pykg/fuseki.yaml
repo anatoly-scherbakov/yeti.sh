@@ -1,0 +1,14 @@
+$context:
+    $import: provenance
+title: Jena Fuseki
+octa:url: https://jena.apache.org/documentation/fuseki2/index.html
+source: https://github.com/apache/jena/
+
+sparql-support: sparql1.1
+ui-support: native
+python-client:
+    $id: https://github.com/RDFLib/sparqlwrapper
+supports-rdflib:
+    value:
+        $id: rdflib-via-sparql
+    ⇐: https://github.com/RDFLib/sparqlwrapper/blob/master/test/fuseki2__v3_8_0__stw__test.py    
