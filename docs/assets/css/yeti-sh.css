@@ -1,0 +1,4 @@
+/* Draw links as links, even in <th>. */
+.md-typeset table:not([class]) th a {
+    color: var(--md-typeset-a-color);
+}

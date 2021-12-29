@@ -3,7 +3,7 @@ $context:
   $import: table
 
 $id: kg_stores_comparison
-title: Choosing a Knowledge Graph DB for a Python app
+title: Choosing a Knowledge Graph management system for a Python app
 date: 2021-11-07
 author: anatoly
 
