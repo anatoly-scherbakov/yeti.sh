@@ -81,7 +81,7 @@
   "has_downloads": true,
   "has_wiki": true,
   "has_pages": false,
-  "forks_count": 63,
+  "forks_count": 62,
   "mirror_url": null,
   "archived": false,
   "disabled": false,
@@ -97,12 +97,12 @@
   "is_template": false,
   "topics": [],
   "visibility": "public",
-  "forks": 63,
+  "forks": 62,
   "open_issues": 87,
   "watchers": 133,
   "default_branch": "master",
   "temp_clone_token": null,
-  "network_count": 63,
+  "network_count": 62,
   "subscribers_count": 11,
   "@id": "https://github.com/alisaifee/jira-cli"
 }

@@ -81,7 +81,7 @@
   "has_downloads": true,
   "has_wiki": true,
   "has_pages": false,
-  "forks_count": 11,
+  "forks_count": 12,
   "mirror_url": null,
   "archived": false,
   "disabled": false,
@@ -97,7 +97,7 @@
   "is_template": false,
   "topics": [],
   "visibility": "public",
-  "forks": 11,
+  "forks": 12,
   "open_issues": 3,
   "watchers": 35,
   "default_branch": "master",
@@ -122,7 +122,7 @@
     "type": "Organization",
     "site_admin": false
   },
-  "network_count": 11,
+  "network_count": 12,
   "subscribers_count": 20,
   "@id": "https://github.com/blazegraph/blazegraph-python"
 }
