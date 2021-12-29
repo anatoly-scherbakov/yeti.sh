@@ -1,6 +1,6 @@
 $context:
     $import: provenance
-$id: https://www.ontotext.com/products/graphdb
+url: https://www.ontotext.com/products/graphdb
 title: GraphDB
 sparql-support: sparql1.1
 reasoning-support:

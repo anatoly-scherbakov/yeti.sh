@@ -1,7 +1,7 @@
 $context:
     $import: provenance
 title: Jena Fuseki
-octa:url: https://jena.apache.org/documentation/fuseki2/index.html
+url: https://jena.apache.org/documentation/fuseki2/index.html
 source: https://github.com/apache/jena/
 
 sparql-support: sparql1.1

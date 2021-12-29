@@ -1,6 +1,7 @@
 $context:
     $import: provenance
 source: https://github.com/openlink/virtuoso-opensource
+url: https://virtuoso.openlinksw.com
 title: Virtuoso
 license: GPL
 sparql-support: sparql1.1

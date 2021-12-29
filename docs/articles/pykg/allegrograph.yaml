@@ -1,6 +1,6 @@
 $context:
     $import: provenance
-$id: https://allegrograph.com/
+url: https://allegrograph.com/
 title: AllegroGraph
 ui:
     value: true

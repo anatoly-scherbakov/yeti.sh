@@ -1,4 +1,5 @@
 source: https://github.com/oxigraph/oxigraph
+url: https://github.com/oxigraph/oxigraph
 title: Oxigraph
 sparql-support: sparql1.1
 python-client:

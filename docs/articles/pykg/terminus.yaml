@@ -1,6 +1,7 @@
 $context:
     $import: provenance
 source: https://github.com/terminusdb/terminusdb
+url: https://terminusdb.com/
 title: TerminusDB
 ui:
     value: true

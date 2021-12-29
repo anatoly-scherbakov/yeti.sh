@@ -1,6 +1,6 @@
 $context:
     $import: provenance
-$id: https://www.stardog.com/
+url: https://www.stardog.com/
 title: Stardog
 license: proprietary
 python-client:
