@@ -8,11 +8,11 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "3.8"
 mkdocs-material = "^8.1.3"
+octadocs = "^0.2.13"
 
 [tool.poetry.dev-dependencies]
 pipdeptree = "^2.2.0"
 plumbum = "^1.7.2"
-typer = "^0.4.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
