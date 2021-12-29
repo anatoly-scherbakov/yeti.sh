@@ -19,6 +19,9 @@ def pypi():
 @jeeves.command(name='local')
 def to_local():
     """Switch Octadocs to local directory."""
+    print(local.cmd.poetry['remove', 'octadocs'](retcode=None))
+    print(local.cmd.pip['install', 'poetry'](retcode=None))
+    print(local.cmd.poetry['install'].with_cwd(local.cwd / '../octadocs')())
 
 
 if __name__ == '__main__':

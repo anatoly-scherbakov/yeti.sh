@@ -389,7 +389,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "octadocs"
-version = "0.2.12"
+version = "0.2.13"
 description = "MkDocs wiki made smart"
 category = "main"
 optional = false
@@ -870,7 +870,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "3.8"
-content-hash = "d24602c1ed8e0ebce7edb79ad850994f7b7861fafcf831d72d1e7b171b61d3c1"
+content-hash = "6bdd1916cb54ad3fa489027f492121fd089b3f23e9f490123c341792cc35abe0"
 
 [metadata.files]
 alembic = [
@@ -1236,8 +1236,8 @@ more-itertools = [
     {file = "more_itertools-8.12.0-py3-none-any.whl", hash = "sha256:43e6dd9942dffd72661a2c4ef383ad7da1e6a3e968a927ad7a6083ab410a688b"},
 ]
 octadocs = [
-    {file = "octadocs-0.2.12-py3-none-any.whl", hash = "sha256:fe480261baca1929e8124d3de0a7c5449a082a28782af1d307b32b582dd5dda9"},
-    {file = "octadocs-0.2.12.tar.gz", hash = "sha256:06e64fbbb4ab0d909b12bd88173e1617cb2c6757837b7dc395089fc6aee2d778"},
+    {file = "octadocs-0.2.13-py3-none-any.whl", hash = "sha256:35b0fa8bb061a2342f5f324707b71e5a10e1515787eb6f35c41a56ade089f450"},
+    {file = "octadocs-0.2.13.tar.gz", hash = "sha256:fc622317923dc097ca3a45af4073f561b03c958e4fdc19b184c2ce936a3ed87c"},
 ]
 owlrl = [
     {file = "owlrl-6.0.2-py3-none-any.whl", hash = "sha256:57eca06b221edbbc682376c8d42e2ddffc99f61e82c0da02e26735592f08bacc"},

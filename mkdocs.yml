@@ -39,8 +39,11 @@ theme:
     - navigation.indexes
 
 extra_css:
-  - stylesheets/flake8-codes.css
+  - assets/css/yeti-sh.css
+#  - //cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - javascripts/tablesort.js
+#  - //code.jquery.com/jquery-3.6.0.min.js
+#  - //cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js

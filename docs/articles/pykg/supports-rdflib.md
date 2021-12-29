@@ -6,7 +6,7 @@ title: RDFLib support
 $included:
   - $id: rdflib-native-driver
     value: true
-    comment: There is a native storage backend for RDFLib. That promises better performance.
+    comment: There is a native storage backend for RDFLib, which (theoretically) promises better performance.
   - $id: rdflib-incompatible
     value: false
     comment: The system is principally incompatible with RDFLib.

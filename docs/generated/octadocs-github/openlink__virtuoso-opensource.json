@@ -81,7 +81,7 @@
   "has_downloads": true,
   "has_wiki": true,
   "has_pages": false,
-  "forks_count": 195,
+  "forks_count": 196,
   "mirror_url": null,
   "archived": false,
   "disabled": false,
@@ -102,12 +102,12 @@
     "virtuoso-server"
   ],
   "visibility": "public",
-  "forks": 195,
+  "forks": 196,
   "open_issues": 578,
   "watchers": 724,
   "default_branch": "develop/7",
   "temp_clone_token": null,
-  "network_count": 195,
+  "network_count": 196,
   "subscribers_count": 81,
   "@id": "https://github.com/openlink/virtuoso-opensource"
 }

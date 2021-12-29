@@ -1,0 +1,14 @@
+$context:
+    $import: provenance
+source: https://github.com/neo4j/neo4j
+url: https://neo4j.com/
+title: Neo4j
+sparql-support:
+  value: false
+  comment: Neo4j only supports Cypher graph query language.
+  ⇐: https://community.neo4j.com/t/sparql-for-neo4j/19583/2
+python-client: https://github.com/neo4j-labs/rdflib-neo4j
+supports-rdflib: rdflib-native-driver
+ui:
+  value: true
+  ⇐: https://neo4j.com/developer/neo4j-browser/

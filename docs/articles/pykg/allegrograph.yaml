@@ -1,7 +1,6 @@
----
 $context:
     $import: provenance
-$id: https://allegrograph.com/
+url: https://allegrograph.com/
 title: AllegroGraph
 ui:
     value: true
@@ -13,4 +12,3 @@ supports-rdflib:
         $id: rdflib-via-sparql
     ⇐: https://github.com/RDFLib/sparqlwrapper/blob/master/test/allegrograph__v4_14_1__mmi__test.py
 sparql-support: sparql1.1
----

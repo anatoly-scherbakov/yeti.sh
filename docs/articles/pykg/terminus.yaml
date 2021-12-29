@@ -1,7 +1,7 @@
----
 $context:
     $import: provenance
 source: https://github.com/terminusdb/terminusdb
+url: https://terminusdb.com/
 title: TerminusDB
 ui:
     value: true
@@ -13,4 +13,3 @@ supports-rdflib: rdflib-incompatible
 sparql-support:
   value: false
   comment: No SPARQL support available.
----

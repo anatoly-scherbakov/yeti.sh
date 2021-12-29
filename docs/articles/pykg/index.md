@@ -3,7 +3,7 @@ $context:
   $import: table
 
 $id: kg_stores_comparison
-title: Choosing a Knowledge Graph DB for a Python app
+title: Choosing a Knowledge Graph management system for a Python app
 date: 2021-11-07
 author: anatoly
 
@@ -18,13 +18,11 @@ columns:
   - source
   - source-updated
   - source-stars
-  - source-license
   - python-client
   - python-client-updated
   - python-client-stars
-  - python-client-license
   - ui
-ordering: octa:title
+ordering: table:self
 
 rdfs:seeAlso:
   - $id: https://en.wikipedia.org/wiki/Comparison_of_triplestores
@@ -39,5 +37,9 @@ $included:
     title: rdflib
     octa:url: https://rdflib.dev/ 
 ---
+
+I have created this table to compare a few knowledge graph engines by a few subjectively chosen criteria. They might not be the ones that you would have chosen. For example: I do not believe the number of GitHub stars is the leading criterion to choose a software tool, but I do think their number can inform about how widely known and how well supported the solution is.
+
+At the moment of this writing, I have not used the majority of the listed tools, and the table might contain errors. PRs are very welcome.
 
 {{ render(local.kg_stores_comparison) }}
