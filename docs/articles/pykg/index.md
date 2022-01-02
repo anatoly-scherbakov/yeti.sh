@@ -18,6 +18,7 @@ columns:
   - source
   - source-updated
   - source-stars
+  - source-license
   - python-client
   - python-client-updated
   - python-client-stars
