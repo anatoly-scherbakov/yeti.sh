@@ -1,4 +1,5 @@
 {
+  "@import": "github",
   "updated_at": {
     "@type": "xsd:dateTime"
   },
