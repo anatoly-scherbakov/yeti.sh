@@ -1,13 +1,4 @@
 {
   "@import": "github",
-  "updated_at": {
-    "@type": "xsd:dateTime"
-  },
-  "pushed_at": {
-    "@type": "xsd:dateTime"
-  },
-  "@vocab": "https://octadocs.io/github/",
-  "license": {
-    "@type": "gh:License"
-  }
+  "@vocab": "https://octadocs.io/github/"
 }

@@ -91,7 +91,8 @@
     "name": "GNU General Public License v2.0",
     "spdx_id": "GPL-2.0",
     "url": "https://api.github.com/licenses/gpl-2.0",
-    "node_id": "MDc6TGljZW5zZTg="
+    "node_id": "MDc6TGljZW5zZTg=",
+    "@id": "http://spdx.org/licenses/GPL-2.0"
   },
   "allow_forking": true,
   "is_template": false,

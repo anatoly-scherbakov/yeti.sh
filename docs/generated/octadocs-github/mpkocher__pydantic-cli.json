@@ -91,7 +91,8 @@
     "name": "MIT License",
     "spdx_id": "MIT",
     "url": "https://api.github.com/licenses/mit",
-    "node_id": "MDc6TGljZW5zZTEz"
+    "node_id": "MDc6TGljZW5zZTEz",
+    "@id": "http://spdx.org/licenses/MIT"
   },
   "allow_forking": true,
   "is_template": false,
