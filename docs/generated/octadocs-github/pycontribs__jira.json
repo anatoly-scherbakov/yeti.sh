@@ -65,7 +65,7 @@
   "releases_url": "https://api.github.com/repos/pycontribs/jira/releases{/id}",
   "deployments_url": "https://api.github.com/repos/pycontribs/jira/deployments",
   "created_at": "2014-06-28T14:06:53Z",
-  "updated_at": "2022-01-29T14:39:35Z",
+  "updated_at": "2022-01-31T08:45:34Z",
   "pushed_at": "2022-01-18T00:47:21Z",
   "git_url": "git://github.com/pycontribs/jira.git",
   "ssh_url": "git@github.com:pycontribs/jira.git",
@@ -73,8 +73,8 @@
   "svn_url": "https://github.com/pycontribs/jira",
   "homepage": "https://jira.readthedocs.io",
   "size": 3175,
-  "stargazers_count": 1486,
-  "watchers_count": 1486,
+  "stargazers_count": 1488,
+  "watchers_count": 1488,
   "language": "Python",
   "has_issues": true,
   "has_projects": false,
@@ -91,8 +91,7 @@
     "name": "BSD 2-Clause \"Simplified\" License",
     "spdx_id": "BSD-2-Clause",
     "url": "https://api.github.com/licenses/bsd-2-clause",
-    "node_id": "MDc6TGljZW5zZTQ=",
-    "@id": "http://spdx.org/licenses/BSD-2-Clause"
+    "node_id": "MDc6TGljZW5zZTQ="
   },
   "allow_forking": true,
   "is_template": false,
@@ -104,7 +103,7 @@
   "visibility": "public",
   "forks": 730,
   "open_issues": 107,
-  "watchers": 1486,
+  "watchers": 1488,
   "default_branch": "main",
   "temp_clone_token": null,
   "organization": {

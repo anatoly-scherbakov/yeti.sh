@@ -11,7 +11,7 @@ python-client: https://github.com/neo4j-labs/rdflib-neo4j
 supports-rdflib: rdflib-native-driver
 source-license:
   value:
-    $id: spdx:GPL-3.0
+    $id: http://spdx.org/licenses/GPL-3.0
   ⇐: https://neo4j.com/licensing/
 ui:
   value: true
