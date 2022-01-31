@@ -1,5 +1,6 @@
 $context:
-  $import: provenance
+  - $import: provenance
+  - $import: github
 $included:
   - $id: KGStore
     $type: rdfs:Class

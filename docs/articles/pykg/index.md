@@ -1,6 +1,7 @@
 ---
 $context:
-  $import: table
+  - $import: table
+  - $import: provenance
 
 $id: kg_stores_comparison
 title: Choosing a Knowledge Graph management system for a Python app
@@ -18,6 +19,7 @@ columns:
   - source
   - source-updated
   - source-stars
+  - source-license
   - python-client
   - python-client-updated
   - python-client-stars

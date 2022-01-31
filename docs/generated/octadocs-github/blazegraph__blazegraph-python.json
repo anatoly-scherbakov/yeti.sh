@@ -86,13 +86,6 @@
   "archived": false,
   "disabled": false,
   "open_issues_count": 3,
-  "license": {
-    "key": "other",
-    "name": "Other",
-    "spdx_id": "NOASSERTION",
-    "url": null,
-    "node_id": "MDc6TGljZW5zZTA="
-  },
   "allow_forking": true,
   "is_template": false,
   "topics": [],

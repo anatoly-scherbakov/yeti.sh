@@ -21,3 +21,6 @@ source:
 
 supports-rdflib:
   $type: $id
+
+source-license:
+  $type: $id
