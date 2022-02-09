@@ -101,7 +101,14 @@
   "open_issues": 0,
   "watchers": 11,
   "default_branch": "master",
-  "temp_clone_token": null,
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": true
+  },
+  "temp_clone_token": "",
   "organization": {
     "login": "neo4j-labs",
     "id": 42673396,
@@ -124,5 +131,6 @@
   },
   "network_count": 2,
   "subscribers_count": 5,
+  "releases": [],
   "@id": "https://github.com/neo4j-labs/rdflib-neo4j"
 }
