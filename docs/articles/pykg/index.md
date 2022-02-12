@@ -17,7 +17,7 @@ columns:
   - supports-rdflib
   - sparql-support
   - source
-  - source-updated
+  - source-release
   - source-stars
   - source-license
   - python-client

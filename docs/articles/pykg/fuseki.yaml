@@ -1,13 +1,25 @@
 $context:
     $import: provenance
+    gh: https://octadocs.io/github/
+
 title: Jena Fuseki
 url: https://jena.apache.org/documentation/fuseki2/index.html
 source: https://github.com/apache/jena
+
+source-release:
+    $type: gh:Release
+    $id: https://archive.apache.org/dist/jena/binaries
+    gh:published_at:
+        $value: 2022-01-30
+        $type: xsd:date
+    gh:name: 4.4.0
+    gh:prerelease: false
 
 sparql-support: sparql1.1
 ui-support: native
 python-client:
     $id: https://github.com/RDFLib/sparqlwrapper
+
 supports-rdflib:
     value:
         $id: rdflib-via-sparql
