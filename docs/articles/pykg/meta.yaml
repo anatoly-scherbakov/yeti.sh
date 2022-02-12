@@ -38,19 +38,17 @@ $included:
       - source
       - gh:license
 
-  - $id: source-updated
+  - $id: source-release
     label: Updated
     ∘:
       - source
-      - gh:pushed_at
-    iolanta:hasDefaultFacet: python://octadocs.facets.DateLiteral
+      - gh:hasLatestRelease
 
   - $id: python-client-updated
     label: Updated
     ∘:
       - python-client
-      - gh:pushed_at
-    iolanta:hasDefaultFacet: python://octadocs.facets.DateLiteral
+      - gh:hasLatestRelease
 
   - $id: python-client-license
     label: ⚖️

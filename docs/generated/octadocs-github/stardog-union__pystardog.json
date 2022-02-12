@@ -94,7 +94,14 @@
   "open_issues": 20,
   "watchers": 14,
   "default_branch": "develop",
-  "temp_clone_token": null,
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": true
+  },
+  "temp_clone_token": "",
   "organization": {
     "login": "stardog-union",
     "id": 3451489,
@@ -117,5 +124,6 @@
   },
   "network_count": 5,
   "subscribers_count": 27,
+  "releases": [],
   "@id": "https://github.com/stardog-union/pystardog"
 }
