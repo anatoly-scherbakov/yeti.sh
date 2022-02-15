@@ -1,6 +1,6 @@
 $context:
   - $import: provenance
-  - $import: gh
+  - $import: github
 
 $included:
   - $id: KGStore
@@ -25,38 +25,38 @@ $included:
     label: ⭐
     ∘:
       - source
-      - gh:stargazers_count
+      - github:stargazers_count
 
   - $id: python-client-stars
     label: ⭐
     ∘:
       - python-client
-      - gh:stargazers_count
+      - github:stargazers_count
 
   - $id: source-license
     label: ⚖️
     ∘:
       - source
-      - gh:license
+      - github:license
 
   - $id: source-release
-    range: gh:Release
+    range: github:Release
     label: Updated
     ∘:
       - source
-      - gh:hasLatestRelease
+      - github:hasLatestRelease
 
   - $id: python-client-updated
     label: Updated
     ∘:
       - python-client
-      - gh:hasLatestRelease
+      - github:hasLatestRelease
 
   - $id: python-client-license
     label: ⚖️
     ∘:
       - python-client
-      - gh:license
+      - github:license
 
   - $id: sparql1.1
     value: "1.1"
