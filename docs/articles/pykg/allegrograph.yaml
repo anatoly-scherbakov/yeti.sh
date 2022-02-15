@@ -7,7 +7,7 @@ ui:
     value: true
     ⇐: https://franz.com/agraph/support/documentation/current/agwebview.html
 
-source-release:
+release:
     $id: https://www.kmworld.com/Articles/News/News/Franz-AllegroGraph-7.2-expands-knowledge-graph-features--149767.aspx
     github:published_at: 2021-10-07
     github:name: 7.2.0

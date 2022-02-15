@@ -12,15 +12,11 @@ sparql-support:
 python-client: https://github.com/neo4j-labs/rdflib-neo4j
 supports-rdflib: rdflib-native-driver
 
-source-release:
-    $type: github:Release
+release:
     $id: https://neo4j.com/release-notes/database/neo4j-4-4-4/
     octa:trustLevel: 5
-    github:published_at:
-        $value: 2022-02-09
-        $type: xsd:date
+    github:published_at: 2022-02-09
     github:name: 4.4.4
-    github:prerelease: false
 
 source-license:
   value:

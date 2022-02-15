@@ -39,7 +39,7 @@ $included:
       - source
       - github:license
 
-  - $id: source-release
+  - $id: release
     range: github:Release
     label: Updated
     ∘:

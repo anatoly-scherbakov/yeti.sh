@@ -1,5 +1,7 @@
 $context:
-    $import: provenance
+    - $import: provenance
+    - $import: github
+
 url: https://www.cambridgesemantics.com/anzograph/
 title: AnzoGraph
 license: proprietary
@@ -8,3 +10,7 @@ supports-rdflib:
     value:
         $id: rdflib-via-sparql
     ⇐: https://stackoverflow.com/questions/67408684/how-can-i-get-more-results-from-anzograph
+
+release:
+    $id: https://docs.cambridgesemantics.com/anzograph/relnotes/anzograph-db-v25-releases.htm
+    github:name: 2.5.0
