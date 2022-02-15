@@ -1,6 +1,7 @@
 $context:
   - $import: provenance
-  - $import: github
+  - $import: gh
+
 $included:
   - $id: KGStore
     $type: rdfs:Class
@@ -39,6 +40,7 @@ $included:
       - gh:license
 
   - $id: source-release
+    range: gh:Release
     label: Updated
     ∘:
       - source

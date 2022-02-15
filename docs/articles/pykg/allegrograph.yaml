@@ -1,5 +1,6 @@
 $context:
-    $import: provenance
+    - $import: provenance
+    - $import: gh
 url: https://allegrograph.com/
 title: AllegroGraph
 ui:
@@ -7,13 +8,9 @@ ui:
     ⇐: https://franz.com/agraph/support/documentation/current/agwebview.html
 
 source-release:
-    $type: gh:Release
     $id: https://www.kmworld.com/Articles/News/News/Franz-AllegroGraph-7.2-expands-knowledge-graph-features--149767.aspx
-    gh:published_at:
-        $value: 2021-10-07
-        $type: xsd:date
+    gh:published_at: 2021-10-07
     gh:name: 7.2.0
-    gh:prerelease: false
 
 python-client:
     $id: https://github.com/franzinc/agraph-python

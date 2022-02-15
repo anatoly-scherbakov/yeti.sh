@@ -65,7 +65,7 @@
   "releases_url": "https://api.github.com/repos/go-jira/jira/releases{/id}",
   "deployments_url": "https://api.github.com/repos/go-jira/jira/deployments",
   "created_at": "2015-02-10T23:57:33Z",
-  "updated_at": "2022-02-08T07:46:31Z",
+  "updated_at": "2022-02-14T01:28:24Z",
   "pushed_at": "2022-02-04T10:57:17Z",
   "git_url": "git://github.com/go-jira/jira.git",
   "ssh_url": "git@github.com:go-jira/jira.git",
@@ -73,8 +73,8 @@
   "svn_url": "https://github.com/go-jira/jira",
   "homepage": null,
   "size": 4446,
-  "stargazers_count": 2434,
-  "watchers_count": 2434,
+  "stargazers_count": 2438,
+  "watchers_count": 2438,
   "language": "Go",
   "has_issues": true,
   "has_projects": true,
@@ -99,7 +99,7 @@
   "visibility": "public",
   "forks": 303,
   "open_issues": 160,
-  "watchers": 2434,
+  "watchers": 2438,
   "default_branch": "master",
   "permissions": {
     "admin": false,
@@ -130,7 +130,7 @@
     "site_admin": false
   },
   "network_count": 303,
-  "subscribers_count": 105,
+  "subscribers_count": 104,
   "releases": [
     {
       "url": "https://api.github.com/repos/go-jira/jira/releases/32289532",
@@ -196,7 +196,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 13833168,
-          "download_count": 1516,
+          "download_count": 1553,
           "created_at": "2020-10-07T20:13:19Z",
           "updated_at": "2020-10-07T20:13:20Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.27/jira-darwin-amd64"
@@ -264,7 +264,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 14477777,
-          "download_count": 23650,
+          "download_count": 24232,
           "created_at": "2020-10-07T20:13:23Z",
           "updated_at": "2020-10-07T20:13:24Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.27/jira-linux-amd64"
@@ -298,7 +298,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 12362240,
-          "download_count": 163,
+          "download_count": 165,
           "created_at": "2020-10-07T20:13:24Z",
           "updated_at": "2020-10-07T20:13:28Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.27/jira-windows-386.exe"
@@ -332,7 +332,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 13817856,
-          "download_count": 536,
+          "download_count": 537,
           "created_at": "2020-10-07T20:13:29Z",
           "updated_at": "2020-10-07T20:13:30Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.27/jira-windows-amd64.exe"
@@ -418,7 +418,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 13828800,
-          "download_count": 114,
+          "download_count": 115,
           "created_at": "2020-09-11T18:14:59Z",
           "updated_at": "2020-09-11T18:15:00Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.26/jira-darwin-amd64"
@@ -1116,7 +1116,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 10629120,
-          "download_count": 32203,
+          "download_count": 32416,
           "created_at": "2020-02-26T19:12:17Z",
           "updated_at": "2020-02-26T19:12:18Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.23/jira-linux-amd64"
@@ -1258,7 +1258,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 10471092,
-          "download_count": 492,
+          "download_count": 509,
           "created_at": "2019-10-01T06:12:06Z",
           "updated_at": "2019-10-01T06:12:19Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.22/jira-darwin-amd64"
@@ -1326,7 +1326,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 10018816,
-          "download_count": 6157,
+          "download_count": 6162,
           "created_at": "2019-10-01T06:12:06Z",
           "updated_at": "2019-10-01T06:12:40Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.22/jira-linux-amd64"
@@ -1746,7 +1746,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 8024800,
-          "download_count": 73463,
+          "download_count": 74782,
           "created_at": "2018-08-04T21:23:20Z",
           "updated_at": "2018-08-04T21:24:16Z",
           "browser_download_url": "https://github.com/go-jira/jira/releases/download/v1.0.20/jira-linux-amd64"

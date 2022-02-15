@@ -1,4 +1,4 @@
 {
-  "@import": "github",
+  "@import": "gh-auto",
   "@vocab": "https://octadocs.io/github/"
 }

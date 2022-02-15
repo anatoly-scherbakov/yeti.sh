@@ -65,7 +65,7 @@
   "releases_url": "https://api.github.com/repos/blazegraph/database/releases{/id}",
   "deployments_url": "https://api.github.com/repos/blazegraph/database/deployments",
   "created_at": "2015-12-22T19:52:44Z",
-  "updated_at": "2022-02-08T09:18:29Z",
+  "updated_at": "2022-02-15T09:24:39Z",
   "pushed_at": "2021-09-03T17:42:42Z",
   "git_url": "git://github.com/blazegraph/database.git",
   "ssh_url": "git@github.com:blazegraph/database.git",
@@ -73,8 +73,8 @@
   "svn_url": "https://github.com/blazegraph/database",
   "homepage": null,
   "size": 207445,
-  "stargazers_count": 661,
-  "watchers_count": 661,
+  "stargazers_count": 663,
+  "watchers_count": 663,
   "language": "Java",
   "has_issues": true,
   "has_projects": true,
@@ -105,7 +105,7 @@
   "visibility": "public",
   "forks": 138,
   "open_issues": 141,
-  "watchers": 661,
+  "watchers": 663,
   "default_branch": "master",
   "permissions": {
     "admin": false,
@@ -136,7 +136,7 @@
     "site_admin": false
   },
   "network_count": 138,
-  "subscribers_count": 59,
+  "subscribers_count": 58,
   "releases": [
     {
       "url": "https://api.github.com/repos/blazegraph/database/releases/23347943",
@@ -202,7 +202,7 @@
           "content_type": "application/java-archive",
           "state": "uploaded",
           "size": 63885536,
-          "download_count": 1342,
+          "download_count": 1355,
           "created_at": "2020-02-03T17:52:51Z",
           "updated_at": "2020-02-03T17:53:01Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/bigdata.jar"
@@ -270,7 +270,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 58673798,
-          "download_count": 426,
+          "download_count": 491,
           "created_at": "2020-02-03T17:52:52Z",
           "updated_at": "2020-02-03T17:53:18Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.deb"
@@ -304,7 +304,7 @@
           "content_type": "application/java-archive",
           "state": "uploaded",
           "size": 63885653,
-          "download_count": 6595,
+          "download_count": 6743,
           "created_at": "2020-02-03T17:52:52Z",
           "updated_at": "2020-02-03T17:53:22Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.jar"
@@ -338,7 +338,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 58675105,
-          "download_count": 146,
+          "download_count": 148,
           "created_at": "2020-02-03T17:52:52Z",
           "updated_at": "2020-02-03T17:53:26Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.rpm"
@@ -372,7 +372,7 @@
           "content_type": "application/x-gzip",
           "state": "uploaded",
           "size": 58682483,
-          "download_count": 564,
+          "download_count": 568,
           "created_at": "2020-02-03T17:52:52Z",
           "updated_at": "2020-02-03T17:53:30Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.tar.gz"
@@ -406,7 +406,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 56482352,
-          "download_count": 553,
+          "download_count": 564,
           "created_at": "2020-02-03T17:52:52Z",
           "updated_at": "2020-02-03T17:53:33Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.war"
@@ -480,7 +480,7 @@
           "content_type": "application/java-archive",
           "state": "uploaded",
           "size": 57110070,
-          "download_count": 4176,
+          "download_count": 4177,
           "created_at": "2019-03-19T05:39:26Z",
           "updated_at": "2019-03-19T05:41:33Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_5/bigdata.jar"
@@ -548,7 +548,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 51105650,
-          "download_count": 125,
+          "download_count": 126,
           "created_at": "2019-03-19T05:39:26Z",
           "updated_at": "2019-03-19T05:40:44Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_5/blazegraph.deb"
@@ -582,7 +582,7 @@
           "content_type": "application/java-archive",
           "state": "uploaded",
           "size": 57110933,
-          "download_count": 9347,
+          "download_count": 9368,
           "created_at": "2019-03-19T05:39:26Z",
           "updated_at": "2019-03-19T05:40:29Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_5/blazegraph.jar"
@@ -684,7 +684,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 51042120,
-          "download_count": 800,
+          "download_count": 808,
           "created_at": "2019-03-19T05:42:48Z",
           "updated_at": "2019-03-19T05:43:06Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_5/blazegraph.war"
@@ -758,7 +758,7 @@
           "content_type": "application/java-archive",
           "state": "uploaded",
           "size": 57110466,
-          "download_count": 12,
+          "download_count": 13,
           "created_at": "2019-03-14T20:14:31Z",
           "updated_at": "2019-03-14T20:15:23Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_CANDIDATE_2_1_5/bigdata.jar"
@@ -792,7 +792,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 51042571,
-          "download_count": 9,
+          "download_count": 10,
           "created_at": "2019-03-14T20:14:32Z",
           "updated_at": "2019-03-14T20:16:31Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_CANDIDATE_2_1_5/bigdata.war"
@@ -860,7 +860,7 @@
           "content_type": "application/java-archive",
           "state": "uploaded",
           "size": 57111329,
-          "download_count": 382,
+          "download_count": 383,
           "created_at": "2019-03-14T20:14:32Z",
           "updated_at": "2019-03-14T20:18:00Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_CANDIDATE_2_1_5/blazegraph.jar"
@@ -962,7 +962,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 51042542,
-          "download_count": 1192,
+          "download_count": 1193,
           "created_at": "2019-03-14T20:14:33Z",
           "updated_at": "2019-03-14T20:20:15Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_CANDIDATE_2_1_5/blazegraph.war"
@@ -1138,7 +1138,7 @@
           "content_type": "application/java-archive",
           "state": "uploaded",
           "size": 56497629,
-          "download_count": 115387,
+          "download_count": 115570,
           "created_at": "2016-08-29T21:26:52Z",
           "updated_at": "2016-08-29T21:27:37Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_4/blazegraph.jar"
@@ -1240,7 +1240,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 50467521,
-          "download_count": 2162,
+          "download_count": 2165,
           "created_at": "2016-08-29T21:26:52Z",
           "updated_at": "2016-08-29T21:27:04Z",
           "browser_download_url": "https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_4/blazegraph.war"
