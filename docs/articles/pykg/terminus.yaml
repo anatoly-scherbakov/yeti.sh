@@ -3,7 +3,7 @@ $context:
 source: https://github.com/terminusdb/terminusdb
 url: https://terminusdb.com/
 title: TerminusDB
-ui:
+visualization:
     value: true
     ⇐: https://www.youtube.com/watch?v=m5pVvzN_oBU
 python-client:

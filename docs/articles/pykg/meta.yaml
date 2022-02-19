@@ -10,10 +10,6 @@ $included:
   - $id: native
     label: Native
 
-  - $id: ui
-    domain: KGStore
-    label: UI
-
   - $id: python-client
     domain: KGStore
     label: Python Client

@@ -23,6 +23,6 @@ source-license:
     $id: http://spdx.org/licenses/GPL-3.0
   ⇐: https://neo4j.com/licensing/
 
-ui:
+visualization:
   value: true
   ⇐: https://neo4j.com/developer/neo4j-browser/

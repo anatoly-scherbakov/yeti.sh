@@ -3,7 +3,7 @@ $context:
     - $import: github
 url: https://allegrograph.com/
 title: AllegroGraph
-ui:
+visualization:
     value: true
     ⇐: https://franz.com/agraph/support/documentation/current/agwebview.html
 

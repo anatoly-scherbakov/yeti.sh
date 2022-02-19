@@ -23,7 +23,9 @@ columns:
   - python-client
   - python-client-updated
   - python-client-stars
-  - ui
+  - $id: visualization
+    label: Visualization
+
 ordering: table:self
 
 rdfs:seeAlso:
