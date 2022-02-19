@@ -12,7 +12,6 @@ release:
     github:name: 4.4.0
 
 sparql-support: sparql1.1
-ui-support: native
 python-client:
     $id: https://github.com/RDFLib/sparqlwrapper
 

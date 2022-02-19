@@ -23,8 +23,7 @@ columns:
   - python-client
   - python-client-updated
   - python-client-stars
-  - $id: visualization
-    label: Visualization
+  - visualization
 
 ordering: table:self
 

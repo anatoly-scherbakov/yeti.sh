@@ -5,7 +5,6 @@ url: https://virtuoso.openlinksw.com
 title: Virtuoso
 license: GPL
 sparql-support: sparql1.1
-ui-support: true
 python-client: https://github.com/maparent/virtuoso-python
 supports-rdflib:
     value:

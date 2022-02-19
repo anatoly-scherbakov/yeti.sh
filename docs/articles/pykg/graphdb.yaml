@@ -7,7 +7,10 @@ sparql-support: sparql1.1
 reasoning-support:
   - owl-rl
   - owl-ql
-ui-support: native
+visualization:
+  prov:value: true
+  ⇐: https://graphdb.ontotext.com/free/exploring-data.html
+  label: GraphDB UI exceeds just nodes and edges visualization, it can also draw RDFS class hierarchies and more.
 python-client:
     $id: https://github.com/RDFLib/sparqlwrapper
 supports-rdflib:

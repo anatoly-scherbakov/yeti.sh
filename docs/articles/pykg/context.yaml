@@ -1,6 +1,3 @@
-ui-support:
-  $type: $id
-
 python-client:
   $type: $id
 
