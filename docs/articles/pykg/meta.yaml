@@ -1,5 +1,5 @@
 $context:
-  - $import: provenance
+  - $import: prov
   - $import: github
 
 $included:
@@ -55,7 +55,7 @@ $included:
       - github:license
 
   - $id: sparql1.1
-    value: "1.1"
+    =: "1.1"
     comment: "Latest version of the language with update capabilities."
 
   - $id: https://github.com/RDFLib/sparqlwrapper

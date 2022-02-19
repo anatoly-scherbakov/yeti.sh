@@ -1,12 +1,14 @@
 $context:
-    - $import: provenance
+    - $import: prov
     - $import: github
 
 url: https://www.stardog.com/
 title: Stardog
 license: proprietary
+
 python-client:
     $id: https://github.com/stardog-union/pystardog
+
 supports-rdflib:
     value:
         $id: rdflib-via-sparql
@@ -19,5 +21,5 @@ release:
     github:name: 7.8.3
 
 visualization:
-    value: true
+    =: true
     ⇐: https://www.stardog.com/studio/

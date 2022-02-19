@@ -1,5 +1,5 @@
 $context:
-    $import: provenance
+    $import: prov
 url: https://blazegraph.com
 title: Blazegraph
 sparql-support: sparql1.1

@@ -1,14 +1,14 @@
 ---
 $context:
-    $import: provenance
+    $import: prov
 $id: supports-rdflib
 title: RDFLib support
 $included:
   - $id: rdflib-native-driver
-    value: true
+    =: true
     comment: There is a native storage backend for RDFLib, which (theoretically) promises better performance.
   - $id: rdflib-incompatible
-    value: false
+    =: false
     comment: The system is principally incompatible with RDFLib.
   - $id: rdflib-via-sparql
     label: SPARQL

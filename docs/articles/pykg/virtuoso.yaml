@@ -1,5 +1,5 @@
 $context:
-    $import: provenance
+    $import: prov
 source: https://github.com/openlink/virtuoso-opensource
 url: https://virtuoso.openlinksw.com
 title: Virtuoso

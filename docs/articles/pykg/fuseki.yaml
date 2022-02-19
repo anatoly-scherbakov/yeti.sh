@@ -1,5 +1,5 @@
 $context:
-    $import: provenance
+    $import: prov
     github: https://octadocs.io/github/
 
 title: Jena Fuseki

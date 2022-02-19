@@ -1,5 +1,5 @@
 $context:
-    - $import: provenance
+    - $import: prov
     - $import: github
 
 url: https://www.cambridgesemantics.com/anzograph/

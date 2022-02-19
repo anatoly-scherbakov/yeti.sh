@@ -1,12 +1,12 @@
 $context:
-    - $import: provenance
+    - $import: prov
     - $import: github
 url: https://allegrograph.com/
 title: AllegroGraph
 visualization:
-    value: false
+    =: false
     ⇐: https://franz.com/agraph/support/documentation/current/agwebview.html
-    label: There is a web UI but we do not see how it displays the graph visually; thus, the condition is not satisfied.
+    comment: There is a web UI but we do not see how it displays the graph visually; thus, the condition is not satisfied.
 
 release:
     $id: https://www.kmworld.com/Articles/News/News/Franz-AllegroGraph-7.2-expands-knowledge-graph-features--149767.aspx

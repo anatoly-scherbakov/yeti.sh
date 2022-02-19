@@ -1,5 +1,5 @@
 $context:
-    - $import: provenance
+    - $import: prov
     - $import: github
 url: https://www.ontotext.com/products/graphdb
 title: GraphDB
@@ -7,12 +7,15 @@ sparql-support: sparql1.1
 reasoning-support:
   - owl-rl
   - owl-ql
+
 visualization:
-  prov:value: true
+  =: true
   ⇐: https://graphdb.ontotext.com/free/exploring-data.html
-  label: GraphDB UI exceeds just nodes and edges visualization, it can also draw RDFS class hierarchies and more.
+  comment: GraphDB UI exceeds just nodes and edges visualization, it can also draw RDFS class hierarchies and more.
+
 python-client:
     $id: https://github.com/RDFLib/sparqlwrapper
+
 supports-rdflib:
     value:
         $id: rdflib-via-sparql

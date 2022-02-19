@@ -1,7 +1,7 @@
 ---
 $context:
   - $import: table
-  - $import: provenance
+  - $import: prov
 
 $id: kg_stores_comparison
 title: Choosing a Knowledge Graph management system for a Python app
