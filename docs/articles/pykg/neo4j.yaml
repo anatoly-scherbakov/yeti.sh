@@ -19,7 +19,7 @@ release:
     github:name: 4.4.4
 
 source-license:
-  value:
+  =:
     $id: http://spdx.org/licenses/GPL-3.0
   ⇐: https://neo4j.com/licensing/
 
