@@ -1,4 +1,5 @@
-site_name: https://yeti.sh
+site_name: yeti.sh
+site_url: https://yeti.sh
 repo_url: https://github.com/anatoly-scherbakov/yeti.sh
 repo_name: yeti.sh
 edit_uri: edit/master/docs/
