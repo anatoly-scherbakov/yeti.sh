@@ -20,6 +20,7 @@ $included:
       - octa:url: https://rdflib.readthedocs.io/en/stable/apidocs/rdflib.plugins.stores.html#rdflib.plugins.stores.sparqlstore.SPARQLStore
         label: SPARQLStore (read only)
         position: 1
+exclude_from_blog: true
 ---
 
 <img src="https://rdflib.dev/images/RDFlib-250.png" style="float: left" />

@@ -11,6 +11,7 @@ fix-versions-support:
     comment: --fix-version option :)
 jql_builder:
     is: false
+exclude_from_blog: true
 ---
 
 ## How to auth?

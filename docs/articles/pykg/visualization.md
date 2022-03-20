@@ -2,6 +2,7 @@
 $id: visualization
 domain: KGStore
 title: Visualization
+exclude_from_blog: true
 ---
 
 Under **graph visualization**, we mean a visual user interface where a person can browse the graph using their mouse and keyboard, navigating through the graph's nodes and edges.

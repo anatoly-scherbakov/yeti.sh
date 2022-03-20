@@ -13,6 +13,7 @@ fix-versions-support:
 jql_builder:
     is: true
     comment: JQL query might be built from command line options and ~ character is used for negation.
+exclude_from_blog: true
 ---
 
 ## Configuration

@@ -1,6 +1,7 @@
 ---
 title: Retrieve auth token from an environment variable
 $id: token-in-env
+exclude_from_blog: true
 ---
 
 The recommended auth method at the moment is [API token auth](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/). In JIRA UI, you obtain a token and store it somehow in your environment variables (for example, in `~/.profile`).

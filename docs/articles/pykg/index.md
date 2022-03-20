@@ -38,10 +38,12 @@ rdfs:seeAlso:
 $included:
   - $id: rdflib
     title: rdflib
-    octa:url: https://rdflib.dev/ 
+    octa:url: https://rdflib.dev/
+
+description: "I have created this table to compare a few knowledge graph engines by a few subjectively chosen criteria. They might not be the ones that you would have chosen. For example: I do not believe the number of GitHub stars is the leading criterion to choose a software tool, but I do think their number can inform about how widely known and how well-supported the solution is."
 ---
 
-I have created this table to compare a few knowledge graph engines by a few subjectively chosen criteria. They might not be the ones that you would have chosen. For example: I do not believe the number of GitHub stars is the leading criterion to choose a software tool, but I do think their number can inform about how widely known and how well supported the solution is.
+{{ page.meta.description }}
 
 At the moment of this writing, I have not used the majority of the listed tools, and the table might contain errors. PRs are very welcome.
 

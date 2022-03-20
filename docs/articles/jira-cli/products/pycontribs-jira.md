@@ -11,6 +11,7 @@ fix-versions-support:
     comment: I have not found any support for this option in docs.
 jql_builder:
     is: false
+exclude_from_blog: true
 ---
 
 ## Installation

@@ -20,9 +20,14 @@ markdown_extensions:
 
 plugins:
   - search
+  - blogging:
+      dirs:
+        - articles
+      theme:
+        name: card
   - octadocs
   - octadocs-table
-  - octadocs-provenance
+  - octadocs-prov
   - octadocs-github
   - macros:
       modules:
