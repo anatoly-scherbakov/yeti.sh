@@ -1,0 +1,8 @@
+$id: https://github.com/andyoakley/mkdocs-blog
+notes: Looks unmaintained ☹
+requires-nested-directories:
+  ⇐: https://github.com/andyoakley/mkdocs-blog#content-layout
+  =: true
+supports-frontmatter:
+  ⇐: https://github.com/andyoakley/mkdocs-blog#content-layout
+  =: false

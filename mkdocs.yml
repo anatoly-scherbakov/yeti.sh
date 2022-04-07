@@ -32,6 +32,7 @@ plugins:
   - octadocs-prov
   - octadocs-github
   - macros:
+      on_error_fail: true
       modules:
         - octadocs.macros
 

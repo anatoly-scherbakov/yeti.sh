@@ -358,7 +358,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "mkdocs"
-version = "1.2.3"
+version = "1.3.0"
 description = "Project documentation with Markdown."
 category = "main"
 optional = false
@@ -367,8 +367,8 @@ python-versions = ">=3.6"
 [package.dependencies]
 click = ">=3.3"
 ghp-import = ">=1.0"
-importlib-metadata = ">=3.10"
-Jinja2 = ">=2.10.1"
+importlib-metadata = ">=4.3"
+Jinja2 = ">=2.10.2"
 Markdown = ">=3.2.1"
 mergedeep = ">=1.3.4"
 packaging = ">=20.5"
@@ -395,7 +395,7 @@ mkdocs = ">=1.0"
 
 [[package]]
 name = "mkdocs-macros-plugin"
-version = "0.5.12"
+version = "0.7.0"
 description = "Unleash the power of MkDocs with macros and variables"
 category = "main"
 optional = false
@@ -445,7 +445,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "octadocs"
-version = "0.2.22"
+version = "0.2.24"
 description = "MkDocs wiki made smart"
 category = "main"
 optional = false
@@ -460,8 +460,8 @@ deepmerge = ">=0.1.1,<0.2.0"
 documented = ">=0.1.1,<0.2.0"
 dominate = ">=2.6.0,<3.0.0"
 graphviz = ">=0.17,<0.18"
-mkdocs = ">=1.2.3,<2.0.0"
-mkdocs-macros-plugin = ">=0.5.0,<0.6.0"
+mkdocs = ">=1.3.0,<2.0.0"
+mkdocs-macros-plugin = ">=0.7.0,<0.8.0"
 more-itertools = ">=8.9.0,<9.0.0"
 owlrl = ">=6.0.2,<7.0.0"
 pydantic = ">=1.8.2,<2.0.0"
@@ -942,7 +942,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "3.8"
-content-hash = "a4039e711ef4f5210c01e570172df35464f98e3d729b2d9af669ab90bc63c0e5"
+content-hash = "949293f264de3a3b32014315f02087d2bb834557f9dcf65676119bc2a10c093d"
 
 [metadata.files]
 alembic = [
@@ -1291,16 +1291,16 @@ mergedeep = [
     {file = "mergedeep-1.3.4.tar.gz", hash = "sha256:0096d52e9dad9939c3d975a774666af186eda617e6ca84df4c94dec30004f2a8"},
 ]
 mkdocs = [
-    {file = "mkdocs-1.2.3-py3-none-any.whl", hash = "sha256:a1fa8c2d0c1305d7fc2b9d9f607c71778572a8b110fb26642aa00296c9e6d072"},
-    {file = "mkdocs-1.2.3.tar.gz", hash = "sha256:89f5a094764381cda656af4298727c9f53dc3e602983087e1fe96ea1df24f4c1"},
+    {file = "mkdocs-1.3.0-py3-none-any.whl", hash = "sha256:26bd2b03d739ac57a3e6eed0b7bcc86168703b719c27b99ad6ca91dc439aacde"},
+    {file = "mkdocs-1.3.0.tar.gz", hash = "sha256:b504405b04da38795fec9b2e5e28f6aa3a73bb0960cb6d5d27ead28952bd35ea"},
 ]
 mkdocs-blogging-plugin = [
     {file = "mkdocs-blogging-plugin-1.4.0.tar.gz", hash = "sha256:5714779fd6bfc0048b95a382f89cc6704360f0d7e55506b2fb033389b284ff68"},
     {file = "mkdocs_blogging_plugin-1.4.0-py3-none-any.whl", hash = "sha256:5a3f4032d7fa0e1b5cc8cf77ca6e845b260007898d004e22c40fde84bb6b32ed"},
 ]
 mkdocs-macros-plugin = [
-    {file = "mkdocs-macros-plugin-0.5.12.tar.gz", hash = "sha256:106aeb1ff3ba580e4884aec225ec6891ed8c93d083056088f8e66f3309fcd579"},
-    {file = "mkdocs_macros_plugin-0.5.12-py3-none-any.whl", hash = "sha256:43b7ea0259e2e18a7fe52b73a548c5ea38bb99bc9ab37d026cbdd42e45769c65"},
+    {file = "mkdocs-macros-plugin-0.7.0.tar.gz", hash = "sha256:9e64e1cabcf6925359de29fe54f62d5847fb455c2528c440b87f8f1240650608"},
+    {file = "mkdocs_macros_plugin-0.7.0-py3-none-any.whl", hash = "sha256:96bdabeb98b96139544f0048ea2f5cb80c7befde6b21e94c6d4596c22774cbcf"},
 ]
 mkdocs-material = [
     {file = "mkdocs-material-8.2.5.tar.gz", hash = "sha256:cdfb39edc77f5c2bbfca02b4fc3764de38b2093eff121aed37674204439901ce"},
@@ -1315,8 +1315,8 @@ more-itertools = [
     {file = "more_itertools-8.12.0-py3-none-any.whl", hash = "sha256:43e6dd9942dffd72661a2c4ef383ad7da1e6a3e968a927ad7a6083ab410a688b"},
 ]
 octadocs = [
-    {file = "octadocs-0.2.22-py3-none-any.whl", hash = "sha256:fad6e3f1d134960166c9419f3be0c4402f3ed5d34f0101f9c51226cee3c507e9"},
-    {file = "octadocs-0.2.22.tar.gz", hash = "sha256:5f552dfa0d6d4c4cad9e8745f011342b887c7e91b21ecc2560af57052c2b9816"},
+    {file = "octadocs-0.2.24-py3-none-any.whl", hash = "sha256:e6f800b1fae3ce170bda3a1c4f2f7c4deb96e542676019304b84f51d7d5ea475"},
+    {file = "octadocs-0.2.24.tar.gz", hash = "sha256:d3f80662ef755a67d2df0c9eb20ebc37985361395593d2aa6b2e57d93e218346"},
 ]
 owlrl = [
     {file = "owlrl-6.0.2-py3-none-any.whl", hash = "sha256:57eca06b221edbbc682376c8d42e2ddffc99f61e82c0da02e26735592f08bacc"},
