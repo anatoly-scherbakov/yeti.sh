@@ -42,6 +42,7 @@ $included:
         $id: python://octadocs.facets.DateLiteral
 
 title: MkDocs plugins for blogging
+description: "MkDocs was designed to manage software project documentation, but in fact it is a very wide purpose static site generator. Can you use it to write your personal blog? Yes, most assuredly. Here are a few plugins for that."
 ---
 
-[MkDocs](https://mkdocs.org) was designed to manage software project documentation, but in fact it is a very wide purpose static site generator. Can you use it to write your personal blog? Yes, most assuredly. Here are a few plugins for that.
+{{ page.meta.description }}

@@ -1,6 +1,7 @@
 ---
 $context:
     $import: prov
+
 $id: supports-rdflib
 title: RDFLib support
 $included:
@@ -30,5 +31,3 @@ exclude_from_blog: true
 This is how one may start building their KG oriented Python application, but applications require persistence and scalability - qualities found in mature knowledge graph database management systems.
 
 If a KGMS provides a backend for a `rdflib` the developer can easily migrate from a naive in-memory rdflib solution to a solution backed by the KGMS.
-
-{{ render(local['supports-rdflib']) }}

@@ -25,7 +25,7 @@
     "site_admin": false
   },
   "html_url": "https://github.com/pycontribs/jira",
-  "description": "Python Jira library. Development chat available on https://web.libera.chat/?channel=#pycontribs ",
+  "description": "Python Jira library. Development chat available on https://matrix.to/#/#pycontribs:matrix.org",
   "fork": false,
   "url": "https://api.github.com/repos/pycontribs/jira",
   "forks_url": "https://api.github.com/repos/pycontribs/jira/forks",
@@ -65,27 +65,27 @@
   "releases_url": "https://api.github.com/repos/pycontribs/jira/releases{/id}",
   "deployments_url": "https://api.github.com/repos/pycontribs/jira/deployments",
   "created_at": "2014-06-28T14:06:53Z",
-  "updated_at": "2022-03-15T00:04:43Z",
-  "pushed_at": "2022-03-15T19:04:52Z",
+  "updated_at": "2022-04-07T07:58:27Z",
+  "pushed_at": "2022-04-08T16:23:52Z",
   "git_url": "git://github.com/pycontribs/jira.git",
   "ssh_url": "git@github.com:pycontribs/jira.git",
   "clone_url": "https://github.com/pycontribs/jira.git",
   "svn_url": "https://github.com/pycontribs/jira",
   "homepage": "https://jira.readthedocs.io",
-  "size": 3289,
-  "stargazers_count": 1510,
-  "watchers_count": 1510,
+  "size": 3253,
+  "stargazers_count": 1522,
+  "watchers_count": 1522,
   "language": "Python",
   "has_issues": true,
   "has_projects": false,
   "has_downloads": true,
   "has_wiki": false,
   "has_pages": false,
-  "forks_count": 748,
+  "forks_count": 751,
   "mirror_url": null,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 110,
+  "open_issues_count": 115,
   "license": {
     "key": "bsd-2-clause",
     "name": "BSD 2-Clause \"Simplified\" License",
@@ -101,9 +101,9 @@
     "python3-only"
   ],
   "visibility": "public",
-  "forks": 748,
-  "open_issues": 110,
-  "watchers": 1510,
+  "forks": 751,
+  "open_issues": 115,
+  "watchers": 1522,
   "default_branch": "main",
   "permissions": {
     "admin": false,
@@ -133,8 +133,8 @@
     "type": "Organization",
     "site_admin": false
   },
-  "network_count": 748,
-  "subscribers_count": 80,
+  "network_count": 751,
+  "subscribers_count": 79,
   "releases": [
     {
       "url": "https://api.github.com/repos/pycontribs/jira/releases/53157050",
@@ -411,7 +411,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 2505,
-          "download_count": 57,
+          "download_count": 60,
           "created_at": "2018-12-19T13:56:32Z",
           "updated_at": "2018-12-19T13:56:32Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.1rc1/ChangeLog"
@@ -445,7 +445,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 61947,
-          "download_count": 25,
+          "download_count": 28,
           "created_at": "2018-12-19T13:56:31Z",
           "updated_at": "2018-12-19T13:56:31Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.1rc1/jira-2.0.1.0rc1-py2.py3-none-any.whl"
@@ -479,7 +479,7 @@
           "content_type": "application/gzip",
           "state": "uploaded",
           "size": 104196,
-          "download_count": 19,
+          "download_count": 22,
           "created_at": "2018-12-19T13:56:30Z",
           "updated_at": "2018-12-19T13:56:30Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.1rc1/jira-2.0.1.0rc1.tar.gz"
@@ -553,7 +553,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 2228,
-          "download_count": 337,
+          "download_count": 342,
           "created_at": "2018-07-12T17:44:01Z",
           "updated_at": "2018-07-12T17:44:01Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.0/ChangeLog"
@@ -587,7 +587,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 57560,
-          "download_count": 57,
+          "download_count": 59,
           "created_at": "2018-07-12T17:44:00Z",
           "updated_at": "2018-07-12T17:44:00Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.0/jira-2.0.0-py2.py3-none-any.whl"
@@ -621,7 +621,7 @@
           "content_type": "application/gzip",
           "state": "uploaded",
           "size": 95561,
-          "download_count": 97,
+          "download_count": 99,
           "created_at": "2018-07-12T17:44:00Z",
           "updated_at": "2018-07-12T17:44:00Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.0/jira-2.0.0.tar.gz"
@@ -695,7 +695,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 2106,
-          "download_count": 29,
+          "download_count": 31,
           "created_at": "2018-07-10T16:02:36Z",
           "updated_at": "2018-07-10T16:02:36Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.0rc10/ChangeLog"
@@ -729,7 +729,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 56927,
-          "download_count": 11,
+          "download_count": 13,
           "created_at": "2018-07-10T16:02:36Z",
           "updated_at": "2018-07-10T16:02:36Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.0rc10/jira-2.0.0.0rc10-py2.py3-none-any.whl"
@@ -763,7 +763,7 @@
           "content_type": "application/gzip",
           "state": "uploaded",
           "size": 95969,
-          "download_count": 18,
+          "download_count": 20,
           "created_at": "2018-07-10T16:02:35Z",
           "updated_at": "2018-07-10T16:02:35Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.0rc10/jira-2.0.0.0rc10.tar.gz"
@@ -837,7 +837,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 2131,
-          "download_count": 37,
+          "download_count": 39,
           "created_at": "2018-07-09T17:53:38Z",
           "updated_at": "2018-07-09T17:53:38Z",
           "browser_download_url": "https://github.com/pycontribs/jira/releases/download/2.0.0rc4/ChangeLog"

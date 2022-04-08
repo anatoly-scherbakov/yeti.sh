@@ -65,23 +65,23 @@
   "releases_url": "https://api.github.com/repos/ankitpokhrel/jira-cli/releases{/id}",
   "deployments_url": "https://api.github.com/repos/ankitpokhrel/jira-cli/deployments",
   "created_at": "2020-11-22T08:48:39Z",
-  "updated_at": "2022-03-16T16:36:54Z",
-  "pushed_at": "2022-03-16T01:07:29Z",
+  "updated_at": "2022-04-08T16:03:07Z",
+  "pushed_at": "2022-04-08T14:58:09Z",
   "git_url": "git://github.com/ankitpokhrel/jira-cli.git",
   "ssh_url": "git@github.com:ankitpokhrel/jira-cli.git",
   "clone_url": "https://github.com/ankitpokhrel/jira-cli.git",
   "svn_url": "https://github.com/ankitpokhrel/jira-cli",
   "homepage": "",
-  "size": 85568,
-  "stargazers_count": 767,
-  "watchers_count": 767,
+  "size": 85625,
+  "stargazers_count": 825,
+  "watchers_count": 825,
   "language": "Go",
   "has_issues": true,
   "has_projects": false,
   "has_downloads": true,
   "has_wiki": false,
   "has_pages": false,
-  "forks_count": 53,
+  "forks_count": 56,
   "mirror_url": null,
   "archived": false,
   "disabled": false,
@@ -115,9 +115,9 @@
     "tui"
   ],
   "visibility": "public",
-  "forks": 53,
+  "forks": 56,
   "open_issues": 20,
-  "watchers": 767,
+  "watchers": 825,
   "default_branch": "main",
   "permissions": {
     "admin": false,
@@ -127,8 +127,8 @@
     "pull": true
   },
   "temp_clone_token": "",
-  "network_count": 53,
-  "subscribers_count": 11,
+  "network_count": 56,
+  "subscribers_count": 12,
   "releases": [
     {
       "url": "https://api.github.com/repos/ankitpokhrel/jira-cli/releases/56712930",
@@ -194,7 +194,7 @@
           "content_type": "text/plain; charset=utf-8",
           "state": "uploaded",
           "size": 672,
-          "download_count": 3,
+          "download_count": 4,
           "created_at": "2022-01-10T06:50:48Z",
           "updated_at": "2022-01-10T06:50:49Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.3.0/checksums.txt"
@@ -228,7 +228,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 5353718,
-          "download_count": 41,
+          "download_count": 50,
           "created_at": "2022-01-10T06:50:55Z",
           "updated_at": "2022-01-10T06:50:57Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.3.0/jira_0.3.0_linux_arm64.tar.gz"
@@ -262,7 +262,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 5563592,
-          "download_count": 3,
+          "download_count": 4,
           "created_at": "2022-01-10T06:50:55Z",
           "updated_at": "2022-01-10T06:50:57Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.3.0/jira_0.3.0_linux_armv6.tar.gz"
@@ -296,7 +296,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 5287250,
-          "download_count": 17,
+          "download_count": 19,
           "created_at": "2022-01-10T06:50:49Z",
           "updated_at": "2022-01-10T06:50:51Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.3.0/jira_0.3.0_linux_i386.tar.gz"
@@ -330,7 +330,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 5844853,
-          "download_count": 319,
+          "download_count": 413,
           "created_at": "2022-01-10T06:50:52Z",
           "updated_at": "2022-01-10T06:50:54Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.3.0/jira_0.3.0_linux_x86_64.tar.gz"
@@ -364,7 +364,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 5932444,
-          "download_count": 200,
+          "download_count": 274,
           "created_at": "2022-01-10T06:50:48Z",
           "updated_at": "2022-01-10T06:50:55Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.3.0/jira_0.3.0_macOS_arm64.tar.gz"
@@ -398,7 +398,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 6030070,
-          "download_count": 716,
+          "download_count": 924,
           "created_at": "2022-01-10T06:50:48Z",
           "updated_at": "2022-01-10T06:50:55Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.3.0/jira_0.3.0_macOS_x86_64.tar.gz"
@@ -432,7 +432,7 @@
           "content_type": "application/zip",
           "state": "uploaded",
           "size": 5876209,
-          "download_count": 117,
+          "download_count": 136,
           "created_at": "2022-01-10T06:50:48Z",
           "updated_at": "2022-01-10T06:50:55Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.3.0/jira_0.3.0_windows_amd64.zip"
@@ -723,7 +723,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 6006516,
-          "download_count": 274,
+          "download_count": 275,
           "created_at": "2021-11-20T09:17:47Z",
           "updated_at": "2021-11-20T09:17:56Z",
           "browser_download_url": "https://github.com/ankitpokhrel/jira-cli/releases/download/v0.2.0/jira_0.2.0_macOS_x86_64.tar.gz"

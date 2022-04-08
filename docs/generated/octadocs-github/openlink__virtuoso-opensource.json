@@ -65,27 +65,27 @@
   "releases_url": "https://api.github.com/repos/openlink/virtuoso-opensource/releases{/id}",
   "deployments_url": "https://api.github.com/repos/openlink/virtuoso-opensource/deployments",
   "created_at": "2012-03-21T16:00:39Z",
-  "updated_at": "2022-03-14T16:01:41Z",
-  "pushed_at": "2022-03-08T10:00:26Z",
+  "updated_at": "2022-04-08T19:39:23Z",
+  "pushed_at": "2022-04-08T09:34:30Z",
   "git_url": "git://github.com/openlink/virtuoso-opensource.git",
   "ssh_url": "git@github.com:openlink/virtuoso-opensource.git",
   "clone_url": "https://github.com/openlink/virtuoso-opensource.git",
   "svn_url": "https://github.com/openlink/virtuoso-opensource",
   "homepage": "http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/",
-  "size": 296125,
-  "stargazers_count": 732,
-  "watchers_count": 732,
+  "size": 298113,
+  "stargazers_count": 737,
+  "watchers_count": 737,
   "language": "C",
   "has_issues": true,
   "has_projects": true,
   "has_downloads": true,
   "has_wiki": true,
   "has_pages": false,
-  "forks_count": 199,
+  "forks_count": 201,
   "mirror_url": null,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 584,
+  "open_issues_count": 591,
   "allow_forking": true,
   "is_template": false,
   "topics": [
@@ -95,9 +95,9 @@
     "virtuoso-server"
   ],
   "visibility": "public",
-  "forks": 199,
-  "open_issues": 584,
-  "watchers": 732,
+  "forks": 201,
+  "open_issues": 591,
+  "watchers": 737,
   "default_branch": "develop/7",
   "permissions": {
     "admin": false,
@@ -107,7 +107,7 @@
     "pull": true
   },
   "temp_clone_token": "",
-  "network_count": 199,
+  "network_count": 201,
   "subscribers_count": 80,
   "releases": [
     {
@@ -174,7 +174,7 @@
           "content_type": "application/x-gzip",
           "state": "uploaded",
           "size": 120996795,
-          "download_count": 223,
+          "download_count": 246,
           "created_at": "2021-06-22T17:25:25Z",
           "updated_at": "2021-06-22T17:25:29Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.6.1/virtuoso-opensource-7.2.6.tar.gz"
@@ -208,7 +208,7 @@
           "content_type": "application/x-gzip",
           "state": "uploaded",
           "size": 132655853,
-          "download_count": 592,
+          "download_count": 660,
           "created_at": "2021-06-22T17:25:21Z",
           "updated_at": "2021-06-22T17:25:25Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.6.1/virtuoso-opensource.x86_64-generic_glibc25-linux-gnu.tar.gz"
@@ -242,7 +242,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 56730160,
-          "download_count": 671,
+          "download_count": 739,
           "created_at": "2021-06-24T14:47:40Z",
           "updated_at": "2021-06-24T14:51:52Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.6.1/Virtuoso_OpenSource_Server_7.2.x64.exe"
@@ -276,7 +276,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 49001552,
-          "download_count": 161,
+          "download_count": 183,
           "created_at": "2021-06-22T17:25:18Z",
           "updated_at": "2021-06-22T17:25:21Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.6.1/Virtuoso_Open_Source_for_macOS.dmg"
@@ -418,7 +418,7 @@
           "content_type": "application/x-gzip",
           "state": "uploaded",
           "size": 33128493,
-          "download_count": 375,
+          "download_count": 377,
           "created_at": "2018-08-15T18:06:53Z",
           "updated_at": "2018-08-15T18:06:58Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.5.1/virtuoso-opensource.x86_64-generic_glibc25-linux-gnu.tar.gz"
@@ -526,7 +526,7 @@
           "content_type": "application/octet-stream",
           "state": "uploaded",
           "size": 24966773,
-          "download_count": 15,
+          "download_count": 16,
           "created_at": "2018-08-16T11:00:28Z",
           "updated_at": "2018-08-16T11:00:37Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.5/virtuoso-opensource-7.2.5-macosx-app.dmg"
@@ -702,7 +702,7 @@
           "content_type": "application/x-gzip",
           "state": "uploaded",
           "size": 120144913,
-          "download_count": 2534,
+          "download_count": 2538,
           "created_at": "2016-04-25T16:40:38Z",
           "updated_at": "2016-04-25T16:40:51Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.4.2/virtuoso-opensource-7.2.4.2.tar.gz"
@@ -918,7 +918,7 @@
           "content_type": "application/x-gzip",
           "state": "uploaded",
           "size": 119056229,
-          "download_count": 1137,
+          "download_count": 1140,
           "created_at": "2015-06-24T16:28:20Z",
           "updated_at": "2015-06-24T16:28:33Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.1/virtuoso-opensource-7.2.1.tar.gz"
@@ -952,7 +952,7 @@
           "content_type": "application/zip",
           "state": "uploaded",
           "size": 129946530,
-          "download_count": 392,
+          "download_count": 393,
           "created_at": "2015-06-26T12:46:18Z",
           "updated_at": "2015-06-26T12:46:32Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.1/virtuoso-opensource-win-x64-20150625.zip"
@@ -1026,7 +1026,7 @@
           "content_type": "application/x-gzip",
           "state": "uploaded",
           "size": 119524663,
-          "download_count": 302,
+          "download_count": 303,
           "created_at": "2015-02-17T14:26:45Z",
           "updated_at": "2015-02-17T14:29:33Z",
           "browser_download_url": "https://github.com/openlink/virtuoso-opensource/releases/download/v7.2.0.1/virtuoso-opensource-7.2.0_p1.tar.gz"
