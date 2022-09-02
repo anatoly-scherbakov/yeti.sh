@@ -1,5 +1,6 @@
 ---
 title: Algebraic Structures
+description: Minimalistic cheat sheet
 date: "2022-08-29"
 ---
 
