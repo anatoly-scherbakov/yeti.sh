@@ -11,8 +11,8 @@ author: anatoly
 hide:
     - navigation
 
-class: KGStore
-columns:
+table:class: KGStore
+table:columns:
   - table:self
   - supports-rdflib
   - sparql-support

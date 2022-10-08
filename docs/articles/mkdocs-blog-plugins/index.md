@@ -10,7 +10,7 @@ $type: table:Table
 table:class:
   $id: MkdocsBlogPlugin
   title: Plugin
-columns:
+table:columns:
   - table:self
   - last-commit
   - github:hasLatestRelease

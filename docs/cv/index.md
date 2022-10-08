@@ -16,9 +16,9 @@ hide:
 
 ## Currently
 
-Team Lead & Senior Software Developer at Recall Masters Inc | [recallmasters.com](http://recallmasters.com)
+Software Developer at Datafold | [datafold.com](http://datafold.com)
 
-Have been responsible for development of internal business automation system and the development team from day one.
+Creating solutions to make data engineers' life better.
 
 ## Technologies
 
@@ -40,7 +40,7 @@ Git | [JIRA](https://www.atlassian.com/software/jira) | PyCharm IDE
 
 ## Career
 
-### 2012 — *current* | Recall Masters Inc — Senior Software Developer, Team Lead
+### 2012 — 2022 | Recall Masters Inc — Senior Software Developer, Team Lead
 
 ---
 
