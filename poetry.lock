@@ -394,7 +394,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "octadocs"
-version = "0.2.29"
+version = "0.2.30"
 description = "MkDocs wiki made smart"
 category = "main"
 optional = false
@@ -417,7 +417,7 @@ owlrl = ">=6.0.2,<7.0.0"
 pydantic = ">=1.8.2,<2.0.0"
 pydotplus = ">=2.0.2,<3.0.0"
 PyGithub = ">=1.55,<2.0"
-pygraphviz = ">=1.9,<2.0"
+pygraphviz = "1.9"
 PyLD = ">=2.0.3,<3.0.0"
 python-frontmatter = ">=0.5.0,<0.6.0"
 rdflib = ">=6.2.0,<7.0.0"
@@ -539,7 +539,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "pygraphviz"
-version = "1.10"
+version = "1.9"
 description = "Python interface to Graphviz"
 category = "main"
 optional = false
@@ -860,7 +860,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.10"
-content-hash = "5d8e43357e8c76aa10e973fedd99fcf4387805f76741e7c8ecfacd159f4b2c9c"
+content-hash = "fe006e3f7a9af386c6d51a9f45986d4cab307aecf636a99b7bdcd3ce289ae3d6"
 
 [metadata.files]
 babel = [
@@ -1042,7 +1042,9 @@ pygments = [
     {file = "Pygments-2.11.2-py3-none-any.whl", hash = "sha256:44238f1b60a76d78fc8ca0528ee429702aae011c265fe6a8dd8b63049ae41c65"},
     {file = "Pygments-2.11.2.tar.gz", hash = "sha256:4e426f72023d88d03b2fa258de560726ce890ff3b630f88c21cbb8b2503b8c6a"},
 ]
-pygraphviz = []
+pygraphviz = [
+    {file = "pygraphviz-1.9.zip", hash = "sha256:fa18f7c6cea28341a4e466ed0cf05682b0a68288afe8dd7c9426782f7c1ae01c"},
+]
 pyjwt = []
 pyld = [
     {file = "PyLD-2.0.3.tar.gz", hash = "sha256:287445f888c3a332ccbd20a14844c66c2fcbaeab3c99acd506a0788e2ebb2f82"},
