@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: mhausenblas/mkdocs-deploy-gh-pages@1.25
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
