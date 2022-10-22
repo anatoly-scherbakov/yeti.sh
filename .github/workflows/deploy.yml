@@ -7,6 +7,7 @@ jobs:
     name: Deploy to GitHub pages
     runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v2
       - uses: mhausenblas/mkdocs-deploy-gh-pages@1.25
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
