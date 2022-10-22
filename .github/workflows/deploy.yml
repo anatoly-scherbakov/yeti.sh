@@ -5,6 +5,6 @@ on:
 jobs:
   build:
     name: Deploy to GitHub pages
-    runs-on: [linux, X64]
+    runs-on: ubuntu-22.04
     steps:
       - uses: mhausenblas/mkdocs-deploy-gh-pages@1.25
