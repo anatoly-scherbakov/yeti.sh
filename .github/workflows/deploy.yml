@@ -1,0 +1,10 @@
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    name: Deploy to GitHub pages
+    runs-on: [linux, X64]
+    steps:
+      - uses: mhausenblas/mkdocs-deploy-gh-pages@1.25
