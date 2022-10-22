@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
       - run: pip install -q poetry
       - run: poetry install
       - uses: mhausenblas/mkdocs-deploy-gh-pages@1.25
