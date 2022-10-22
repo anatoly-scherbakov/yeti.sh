@@ -4,6 +4,7 @@
 publish = "site/"
 command = """
 pip install --upgrade pip setuptools wheel &&
+python -m pip install --no-use-pep517 pygraphviz==1.9 &&
 pip install -q poetry &&
 poetry install &&
 poetry run mkdocs build
