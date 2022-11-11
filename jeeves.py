@@ -1,28 +1,25 @@
-from typer import Typer
-from plumbum import local
+import sys
+from pathlib import Path
 
-jeeves = Typer()
-switch = Typer()
-
-jeeves.add_typer(switch)
+from plumbum.cmd import poetry, pip, mkdocs
 
 
-@jeeves.command()
 def pypi():
     """Switch Octadocs from PyPI."""
-    print(local.cmd.poetry['remove', 'octadocs'](retcode=None))
-    print(local.cmd.pip['uninstall', '-y', 'octadocs'](retcode=None))
-    print(local.cmd.pip['install', 'poetry']())
-    print(local.cmd.poetry['add', 'octadocs@latest']())
+    print(poetry['remove', 'octadocs'](retcode=None))
+    print(pip['uninstall', '-y', 'octadocs'](retcode=None))
+    print(pip['install', 'poetry']())
+    print(poetry['add', 'octadocs@latest']())
 
 
-@jeeves.command(name='local')
 def to_local():
     """Switch Octadocs to local directory."""
-    print(local.cmd.poetry['remove', 'octadocs'](retcode=None))
-    print(local.cmd.pip['install', 'poetry'](retcode=None))
-    print(local.cmd.poetry['install'].with_cwd(local.cwd / '../octadocs')())
+    print(poetry['remove', 'octadocs'](retcode=None))
+    print(pip['install', 'poetry'](retcode=None))
+
+    octadocs = Path.cwd().parent / 'octadocs'
+    print(poetry['install'].with_cwd(octadocs)())
 
 
-if __name__ == '__main__':
-    jeeves()
+def serve():
+    mkdocs('serve', '-a', 'localhost:9657', stdout=sys.stdout, stderr=sys.stderr)

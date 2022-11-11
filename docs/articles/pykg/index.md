@@ -46,5 +46,3 @@ description: "I have created this table to compare a few knowledge graph engines
 {{ page.meta.description }}
 
 At the moment of this writing, I have not used the majority of the listed tools, and the table might contain errors. PRs are very welcome.
-
-{{ render(local.kg_stores_comparison) }}

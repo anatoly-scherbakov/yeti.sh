@@ -4,3 +4,4 @@ site/
 /.cache/
 docs/drafts/
 docs/cs111/
+__pycache__
