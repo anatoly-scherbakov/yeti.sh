@@ -1,0 +1,15 @@
+$context:
+    $import: prov
+source: https://github.com/terminusdb/terminusdb
+url: https://terminusdb.com/
+title: TerminusDB
+visualization:
+    =: true
+    ⇐: https://www.youtube.com/watch?v=m5pVvzN_oBU
+python-client:
+  $id: https://github.com/terminusdb/terminusdb-client-python
+  comment: There is a rich Python DSL for querying the database, similar to what I would want to see for SPARQL.
+supports-rdflib: rdflib-incompatible
+sparql-support:
+  =: false
+  comment: No SPARQL support available.

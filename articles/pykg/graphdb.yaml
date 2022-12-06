@@ -1,0 +1,27 @@
+$context:
+    - $import: prov
+    - $import: github
+url: https://www.ontotext.com/products/graphdb
+title: GraphDB
+sparql-support: sparql1.1
+reasoning-support:
+  - owl-rl
+  - owl-ql
+
+visualization:
+  =: true
+  ⇐: https://graphdb.ontotext.com/free/exploring-data.html
+  comment: GraphDB UI exceeds just nodes and edges visualization, it can also draw RDFS class hierarchies and more.
+
+python-client:
+    $id: https://github.com/RDFLib/sparqlwrapper
+
+supports-rdflib:
+    =:
+        $id: rdflib-via-sparql
+    ⇐: https://github.com/RDFLib/sparqlwrapper/blob/master/test/graphdbEnterprise__v8_9_0__rs__BROKEN.py
+
+release:
+  $id: https://graphdb.ontotext.com/documentation/standard/release-notes.html#graphdb-9-10-2
+  github:published_at: 2022-01-21
+  github:name: 9.10.2
