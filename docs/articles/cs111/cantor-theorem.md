@@ -1,5 +1,6 @@
 ---
 title: Cantor's theorem
+exclude_from_blog: true
 ---
 
 ![](cantor-theorem.png)

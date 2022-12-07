@@ -1,5 +1,6 @@
 ---
 title: Bounds, extremum, & infimum
+exclude_from_blog: true
 ---
 
 ![](bounds-extremum-infimum.png)

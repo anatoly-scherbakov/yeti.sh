@@ -1,5 +1,6 @@
 ---
 title: Algebraic Structures
+exclude_from_blog: true
 ---
 
 ![](index.png)

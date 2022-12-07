@@ -1,5 +1,6 @@
 ---
 title: Relations
+exclude_from_blog: true
 ---
 
 ![](relations.png)

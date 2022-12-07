@@ -1,5 +1,6 @@
 ---
 title: Abelian Group
+exclude_from_blog: true
 ---
 
 ![](abelian-group.png)

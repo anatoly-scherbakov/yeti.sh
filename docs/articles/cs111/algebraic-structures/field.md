@@ -1,5 +1,6 @@
 ---
 title: Field
+exclude_from_blog: true
 ---
 
 ![](field.png)

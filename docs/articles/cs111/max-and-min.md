@@ -1,5 +1,6 @@
 ---
 title: Max & Min
+exclude_from_blog: true
 ---
 
 ![](max-and-min.png)

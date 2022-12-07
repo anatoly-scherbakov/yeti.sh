@@ -1,5 +1,6 @@
 ---
 title: Group
+exclude_from_blog: true
 ---
 
 ![](group.png)

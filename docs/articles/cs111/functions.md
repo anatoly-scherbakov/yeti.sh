@@ -1,5 +1,6 @@
 ---
 title: Functions
+exclude_from_blog: true
 ---
 
 ![](functions.png)

@@ -1,5 +1,6 @@
 ---
 title: Ring
+exclude_from_blog: true
 ---
 
 ![](ring.png)
