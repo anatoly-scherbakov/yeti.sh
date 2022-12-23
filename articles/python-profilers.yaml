@@ -1,0 +1,26 @@
+columns:
+  requires-runner: Requires running your code under a special executable
+  cost: Cost per month, considered free by default
+
+rows:
+  - datadog-apm:
+    requires-runner: yes
+    cost:
+      amount: 30
+      in: USD
+
+  - line-profiler:
+    url: https://github.com/pyutils/line_profiler
+    requires-runner: yes
+
+  - profilehooks:
+    url: https://pypi.org/project/profilehooks
+
+  - our-own-decorator:
+    references:
+      - https://stackoverflow.com/questions/5375624/a-decorator-that-profiles-a-method-call-and-logs-the-profiling-result
+      - https://gist.github.com/nealtodd/2489618
+      - https://gist.github.com/un33k/6134293
+    supports:
+      - rich
+      - logging
