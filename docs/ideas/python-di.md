@@ -50,6 +50,11 @@ Moreover, if multiple instances of dependable objects are used they will be only
 
 * pytest fixtures are very similar.
 
+### More concerns
+
+* What if we provide just string path to the object instead of importing it, in certain cases?
+* Can DI be used to redefine configuration options or parameters in installed Jeeves plugins?
+
 ## Implementation details
 
 * Can be probably done using `__new__` or something.

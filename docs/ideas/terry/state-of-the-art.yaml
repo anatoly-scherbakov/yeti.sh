@@ -1,0 +1,29 @@
+criteria:
+  supports-fixme:
+    title: "Supports #FIXME"
+    comment: "`@todo` annotations proposed by Yegor Bugayenko are Java specific. In Python development, people usually use #FIXME or #TODO comments. Does the tool support them?"
+  writes-issue-id:
+    title: Issue ID → Code
+    comment: Does the tool write the issue ID right into the puzzle comment in code so as to keep the reader informed?
+  language:
+    title: Programming language
+  supports-yaml:
+    title: YAML in puzzles
+    comment: Does the tool supports arbitrary fields and properties for the issues in puzzles, formatted as YAML?
+  local-first:
+    title: Local First
+    comment: The tool is able to run on the local machine. GitHub Actions or any other SaaS is not required.
+
+alternatives:
+  - id: https://github.com/cqfn/pdd
+    supports-fixme: no
+    writes-issue-id: no
+    supports-yaml: no
+    language: ruby
+    local-first: yes
+  - id: https://github.com/dtinth/todo-actions
+    supports-fixme: yes
+    writes-issue-id: no
+    supports-yaml: no
+    language: TypeScript
+    local-first: no
