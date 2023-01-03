@@ -1217,14 +1217,14 @@ mkdocs = ">=1.0"
 
 [[package]]
 name = "mkdocs-iolanta-tables"
-version = "1.1.7"
+version = "1.1.8"
 description = "Structured tables for MkDocs"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "mkdocs_iolanta_tables-1.1.7-py3-none-any.whl", hash = "sha256:c0051734e5982745fbaf734a4d6756365bbe3ef3c6e9d7d904560d6240f6eb5b"},
-    {file = "mkdocs_iolanta_tables-1.1.7.tar.gz", hash = "sha256:e3f3506a4027082b336650a8ff551190e0da90d2113a605c97c33daae9d3656a"},
+    {file = "mkdocs_iolanta_tables-1.1.8-py3-none-any.whl", hash = "sha256:6caa08124e4868ae7adbd42a1b9aab6495c7fc0681eba63afe354e82bdb72a47"},
+    {file = "mkdocs_iolanta_tables-1.1.8.tar.gz", hash = "sha256:fc15bc6703d106e5a25fc63f265ffb94cbc07ccb8c5e2de1205989c68e76e764"},
 ]
 
 [package.dependencies]
@@ -2367,4 +2367,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<4.0"
-content-hash = "100c1806cfadb91f795cf2d00f9570a28d9aca6687ab4078764e5d2f5f6fc1f5"
+content-hash = "75c7b68481512dde22b6af96caa12edd38ef1de32b5aee74a2c113bd07e963b7"
