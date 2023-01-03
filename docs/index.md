@@ -2,6 +2,7 @@
 title: Home
 hide:
     - navigation
+    - toc
 ---
 
 Hi! My name is Anatoly Scherbakov, and this is my little personal site. See:
