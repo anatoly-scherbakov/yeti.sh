@@ -1,11 +1,7 @@
 ---
-$context:
-  - $import: table
-  - $import: prov
-
 $id: kg_stores_comparison
 title: Choosing a Knowledge Graph management system for a Python app
-date: 2021-11-07
+date: "2021-11-07"
 author: anatoly
 
 hide:
@@ -38,7 +34,7 @@ rdfs:seeAlso:
 $included:
   - $id: rdflib
     title: rdflib
-    octa:url: https://rdflib.dev/
+    mkdocs:url: https://rdflib.dev/
 
 description: "I have created this table to compare a few knowledge graph engines by a few subjectively chosen criteria. They might not be the ones that you would have chosen. For example: I do not believe the number of GitHub stars is the leading criterion to choose a software tool, but I do think their number can inform about how widely known and how well-supported the solution is."
 ---

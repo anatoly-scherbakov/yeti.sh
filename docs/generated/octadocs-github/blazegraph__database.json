@@ -2998,5 +2998,5 @@
       "body": "Blazegraph\u2122 is our ultra high-performance graph database supporting Blueprints and RDF/SPARQL APIs. It supports up to 50 Billion edges on a single machine and has a High Availability and Scale-out architecture. It is in production use for Fortune 500 customers such as EMC, Autodesk, and many others.\n\nThis is a major release candidate of Blazegraph\u2122.  The official release is now made into the Git repository.  \n\n2.0.0 has significant performance improvements for query optimization and new features.  See https://blog.blazegraph.com/?p=977.\n\nSign up to stay in touch with Blazegraph: http://eepurl.com/VLpUj\n\nStarting points:\n- Blazegraph Wiki:  https://wiki.blazegraph.com/\n- Blazegraph Blog:  https://blog.blazegraph.com/\n- Blazegraph JIRA:  https://jira.blazegraph.com/\n- Blazegraph Support:  http://www.blazegraph.com/support/\n- Public Code Samples:  https://github.com/SYSTAP/blazegraph-samples\n\nDownload Blazegraph now:  http://www.blazegraph.com/download\n"
     }
   ],
-  "@id": "https://github.com/blazegraph/database"
+  "$id": "https://github.com/blazegraph/database"
 }

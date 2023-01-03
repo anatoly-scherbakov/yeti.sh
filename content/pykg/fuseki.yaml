@@ -1,6 +1,5 @@
-$context:
-    $import: prov
-    github: https://octadocs.io/github/
+"@context":
+    github: https://mkdocs.iolanta.tech/github/
 
 title: Jena Fuseki
 url: https://jena.apache.org/documentation/fuseki2/index.html

@@ -1,6 +1,6 @@
 ---
 title: Python + λ - .dist-info = DistributionNotFound
-date: 2020-12-29T19:06:47+07:00
+date: "2020-12-29T19:06:47+07:00"
 draft: false
 ---
 

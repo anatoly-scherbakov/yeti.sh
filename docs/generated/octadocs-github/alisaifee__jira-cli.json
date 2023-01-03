@@ -112,5 +112,5 @@
   "network_count": 61,
   "subscribers_count": 11,
   "releases": [],
-  "@id": "https://github.com/alisaifee/jira-cli"
+  "$id": "https://github.com/alisaifee/jira-cli"
 }

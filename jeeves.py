@@ -1,7 +1,6 @@
-import sys
 from pathlib import Path
 
-from plumbum.cmd import poetry, pip, mkdocs
+from sh import poetry, pip, mkdocs
 
 
 def pypi():
@@ -22,4 +21,4 @@ def to_local():
 
 
 def serve():
-    mkdocs('serve', '-a', 'localhost:9657', stdout=sys.stdout, stderr=sys.stderr)
+    mkdocs('serve', '-a', 'localhost:9657', _fg=True)

@@ -1,6 +1,6 @@
 ---
 title: How to remove multiple tables in Redshift by wildcard
-date: 2021-05-24
+date: "2021-05-24"
 ---
 
 You need to remove all tables in Redshift which contain the word `staging` in their name. How do you do that?

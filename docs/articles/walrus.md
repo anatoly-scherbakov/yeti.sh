@@ -1,6 +1,6 @@
 ---
 title: Apology of the walrus operator
-date: 2022-12-22
+date: "2022-12-22"
 description: Python walrus operator has been a source of controversy in the community. Let's list a few of its use cases.
 ---
 

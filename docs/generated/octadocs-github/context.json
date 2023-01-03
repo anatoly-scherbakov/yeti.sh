@@ -1,4 +1,5 @@
 {
-  "@import": "github-generated",
-  "@vocab": "https://octadocs.io/github/"
+  "@context": {
+    "@vocab": "https://octadocs.io/github/"
+  }
 }

@@ -132,5 +132,5 @@
   "network_count": 2,
   "subscribers_count": 5,
   "releases": [],
-  "@id": "https://github.com/neo4j-labs/rdflib-neo4j"
+  "$id": "https://github.com/neo4j-labs/rdflib-neo4j"
 }

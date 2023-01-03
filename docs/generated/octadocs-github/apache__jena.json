@@ -137,5 +137,5 @@
   "network_count": 561,
   "subscribers_count": 85,
   "releases": [],
-  "@id": "https://github.com/apache/jena"
+  "$id": "https://github.com/apache/jena"
 }

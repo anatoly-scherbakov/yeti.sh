@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "github": "https://mkdocs.iolanta.tech/github/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}

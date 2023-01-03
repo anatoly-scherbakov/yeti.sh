@@ -6,17 +6,14 @@ authors = ["Anatoly Scherbakov <altaisoft@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.10"
+python = ">=3.9,<4.0"
 mkdocs-material = "^8.1.3"
 mkdocs-blogging-plugin = "^1.4.0"
-octadocs = "^0.2.32"
-
-[tool.poetry.dev-dependencies]
-pipdeptree = "^2.2.0"
-plumbum = "^1.7.2"
+mkdocs-iolanta-tables = "^1.1.7"
 
 [tool.poetry.group.dev.dependencies]
-jeeves-core = "^1.0.4"
+jeeves-yeti-pyproject = "^0.2.7"
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

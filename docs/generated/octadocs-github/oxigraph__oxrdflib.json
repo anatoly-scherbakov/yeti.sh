@@ -289,5 +289,5 @@
       "body": "Upgrades to pyoxigraph v0.2.0 and makes the stores \"graph aware\""
     }
   ],
-  "@id": "https://github.com/oxigraph/oxrdflib"
+  "$id": "https://github.com/oxigraph/oxrdflib"
 }

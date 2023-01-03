@@ -112,5 +112,5 @@
   "network_count": 4,
   "subscribers_count": 3,
   "releases": [],
-  "@id": "https://github.com/fmaida/mkdocs-blog-plugin"
+  "$id": "https://github.com/fmaida/mkdocs-blog-plugin"
 }

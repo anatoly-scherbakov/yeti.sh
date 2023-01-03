@@ -1,5 +1,0 @@
-$id: https://github.com/fmaida/mkdocs-blog-plugin
-requires-nested-directories:
-  ⇐: https://github.com/fmaida/mkdocs-blog-plugin#how-can-i-add-new-articles-to-my-blog-section-
-  =: true
-supports-frontmatter: false

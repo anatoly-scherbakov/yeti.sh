@@ -29,14 +29,11 @@ plugins:
       theme:
         name: card
       time_format: "%d %B %Y"
-  - octadocs
-  - octadocs-table
-  - octadocs-prov
-  - octadocs-github
+  - mkdocs-iolanta-tables
   - macros:
       on_error_fail: true
       modules:
-        - octadocs.macros
+        - mkdocs_iolanta.macros
 
 
 theme:

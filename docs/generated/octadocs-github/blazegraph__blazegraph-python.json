@@ -125,5 +125,5 @@
   "network_count": 12,
   "subscribers_count": 20,
   "releases": [],
-  "@id": "https://github.com/blazegraph/blazegraph-python"
+  "$id": "https://github.com/blazegraph/blazegraph-python"
 }

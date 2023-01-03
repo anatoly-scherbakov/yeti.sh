@@ -3706,5 +3706,5 @@
       "body": ""
     }
   ],
-  "@id": "https://github.com/terminusdb/terminusdb"
+  "$id": "https://github.com/terminusdb/terminusdb"
 }

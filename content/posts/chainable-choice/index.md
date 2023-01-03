@@ -1,6 +1,6 @@
 ---
 title: Making Choices Chainable
-date: 2021-02-25 20:07:53.372391392+07:00
+date: "2021-02-25 20:07:53.372391392+07:00"
 ---
 
 [Step Functions](https://aws.amazon.com/step-functions/) is a [workflow engine](https://github.com/meirwah/awesome-workflow-engines) natively provided by Amazon Web Services. You can create workflows (also known as State Machines) containing sequences of steps connected one to another. Conditions, loops, and error handling are available. You can call AWS Lambda functions and many other services.

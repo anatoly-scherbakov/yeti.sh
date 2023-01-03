@@ -1,0 +1,24 @@
+"@context":
+  python-client:
+    "@type": "@id"
+
+  reasoning-support:
+    "@type": "@id"
+
+  sparqlwrapper:
+    "@id": https://rdflib.dev/sparqlwrapper/
+
+  command-line-client:
+    "@type": "@id"
+
+  sparql-support:
+    "@type": "@id"
+
+  source:
+    "@type": "@id"
+
+  supports-rdflib:
+    "@type": "@id"
+
+  source-license:
+    "@type": "@id"

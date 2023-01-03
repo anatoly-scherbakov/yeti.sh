@@ -1,6 +1,6 @@
 ---
 title: "A scoop of the Serverless Framework"
-date: 2020-11-02T20:02:06+07:00
+date: "2020-11-02T20:02:06+07:00"
 draft: false
 ---
 

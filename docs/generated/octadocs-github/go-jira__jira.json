@@ -6445,5 +6445,5 @@
       "body": "## 0.1.14 - 2017-05-10\r\n\r\n* fix unsafe casting for --quiet flag [Cory Bennett] [[6f29f43](https://github.com/Netflix-Skunkworks/go-jira/commit/6f29f43)]\r\n* [[#80](https://github.com/Netflix-Skunkworks/go-jira/issues/80)] add `jira unassign ISSUE` and `jira give ISSUE --default` commands [Cory Bennett] [[03d8633](https://github.com/Netflix-Skunkworks/go-jira/commit/03d8633)]"
     }
   ],
-  "@id": "https://github.com/go-jira/jira"
+  "$id": "https://github.com/go-jira/jira"
 }
