@@ -926,5 +926,5 @@
       "body": ""
     }
   ],
-  "@id": "https://github.com/pycontribs/jira"
+  "$id": "https://github.com/pycontribs/jira"
 }

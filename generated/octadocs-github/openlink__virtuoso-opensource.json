@@ -1071,5 +1071,5 @@
       "body": "OpenLink Software is pleased to announce a new release of Virtuoso Open Source Edition, version 7.2.0.\n\nFor more details, see the release notes: \nhttps://github.com/openlink/virtuoso-opensource/blob/stable/7/NEWS\n\nVirtuoso Open Source Edition:\nHome Page: http://virtuoso.openlinksw.com/wiki/main/\nDownload Page: http://virtuoso.openlinksw.com/wiki/main/Main/VOSDownload\n"
     }
   ],
-  "@id": "https://github.com/openlink/virtuoso-opensource"
+  "$id": "https://github.com/openlink/virtuoso-opensource"
 }

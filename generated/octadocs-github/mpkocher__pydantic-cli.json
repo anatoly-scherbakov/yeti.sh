@@ -475,5 +475,5 @@
       "body": ""
     }
   ],
-  "@id": "https://github.com/mpkocher/pydantic-cli"
+  "$id": "https://github.com/mpkocher/pydantic-cli"
 }

@@ -117,5 +117,5 @@
   "network_count": 1,
   "subscribers_count": 2,
   "releases": [],
-  "@id": "https://github.com/derJD/python-mkblog"
+  "$id": "https://github.com/derJD/python-mkblog"
 }

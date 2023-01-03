@@ -2941,5 +2941,5 @@
       "body": "First Oxigraph test release."
     }
   ],
-  "@id": "https://github.com/oxigraph/oxigraph"
+  "$id": "https://github.com/oxigraph/oxigraph"
 }

@@ -731,5 +731,5 @@
       "body": ""
     }
   ],
-  "@id": "https://github.com/liang2kl/mkdocs-blogging-plugin"
+  "$id": "https://github.com/liang2kl/mkdocs-blogging-plugin"
 }

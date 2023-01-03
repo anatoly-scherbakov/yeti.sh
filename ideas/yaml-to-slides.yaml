@@ -1,0 +1,5 @@
+alternatives:
+  - id: https://play.presenta.cc/
+  - id: https://github.com/KmolYuan/reveal-yaml-rs/
+  - id: https://github.com/sukujgrg/pptx-builder-from-yaml
+  - id: https://rstudio-conf-2022.github.io/get-started-quarto/materials/05-presentations.html#/presentations

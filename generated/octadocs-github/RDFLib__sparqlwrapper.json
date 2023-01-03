@@ -956,5 +956,5 @@
       "body": "- Returning raw response in case of unknown content type returned\n- Fixed some issues with the last version of the SPARQL 1.1 Update Protocol\n- `setQuery()` doesn't imply `resetQuery()` anymore\n- Deprecated `addCustomParameter()`, `addParameter()` and `clearParameter()` come to provide all required functionality\n- `SPARQLWrapper`, `QueryResult`, `Value`, `Bindings` (and classes inherited from them) are new-style classes now\n- POST queries are accompanied by full set of parameters now\n- Added rudimentary support for JSON-LD\n- Added proper unit tests without dependencies of external endpoints\n- Fixed Python 3 compatibility issues in `SmartWrapper` module\n"
     }
   ],
-  "@id": "https://github.com/RDFLib/sparqlwrapper"
+  "$id": "https://github.com/RDFLib/sparqlwrapper"
 }

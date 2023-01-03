@@ -1,7 +1,0 @@
-$id: https://github.com/derJD/python-mkblog
-requires-nested-directories:
-  ⇐: https://github.com/derJD/python-mkblog#python-mkblog
-  =: false
-supports-frontmatter:
-  ⇐: https://github.com/derJD/python-mkblog#python-mkblog
-  =: true

@@ -1742,5 +1742,5 @@
       }
     }
   ],
-  "@id": "https://github.com/ankitpokhrel/jira-cli"
+  "$id": "https://github.com/ankitpokhrel/jira-cli"
 }

@@ -105,5 +105,5 @@
   "network_count": 7,
   "subscribers_count": 1,
   "releases": [],
-  "@id": "https://github.com/andyoakley/mkdocs-blog"
+  "$id": "https://github.com/andyoakley/mkdocs-blog"
 }

@@ -112,5 +112,5 @@
   "network_count": 9,
   "subscribers_count": 10,
   "releases": [],
-  "@id": "https://github.com/franzinc/agraph-python"
+  "$id": "https://github.com/franzinc/agraph-python"
 }

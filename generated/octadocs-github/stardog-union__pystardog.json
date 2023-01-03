@@ -125,5 +125,5 @@
   "network_count": 7,
   "subscribers_count": 26,
   "releases": [],
-  "@id": "https://github.com/stardog-union/pystardog"
+  "$id": "https://github.com/stardog-union/pystardog"
 }

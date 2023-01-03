@@ -1314,5 +1314,5 @@
       "body": ""
     }
   ],
-  "@id": "https://github.com/neo4j/neo4j-python-driver"
+  "$id": "https://github.com/neo4j/neo4j-python-driver"
 }
