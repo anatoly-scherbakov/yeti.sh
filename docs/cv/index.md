@@ -1,11 +1,12 @@
 ---
 position: 10
-title: CV
+title: Anatoly Scherbakov | CV
 hide:
     - navigation
+    - toc
 ---
 
-<img src="/images/avatar.jpg" style="float:right; max-width: 256px">
+<img src="/images/avatar.jpg" style="float:right; max-width: 128px">
 
 ## Key Expertise
 
@@ -16,27 +17,105 @@ hide:
 
 ## Currently
 
+<img src="datafold.png" style="float:left; max-width: 128px">
+
 Software Developer at Datafold | [datafold.com](http://datafold.com)
 
 Creating solutions to make data engineers' life better.
 
+<br clear="both"/>
+
+## Research
+
+Independent researcher/engineer in the field of Semantic Web & Linked Data.
+
+<table>
+    <tr>
+        <th>Contributor to:</th>
+        <th>Main research interest:</th>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://github.com/RDFLib/rdflib/commits?author=anatoly-scherbakov"><code>rdflib</code></a>
+            <a href="https://github.com/json-ld/yaml-ld/commits?author=anatoly-scherbakov"><code>yaml-ld</code></a>
+        </td>
+        <td>
+            <a href="https://iolanta.tech"><code>iolanta</code></a>
+        </td>
+    </tr>
+</table>
+
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Technologies
 
-### Code
-
-Python 3 | mypy, flake8 | Pydantic, FastAPI | pandas | A bit of Rust
-
-### Storage & Communication Systems
-
-PostgreSQL | Redis | MongoDB | ElasticSearch
-
-### IaC & AWS
-
-Lambda, S3, EC2, ECS, RDS, SQS, Glue, Step Functions, EventBridge, Redshift | Terraform | CircleCI
-
-### Misc
-
-Git | [JIRA](https://www.atlassian.com/software/jira) | PyCharm IDE
+<table>
+    <tr>
+        <th>Python</th>
+        <th>Storage & communication systems</th>
+    </tr>
+    <tr>
+        <td>
+            <code>mypy</code>
+            <code>flake8</code>
+            <code>pydantic</code>
+            <code>typer</code>
+            <code>fastapi</code>
+            <code>pandas</code>
+        </td>
+        <td>
+            <code>postgresql</code>
+            <code>redis</code>
+            <code>clickhouse</code>
+            <code>neo4j</code>
+            <code>redshift</code>
+        </td>
+    </tr>
+    
+    <tr>
+        <th>Cloud</th>
+        <th>Semantics</th>
+    </tr>
+    <tr>
+        <td>
+            <code>lambda</code>
+            <code>s3</code>
+            <code>ec2</code>
+            <code>ecs</code>
+            <code>rds</code>
+            <code>sqs</code>
+            <code>stepfunctions</code>
+            <code>eventbridge</code>
+        </td>
+        <td>
+            <code>rdf</code>
+            <code>rdfs</code>
+            <code>owl</code>
+            <code>sparql</code>
+            <code>rdflib</code>
+            <code>owl-rl</code>
+            <code>json-ld</code>
+            <code>yaml-ld</code>
+        </td>
+    </tr>
+    
+    <tr>
+        <th>Also</th>
+        <th>Tools</th>
+    </tr>
+    <tr>
+        <td>
+            <code>rust</code>
+            <code>bash-scripting</code>
+        </td>
+        <td>
+            <code>git</code>
+            <code>linear</code>
+            <code>jira</code>
+            <code>pycharm</code>
+        </td>
+    </tr>
+</table>
 
 ## Career
 
