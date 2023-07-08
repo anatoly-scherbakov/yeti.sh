@@ -29,11 +29,9 @@ plugins:
       theme:
         name: card
       time_format: "%d %B %Y"
-  - mkdocs-iolanta-tables
+  - iolanta
   - macros:
       on_error_fail: true
-      modules:
-        - mkdocs_iolanta.macros
 
 
 theme:

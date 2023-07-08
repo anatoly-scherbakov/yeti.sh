@@ -4,3 +4,10 @@ site/
 /.cache/
 docs/drafts/
 __pycache__
+.python-version
+node_modules
+.vscode/
+package.json
+package-lock.json
+
+
