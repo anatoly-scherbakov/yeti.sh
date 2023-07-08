@@ -1,0 +1,24 @@
+$id: subtasks-vs-dependencies
+
+table:columns:
+  - table:self
+  - subtasks
+  - dependencies
+
+table:rows:
+  - rdfs:label: Dependencies between tasks
+    subtasks: Are implicit, they are discussed on planning and maybe mentioned in task descriptions
+    dependencies: Are explicit
+
+  - rdfs:label: Feature is too large
+    subtasks: "Refactor: supertask → a project, undone subtasks → normal tasks in that project, & close the supertask"
+    dependencies: Nothing to refactor ☺
+
+  - rdfs:label: Which task to start?
+    subtasks: Tasks in current sprint ∩ Tasks you are qualified to do
+    dependencies: The left ones ∩ those which are not blocked by other tasks
+
+  - rdfs:label: …
+    subtasks: …
+    dependencies: …
+
