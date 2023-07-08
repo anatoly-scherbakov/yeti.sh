@@ -1,0 +1,15 @@
+$id: dependencies-software-support
+table:columns:
+  - table:self
+  - define-dependencies
+  - $id: prevent-from-starting
+    rdfs:label: Prevent a blocked task from being started
+    
+table:rows:
+  - rdfs:label: Jira
+    define-dependencies: yes
+    prevent-from-starting: no
+
+  - rdfs:label: Linear
+    define-dependencies: yes
+    prevent-from-starting: no

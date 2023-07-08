@@ -1,0 +1,28 @@
+$id: supertask-roles
+table:columns:
+  - table:self
+  - $id: container
+    rdfs:label: No, supertask is only a container for subtasks
+  - $id: separate-work
+    rdfs:label: Yes, supertask can have a PR itself
+
+table:rows:
+  - rdfs:label: Can user provide an estimate?
+    container: no
+    separate-work: Yes, the user might estimate the work assigned to supertask itself
+
+  - rdfs:label: What estimate to show to the user?
+    container: ∑ of estimates of all subtasks
+    separate-work: ∑ of estimates of all subtasks + estimate of the work assigned to the supertask itself
+
+  - rdfs:label: Definition of Done
+    container: Each of the subtasks complete
+    separate-work: Each of the subtasks is complete, and then the supertask itself is complete
+
+  - rdfs:label: Can the supertask be automatically closed when each of the subtasks is closed?
+    container: IMHO it should not be (see below)
+    separate-work: No, because it has some more work attached to it
+
+  - rdfs:label: Who is supertask assignee?
+    container: The one who responsible for the whole feature end to end, and makes sure all pieces integrate
+    separate-work: The one who does the supertask itself and should also be responsible for the feature integration
