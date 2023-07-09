@@ -10,6 +10,7 @@ python = ">=3.10,<4.0"
 mkdocs-blogging-plugin = "^1.4.0"
 iolanta-roadmap = "^0.1.0"
 iolanta-tables = "^0.1.7"
+markdown-del-ins = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 jeeves-yeti-pyproject = "^0.2.19"

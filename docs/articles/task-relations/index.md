@@ -1,6 +1,6 @@
 ---
-title: Tasks in software projects and their relations
-description: Subtasks, dependencies, pro & contra
+title: Prefer task dependencies over subtasks
+description: Subtasks, dependencies, their pro & contra in software projects
 date: "2023-07-08"
 ---
 

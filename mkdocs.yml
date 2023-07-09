@@ -3,10 +3,11 @@ site_url: https://yeti.sh
 repo_url: https://github.com/anatoly-scherbakov/yeti.sh
 repo_name: yeti.sh
 edit_uri: edit/master/docs/
-copyright: Copyright &copy; 2021 Anatoly Scherbakov
+copyright: Copyright &copy; 2023 Anatoly Scherbakov
 
 markdown_extensions:
   - admonition
+  - markdown_del_ins
   - pymdownx.highlight:
       guess_lang: true
   - pymdownx.tasklist:

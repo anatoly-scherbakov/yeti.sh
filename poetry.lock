@@ -1066,6 +1066,20 @@ files = [
 testing = ["coverage", "pyyaml"]
 
 [[package]]
+name = "markdown-del-ins"
+version = "1.0.0"
+description = "Markdown extension to support the <del> and <ins> tags"
+optional = false
+python-versions = "*"
+files = [
+    {file = "markdown_del_ins-1.0.0-py3-none-any.whl", hash = "sha256:fc71237eaec2c5413d4ae330b1f691f38583b9f0ba35de7234bce86a7da955e7"},
+    {file = "markdown_del_ins-1.0.0.tar.gz", hash = "sha256:bcce060d367ac867341e9652d210a500508a352aab55c56414e385e65f972913"},
+]
+
+[package.dependencies]
+markdown = ">=2.0"
+
+[[package]]
 name = "markdown-it-py"
 version = "3.0.0"
 description = "Python port of markdown-it. Markdown parsing, done right!"
@@ -2145,4 +2159,4 @@ typing_extensions = ">=4.0,<5.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<4.0"
-content-hash = "f71c6492611386f38e613dd138e64df169cbefa5b48c3ebfc1891d984a032e48"
+content-hash = "57bdf88e36de23c921ae16f74d2d9f82d0e7c2afcd3756b5472f6f279315b1aa"

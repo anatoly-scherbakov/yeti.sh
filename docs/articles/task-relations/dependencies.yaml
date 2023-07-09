@@ -1,12 +1,25 @@
 roadmap:roadmap:
-  $id: write-paper-about-task-relations
-  title: Write a post about task relations
+  title: Get feedback about my post
   is-blocked-by:
-    - title: Write down more differences between subtasking and dependencies
-    - title: Write about network planning, PERT, CPM, and Gantt charts
-    - title: Strike-through does not work
+    - title: Ordering of posts in left navigation panel is incorrect
       bug: true
-    - title: Note about Jira sprints
-    - title: Rewrite the example as dependencies roadmap
+
+    - $id: write-paper-about-task-relations
+      title: Write a post about task relations
       is-blocked-by:
-        - title: Come up with an example of a supertask with subtasks
+        - title: What we do when we need to split a task we already started?
+          description: This could be a good intro, actually
+        
+        - title: Which project management systems support dependencies?
+
+        - title: Reference PDD
+        - title: Reference PERT
+        - title: Reference CPM
+        - title: Write down more differences between subtasking and dependencies
+        - title: Write about network planning, PERT, CPM, and Gantt charts
+        - title: Strike-through does not work
+          bug: true
+        - title: Note about Jira sprints
+        - title: Rewrite the example as dependencies roadmap
+          is-blocked-by:
+            - title: Come up with an example of a supertask with subtasks
