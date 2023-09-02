@@ -6,12 +6,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://yeti.sh/annotated/</loc>
+         <loc>https://yeti.sh/articles/</loc>
          <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://yeti.sh/articles/</loc>
+         <loc>https://yeti.sh/articles/annotated/</loc>
          <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
