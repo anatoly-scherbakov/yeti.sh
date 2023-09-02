@@ -1,4 +1,4 @@
-# The power of `Annotated[]`` is being unleashed
+# The power of `Annotated[]` is being unleashed
 
 I have been thinking of putting additional meta data into Annotated[]. It would seem that this topic is being researched by the community.
 
