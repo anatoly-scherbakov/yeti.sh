@@ -2,142 +2,157 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://yeti.sh/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yeti.sh/annotated/</loc>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/bash-basename/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/terminal-recorder/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/tmux/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/walrus/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/bounds-extremum-infimum/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/cantor-theorem/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/functions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/max-and-min/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/relations/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/algebraic-structures/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/algebraic-structures/abelian-group/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/algebraic-structures/field/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/algebraic-structures/group/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/algebraic-structures/monoid/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/cs111/algebraic-structures/ring/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yeti.sh/articles/gh-stack/</loc>
+         <lastmod>2023-09-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yeti.sh/articles/gitmoji/</loc>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/mkdocs-blog-plugins/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/articles/task-relations/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/cv/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/interplanner/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/terry/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/terry/decisions/001-plugin-communication/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/terry/decisions/002-communication-format/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/terry/decisions/003-json-rpc-ld/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/projects/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-09-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

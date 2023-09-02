@@ -1,0 +1,34 @@
+roadmap:roadmap:
+  title: Get feedback about my post
+  is-blocked-by:
+    - title: Ordering of posts in left navigation panel is incorrect
+      bug: true
+
+    - $id: write-paper-about-task-relations
+      title: Write a post about task relations
+      is-blocked-by:
+        - title: Catalog use cases against tasks
+          is-blocked-by:
+            - title: I am a developer
+              is-blocked-by:
+                - title: I had already started a task, and it is too large
+                  branches:
+                    - title: I will do the task
+                    - title: Someone else will take part of the work
+            - title: I am a manager
+              is-blocked-by:
+                - title: I have to turn a large piece work into multiple smaller tasks
+
+        - title: Which project management systems support dependencies?
+
+        - title: Reference PDD
+        - title: Reference PERT
+        - title: Reference CPM
+        - title: Write down more differences between subtasking and dependencies
+        - title: Write about network planning, PERT, CPM, and Gantt charts
+        - title: Strike-through does not work
+          bug: true
+        - title: Note about Jira sprints
+        - title: Rewrite the example as dependencies roadmap
+          is-blocked-by:
+            - title: Come up with an example of a supertask with subtasks
