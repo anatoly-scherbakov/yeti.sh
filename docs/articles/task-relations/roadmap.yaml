@@ -7,9 +7,18 @@ roadmap:roadmap:
     - $id: write-paper-about-task-relations
       title: Write a post about task relations
       is-blocked-by:
-        - title: What we do when we need to split a task we already started?
-          description: This could be a good intro, actually
-        
+        - title: Catalog use cases against tasks
+          is-blocked-by:
+            - title: I am a developer
+              is-blocked-by:
+                - title: I had already started a task, and it is too large
+                  branches:
+                    - title: I will do the task
+                    - title: Someone else will take part of the work
+            - title: I am a manager
+              is-blocked-by:
+                - title: I have to turn a large piece work into multiple smaller tasks
+
         - title: Which project management systems support dependencies?
 
         - title: Reference PDD
