@@ -27,6 +27,18 @@ def test_something():
     ).json() == {'foo': 'bar'}, response.text
 ```
 
+## List comprehensions
+
+Transform the iterating value and filter by it.
+
+```python
+popular_repos = [
+    name
+    for repo in github_api_response
+    if (name := repo['name']) and repo['stargazers_count'] > 100
+]
+```
+
 ## Antipatterns
 
 * ≔ + λ

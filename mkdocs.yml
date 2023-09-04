@@ -30,6 +30,7 @@ plugins:
       theme:
         name: card
       time_format: "%d %B %Y"
+      meta_time_format: '%Y-%m-%d'
   - iolanta
   - awesome-pages
   - macros:
