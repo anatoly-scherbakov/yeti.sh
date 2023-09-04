@@ -16,6 +16,9 @@ $reverse:
     - emoji: 🔴
       shortcode: red_circle
       rdfs:comment: Unit test is now broken
+    - emoji: 🟡
+      shortcode: yellow_circle
+      rdfs:comment: Unit test is now skipped
 
 
     - emoji: 🎉
