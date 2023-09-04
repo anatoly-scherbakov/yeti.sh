@@ -403,6 +403,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#list-comprehensions" class="md-nav__link">
+    List comprehensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#antipatterns" class="md-nav__link">
     Antipatterns
   </a>
@@ -447,6 +454,14 @@
     <span class="k">assert</span> <span class="p">(</span>
         <span class="n">response</span> <span class="o">:=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
     <span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="s1">&#39;bar&#39;</span><span class="p">},</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span>
+</code></pre></div>
+<h2 id="list-comprehensions">List comprehensions</h2>
+<p>Transform the iterating value and filter by it.</p>
+<div class="highlight"><pre><span></span><code><span class="n">popular_repos</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">name</span>
+    <span class="k">for</span> <span class="n">repo</span> <span class="ow">in</span> <span class="n">github_api_response</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">name</span> <span class="o">:=</span> <span class="n">repo</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span> <span class="ow">and</span> <span class="n">repo</span><span class="p">[</span><span class="s1">&#39;stargazers_count&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">100</span>
+<span class="p">]</span>
 </code></pre></div>
 <h2 id="antipatterns">Antipatterns</h2>
 <ul>
