@@ -6,28 +6,26 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The main `terry` executable will communicate with language-specific and scheduler-specific plugins sending text-based messages to their stdin and reading analogous messages from their stdout.">
       
       
-      
-        <link rel="canonical" href="https://yeti.sh/ideas/terry/decisions/001-plugin-communication/">
-      
-      
-        <link rel="prev" href="../../">
+        <link rel="canonical" href="https://yeti.sh/blog/cs111/cantor-theorem/">
       
       
-        <link rel="next" href="../002-communication-format/">
+        <link rel="prev" href="../bounds-extremum-infimum/">
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      
+        <link rel="next" href="../functions/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Communicate with plugins via stdin & stdout - yeti.sh</title>
+        <title>Cantor's theorem - yeti.sh</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.26e3688c.min.css">
       
       
 
@@ -43,9 +41,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/css/yeti-sh.css">
+      <link rel="stylesheet" href="../../../assets/css/yeti-sh.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,11 +64,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#context" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -81,9 +74,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="yeti.sh" class="md-header__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+    <a href="../../.." title="yeti.sh" class="md-header__button md-logo" aria-label="yeti.sh" data-md-component="logo">
       
-  <img src="../../../../images/yeti.png" alt="logo">
+  <img src="../../../images/yeti.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -99,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Communicate with plugins via stdin & stdout
+              Cantor's theorem
             
           </span>
         </div>
@@ -174,7 +167,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../.." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -183,13 +176,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../../blog/" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         Blog
       </a>
     </li>
@@ -205,7 +200,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../cv/" class="md-tabs__link">
+      <a href="../../../cv/" class="md-tabs__link">
         Cv
       </a>
     </li>
@@ -215,15 +210,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../ideas/" class="md-tabs__link">
         Ideas
       </a>
     </li>
@@ -239,7 +232,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../projects/" class="md-tabs__link">
+      <a href="../../../projects/" class="md-tabs__link">
         Projects
       </a>
     </li>
@@ -267,9 +260,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="yeti.sh" class="md-nav__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+    <a href="../../.." title="yeti.sh" class="md-nav__button md-logo" aria-label="yeti.sh" data-md-component="logo">
       
-  <img src="../../../../images/yeti.png" alt="logo">
+  <img src="../../../images/yeti.png" alt="logo">
 
     </a>
     yeti.sh
@@ -297,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -310,14 +303,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
@@ -350,7 +345,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/">Blog</a>
+          <a href="../../">Blog</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -358,7 +353,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Blog
@@ -373,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/annotated/" class="md-nav__link">
+      <a href="../../annotated/" class="md-nav__link">
         Annotated[]
       </a>
     </li>
@@ -387,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/bash-basename/" class="md-nav__link">
+      <a href="../../bash-basename/" class="md-nav__link">
         Extract base name & extension in bash
       </a>
     </li>
@@ -401,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/terminal-recorder/" class="md-nav__link">
+      <a href="../../terminal-recorder/" class="md-nav__link">
         Terminal recorder
       </a>
     </li>
@@ -415,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/tmux/" class="md-nav__link">
+      <a href="../../tmux/" class="md-nav__link">
         tmux
       </a>
     </li>
@@ -429,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/walrus/" class="md-nav__link">
+      <a href="../../walrus/" class="md-nav__link">
         Apology of the walrus operator
       </a>
     </li>
@@ -441,14 +436,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
       
       
         
@@ -473,7 +470,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/cs111/">Cs111</a>
+          <a href="../">Cs111</a>
           
             <label for="__nav_2_7">
               <span class="md-nav__icon md-icon"></span>
@@ -481,7 +478,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_7">
           <span class="md-nav__icon md-icon"></span>
           Cs111
@@ -496,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/bounds-extremum-infimum/" class="md-nav__link">
+      <a href="../bounds-extremum-infimum/" class="md-nav__link">
         Bounds, extremum, & infimum
       </a>
     </li>
@@ -508,11 +505,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../../blog/cs111/cantor-theorem/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Cantor's theorem
       </a>
+      
     </li>
   
 
@@ -524,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/functions/" class="md-nav__link">
+      <a href="../functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -538,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/max-and-min/" class="md-nav__link">
+      <a href="../max-and-min/" class="md-nav__link">
         Max & Min
       </a>
     </li>
@@ -552,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/relations/" class="md-nav__link">
+      <a href="../relations/" class="md-nav__link">
         Relations
       </a>
     </li>
@@ -594,7 +599,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/cs111/algebraic-structures/">Algebraic structures</a>
+          <a href="../algebraic-structures/">Algebraic structures</a>
           
             <label for="__nav_2_7_7">
               <span class="md-nav__icon md-icon"></span>
@@ -617,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/abelian-group/" class="md-nav__link">
+      <a href="../algebraic-structures/abelian-group/" class="md-nav__link">
         Abelian Group
       </a>
     </li>
@@ -631,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/field/" class="md-nav__link">
+      <a href="../algebraic-structures/field/" class="md-nav__link">
         Field
       </a>
     </li>
@@ -645,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/group/" class="md-nav__link">
+      <a href="../algebraic-structures/group/" class="md-nav__link">
         Group
       </a>
     </li>
@@ -659,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/monoid/" class="md-nav__link">
+      <a href="../algebraic-structures/monoid/" class="md-nav__link">
         Monoid
       </a>
     </li>
@@ -673,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/ring/" class="md-nav__link">
+      <a href="../algebraic-structures/ring/" class="md-nav__link">
         Ring
       </a>
     </li>
@@ -719,7 +724,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/gh-stack/">Gh stack</a>
+          <a href="../../gh-stack/">Gh stack</a>
           
         </div>
       
@@ -763,7 +768,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/gitmoji/">Gitmoji</a>
+          <a href="../../gitmoji/">Gitmoji</a>
           
         </div>
       
@@ -807,7 +812,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/mkdocs-blog-plugins/">Mkdocs blog plugins</a>
+          <a href="../../mkdocs-blog-plugins/">Mkdocs blog plugins</a>
           
         </div>
       
@@ -851,7 +856,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/task-relations/">Task relations</a>
+          <a href="../../task-relations/">Task relations</a>
           
         </div>
       
@@ -903,7 +908,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../cv/">Cv</a>
+          <a href="../../../cv/">Cv</a>
           
         </div>
       
@@ -928,16 +933,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
         
@@ -954,7 +957,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../">Ideas</a>
+          <a href="../../../ideas/">Ideas</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -962,7 +965,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Ideas
@@ -977,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interplanner/" class="md-nav__link">
+      <a href="../../../ideas/interplanner/" class="md-nav__link">
         interplanner
       </a>
     </li>
@@ -989,16 +992,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
       
       
         
@@ -1013,7 +1014,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">Terry</a>
+          <a href="../../../ideas/terry/">Terry</a>
           
             <label for="__nav_4_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1021,7 +1022,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_3">
           <span class="md-nav__icon md-icon"></span>
           Terry
@@ -1034,16 +1035,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" >
       
       
         
@@ -1060,7 +1059,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_3_2">
           <span class="md-nav__icon md-icon"></span>
           Decisions
@@ -1071,55 +1070,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Communicate with plugins via stdin & stdout
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../ideas/terry/decisions/001-plugin-communication/" class="md-nav__link">
         Communicate with plugins via stdin & stdout
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
-    Decision
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1131,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../002-communication-format/" class="md-nav__link">
+      <a href="../../../ideas/terry/decisions/002-communication-format/" class="md-nav__link">
         Communication Format
       </a>
     </li>
@@ -1145,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../003-json-rpc-ld/" class="md-nav__link">
+      <a href="../../../ideas/terry/decisions/003-json-rpc-ld/" class="md-nav__link">
         JSON-RPC messages are annotated with LD contexts
       </a>
     </li>
@@ -1199,7 +1154,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../projects/">Projects</a>
+          <a href="../../../projects/">Projects</a>
           
         </div>
       
@@ -1236,28 +1191,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
-    Decision
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1274,26 +1207,10 @@
   
 
 
-  <h1>Communicate with plugins via stdin & stdout</h1>
+  <h1>Cantor's theorem</h1>
 
-<p>The main <code>terry</code> executable will communicate with language-specific and scheduler-specific plugins sending text-based messages to their stdin and reading analogous messages from their stdout.</p>
-<h2 id="context">Context</h2>
-<p>At the moment of writing this document, it isn't yet clear in what programming language to write <code>terry</code>. Anyway, I believe it to be important to ensure that plugins for <code>terry</code> must be language agnostic.</p>
-<h2 id="decision">Decision</h2>
-<div class="highlight"><pre><span></span><code><span class="nt">criteria</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">language-agnostic</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Language Agnostic</span>
-<span class="w">  </span><span class="nt">ease-of-debug</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Debuggability</span>
-
-<span class="nt">alternatives</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">socket-based communication</span>
-<span class="w">    </span><span class="nt">language-agnostic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yes</span>
-<span class="w">    </span><span class="nt">ease-of-debug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stdin/stdout communication</span>
-<span class="w">    </span><span class="nt">language-agnostic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yes</span>
-<span class="w">    </span><span class="nt">ease-of-debug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
-</code></pre></div>
+<p><img alt="" src="../cantor-theorem.png" /></p>
+<p>See <a href="https://whimsical.com/cantor-s-theorem-AuJowdBgAvkD2AV5EPZtP">in Whimsical</a>.</p>
 
 
 
@@ -1335,21 +1252,21 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["header.autohide", "navigation.tabs", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.tabs", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
           <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
         
       
         
-          <script src="../../../../javascripts/tablesort.js"></script>
+          <script src="../../../javascripts/tablesort.js"></script>
         
       
         
-          <script src="../../../../javascripts/mathjax.js"></script>
+          <script src="../../../javascripts/mathjax.js"></script>
         
       
         

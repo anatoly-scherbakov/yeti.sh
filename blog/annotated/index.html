@@ -6,28 +6,28 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The main `terry` executable will communicate with language-specific and scheduler-specific plugins sending text-based messages to their stdin and reading analogous messages from their stdout.">
+        <meta name="description" content="Annotated[] type arrived at Python 3.6 as per PEP 527. It is now getting more use cases.">
       
       
       
-        <link rel="canonical" href="https://yeti.sh/ideas/terry/decisions/001-plugin-communication/">
+        <link rel="canonical" href="https://yeti.sh/blog/annotated/">
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../002-communication-format/">
+        <link rel="next" href="../bash-basename/">
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Communicate with plugins via stdin & stdout - yeti.sh</title>
+        <title>Annotated[] - yeti.sh</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
       
 
@@ -43,9 +43,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/css/yeti-sh.css">
+      <link rel="stylesheet" href="../../assets/css/yeti-sh.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#context" class="md-skip">
+        <a href="#the-power-of-annotated-is-being-unleashed" class="md-skip">
           Skip to content
         </a>
       
@@ -81,9 +81,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="yeti.sh" class="md-header__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+    <a href="../.." title="yeti.sh" class="md-header__button md-logo" aria-label="yeti.sh" data-md-component="logo">
       
-  <img src="../../../../images/yeti.png" alt="logo">
+  <img src="../../images/yeti.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Communicate with plugins via stdin & stdout
+              Annotated[]
             
           </span>
         </div>
@@ -174,7 +174,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -183,13 +183,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../../blog/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Blog
       </a>
     </li>
@@ -205,7 +207,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../cv/" class="md-tabs__link">
+      <a href="../../cv/" class="md-tabs__link">
         Cv
       </a>
     </li>
@@ -215,15 +217,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../ideas/" class="md-tabs__link">
         Ideas
       </a>
     </li>
@@ -239,7 +239,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../projects/" class="md-tabs__link">
+      <a href="../../projects/" class="md-tabs__link">
         Projects
       </a>
     </li>
@@ -257,6 +257,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -267,9 +269,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="yeti.sh" class="md-nav__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+    <a href="../.." title="yeti.sh" class="md-nav__button md-logo" aria-label="yeti.sh" data-md-component="logo">
       
-  <img src="../../../../images/yeti.png" alt="logo">
+  <img src="../../images/yeti.png" alt="logo">
 
     </a>
     yeti.sh
@@ -297,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -310,14 +312,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
@@ -350,7 +354,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/">Blog</a>
+          <a href="../">Blog</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -358,7 +362,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Blog
@@ -371,11 +375,87 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../../blog/annotated/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Annotated[]
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Annotated[]
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-it-anyway" class="md-nav__link">
+    What is it anyway?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-to-use-it" class="md-nav__link">
+    Why to use it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    Use Cases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documenting-function-arguments" class="md-nav__link">
+    Documenting function arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-ideas-for-annotations" class="md-nav__link">
+    More ideas for annotations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -387,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/bash-basename/" class="md-nav__link">
+      <a href="../bash-basename/" class="md-nav__link">
         Extract base name & extension in bash
       </a>
     </li>
@@ -401,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/terminal-recorder/" class="md-nav__link">
+      <a href="../terminal-recorder/" class="md-nav__link">
         Terminal recorder
       </a>
     </li>
@@ -415,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/tmux/" class="md-nav__link">
+      <a href="../tmux/" class="md-nav__link">
         tmux
       </a>
     </li>
@@ -429,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/walrus/" class="md-nav__link">
+      <a href="../walrus/" class="md-nav__link">
         Apology of the walrus operator
       </a>
     </li>
@@ -473,7 +553,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/cs111/">Cs111</a>
+          <a href="../cs111/">Cs111</a>
           
             <label for="__nav_2_7">
               <span class="md-nav__icon md-icon"></span>
@@ -496,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/bounds-extremum-infimum/" class="md-nav__link">
+      <a href="../cs111/bounds-extremum-infimum/" class="md-nav__link">
         Bounds, extremum, & infimum
       </a>
     </li>
@@ -510,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/cantor-theorem/" class="md-nav__link">
+      <a href="../cs111/cantor-theorem/" class="md-nav__link">
         Cantor's theorem
       </a>
     </li>
@@ -524,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/functions/" class="md-nav__link">
+      <a href="../cs111/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -538,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/max-and-min/" class="md-nav__link">
+      <a href="../cs111/max-and-min/" class="md-nav__link">
         Max & Min
       </a>
     </li>
@@ -552,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/relations/" class="md-nav__link">
+      <a href="../cs111/relations/" class="md-nav__link">
         Relations
       </a>
     </li>
@@ -594,7 +674,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/cs111/algebraic-structures/">Algebraic structures</a>
+          <a href="../cs111/algebraic-structures/">Algebraic structures</a>
           
             <label for="__nav_2_7_7">
               <span class="md-nav__icon md-icon"></span>
@@ -617,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/abelian-group/" class="md-nav__link">
+      <a href="../cs111/algebraic-structures/abelian-group/" class="md-nav__link">
         Abelian Group
       </a>
     </li>
@@ -631,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/field/" class="md-nav__link">
+      <a href="../cs111/algebraic-structures/field/" class="md-nav__link">
         Field
       </a>
     </li>
@@ -645,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/group/" class="md-nav__link">
+      <a href="../cs111/algebraic-structures/group/" class="md-nav__link">
         Group
       </a>
     </li>
@@ -659,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/monoid/" class="md-nav__link">
+      <a href="../cs111/algebraic-structures/monoid/" class="md-nav__link">
         Monoid
       </a>
     </li>
@@ -673,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/cs111/algebraic-structures/ring/" class="md-nav__link">
+      <a href="../cs111/algebraic-structures/ring/" class="md-nav__link">
         Ring
       </a>
     </li>
@@ -719,7 +799,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/gh-stack/">Gh stack</a>
+          <a href="../gh-stack/">Gh stack</a>
           
         </div>
       
@@ -763,7 +843,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/gitmoji/">Gitmoji</a>
+          <a href="../gitmoji/">Gitmoji</a>
           
         </div>
       
@@ -807,7 +887,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/mkdocs-blog-plugins/">Mkdocs blog plugins</a>
+          <a href="../mkdocs-blog-plugins/">Mkdocs blog plugins</a>
           
         </div>
       
@@ -851,7 +931,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../blog/task-relations/">Task relations</a>
+          <a href="../task-relations/">Task relations</a>
           
         </div>
       
@@ -903,7 +983,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../cv/">Cv</a>
+          <a href="../../cv/">Cv</a>
           
         </div>
       
@@ -928,16 +1008,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
         
@@ -954,7 +1032,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../">Ideas</a>
+          <a href="../../ideas/">Ideas</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -962,7 +1040,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Ideas
@@ -977,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interplanner/" class="md-nav__link">
+      <a href="../../ideas/interplanner/" class="md-nav__link">
         interplanner
       </a>
     </li>
@@ -989,16 +1067,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
       
       
         
@@ -1013,7 +1089,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">Terry</a>
+          <a href="../../ideas/terry/">Terry</a>
           
             <label for="__nav_4_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1021,7 +1097,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_3">
           <span class="md-nav__icon md-icon"></span>
           Terry
@@ -1034,16 +1110,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" >
       
       
         
@@ -1060,7 +1134,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_3_2">
           <span class="md-nav__icon md-icon"></span>
           Decisions
@@ -1071,55 +1145,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Communicate with plugins via stdin & stdout
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ideas/terry/decisions/001-plugin-communication/" class="md-nav__link">
         Communicate with plugins via stdin & stdout
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
-    Decision
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1131,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../002-communication-format/" class="md-nav__link">
+      <a href="../../ideas/terry/decisions/002-communication-format/" class="md-nav__link">
         Communication Format
       </a>
     </li>
@@ -1145,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../003-json-rpc-ld/" class="md-nav__link">
+      <a href="../../ideas/terry/decisions/003-json-rpc-ld/" class="md-nav__link">
         JSON-RPC messages are annotated with LD contexts
       </a>
     </li>
@@ -1199,7 +1229,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../projects/">Projects</a>
+          <a href="../../projects/">Projects</a>
           
         </div>
       
@@ -1226,7 +1256,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1234,6 +1266,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1243,15 +1277,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
+  <a href="#what-is-it-anyway" class="md-nav__link">
+    What is it anyway?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
-    Decision
+  <a href="#why-to-use-it" class="md-nav__link">
+    Why to use it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    Use Cases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documenting-function-arguments" class="md-nav__link">
+    Documenting function arguments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-ideas-for-annotations" class="md-nav__link">
+    More ideas for annotations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -1274,28 +1336,290 @@
   
 
 
-  <h1>Communicate with plugins via stdin & stdout</h1>
-
-<p>The main <code>terry</code> executable will communicate with language-specific and scheduler-specific plugins sending text-based messages to their stdin and reading analogous messages from their stdout.</p>
-<h2 id="context">Context</h2>
-<p>At the moment of writing this document, it isn't yet clear in what programming language to write <code>terry</code>. Anyway, I believe it to be important to ensure that plugins for <code>terry</code> must be language agnostic.</p>
-<h2 id="decision">Decision</h2>
-<div class="highlight"><pre><span></span><code><span class="nt">criteria</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">language-agnostic</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Language Agnostic</span>
-<span class="w">  </span><span class="nt">ease-of-debug</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Debuggability</span>
-
-<span class="nt">alternatives</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">socket-based communication</span>
-<span class="w">    </span><span class="nt">language-agnostic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yes</span>
-<span class="w">    </span><span class="nt">ease-of-debug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stdin/stdout communication</span>
-<span class="w">    </span><span class="nt">language-agnostic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yes</span>
-<span class="w">    </span><span class="nt">ease-of-debug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<h1 id="the-power-of-annotated-is-being-unleashed">The power of <code>Annotated[]</code> is being unleashed</h1>
+<p><code>Annotated[]</code> type arrived at Python 3.6 as per <a href="https://peps.python.org/pep-0526/">PEP 527</a>. It is now getting more use cases.</p>
+<h2 id="what-is-it-anyway">What is it anyway?</h2>
+<p>From <code>mypy</code> point of view, <code>Annotated[T, foo, bar, baz, ...]</code> is strictly equivalent to <code>T</code>, its first argument. The remaining arguments can be any Python objects. For instance,</p>
+<div class="highlight"><pre><span></span><code><span class="n">greeting</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="p">[],</span> <span class="s1">&#39;boombadam&#39;</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span>
 </code></pre></div>
+<p>is valid.</p>
+<h2 id="why-to-use-it">Why to use it?</h2>
+<p>To attach additional metadata to type annotations in Python. Even though <code>mypy</code> does not care for said metadata, other libraries might make use of it.</p>
+<h2 id="use-cases">Use Cases</h2>
+<p>This table is a snapshot of things how they are at the moment of writing this post. Things are going to change.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Library declaring the annotation</th>
+            <th>Annotation</th>
+            <th>Library using the annotation</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="6">
+                <a href="https://github.com/annotated-types/annotated-types">
+                    <code>annotated-types</code>
+                </a>
+            </td>
+            <td>
+                <a href="https://docs.pydantic.dev/latest/why/#type-hints">
+                    <code>Gt</code> <code>Lt</code> <code>Ge</code> <code>Le</code>
+                </a>
+                <code>Interval</code>
+            </td>
+            <td rowspan="9">
+                <code>pydantic</code>
+            </td>
+            <td>&gt; &lt; ⩾ ⩽ and generic interval validators</td>
+        </tr>
+        <tr>
+            <td>
+                <code>MinLen</code>
+                <code>MaxLen</code>
+                <code>Len</code>
+            </td>
+            <td>Sequence length validators</td>
+        </tr>
+        <tr>
+            <td>
+                <code>Timezone</code>
+            </td>
+            <td>Validate timezone for a datetime value</td>
+        </tr>
+        <tr>
+            <td>
+                <code>Predicate</code>
+            </td>
+            <td>Validate value satisfies a given predicate</td>
+        </tr>
+        <tr>
+            <td>
+                <code>GroupedMetadata<code>
+            </td>
+            <td>Combine multiple annotations into one</td>
+        </tr>
+        <tr>
+            <td>
+                <code>…<code>
+            </td>
+            <td>…</td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <code>pydantic</code>
+            </td>
+            <td>
+                <a href="https://docs.pydantic.dev/latest/usage/strict_mode/#strict-mode-with-annotated-strict">
+                    <code>Strict</code>
+                </a>
+            </td>
+            <td>Validate the value in strict mode</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://docs.pydantic.dev/latest/usage/types/custom/#composing-types-via-annotated">
+                    <code>Field</code>
+                </a>
+            </td>
+            <td>Specify Pydantic validation rules</td>
+        </tr>
+        <tr>
+            <td>
+                <code>…<code>
+            </td>
+            <td>…</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://github.com/python/typing_extensions/pull/277">
+                    <code>typing-extensions</code>
+                </a>
+            </td>
+            <td rowspan="2">
+                <code>doc</code>
+            </td>
+            <td rowspan="2">
+                <a href="https://github.com/mkdocstrings/mkdocstrings">
+                    mkdocstrings
+                </a>
+            </td>
+            <td rowspan="2">Document a variable, function parameter, or class field</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://peps.python.org/pep-0727/">
+                    <code>typing</code>
+                </a>,
+                starting at Python 3.13 <em>(if PEP 727 passes)</em>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                <a href="https://fastapi.tiangolo.com">
+                    FastAPI
+                </a>
+            </td>
+            <td>
+                <a href="https://fastapi.tiangolo.com/tutorial/query-params-str-validations/?h=annotated#import-query-and-annotated">
+                    <code>Query</code>
+                </a>
+            </td>
+            <td rowspan="4">
+                FastAPI
+            </td>
+            <td>Designate this as a query parameter</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/?h=annotated#better-with-annotated">
+                    <code>Path</code>
+                </a>
+            </td>
+            <td>Designate as a path parameter</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://fastapi.tiangolo.com/tutorial/extra-data-types/?h=annotated#example">
+                    <code>Body</code>
+                </a>
+            </td>
+            <td>Designate as a body parameter</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://fastapi.tiangolo.com/tutorial/dependencies/?h=annotated#share-annotated-dependencies">
+                    <code>Depends</code>
+                </a>
+            </td>
+            <td>Inject a dependency</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://typer.tiangolo.com">
+                    Typer
+                </a>
+            </td>
+            <td>
+                <a href="https://typer.tiangolo.com/tutorial/parameter-types/number/">
+                    <code>Argument</code>
+                    <code>Option</code>
+                </a>
+            </td>
+            <td>
+                Typer
+            </td>
+            <td>
+                Designate function parameter as CLI option or argument.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="documenting-function-arguments">Documenting function arguments</h2>
+<p>One of the cases above I would want to attract your attention to is <code>doc()</code> annotation, proposed by <a href="https://peps.python.org/pep-0727/">PEP 727</a> and best illustrated by an example:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Annotated</span><span class="p">,</span> <span class="n">doc</span>
 
 
+<span class="k">def</span> <span class="nf">create_user</span><span class="p">(</span>
+    <span class="n">lastname</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">doc</span><span class="p">(</span><span class="s2">&quot;The **last name** of the newly created user&quot;</span><span class="p">)],</span>
+    <span class="n">firstname</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">doc</span><span class="p">(</span><span class="s2">&quot;The user&#39;s **first name**&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Annotated</span><span class="p">[</span><span class="n">User</span><span class="p">,</span> <span class="n">doc</span><span class="p">(</span><span class="s2">&quot;The created user after saving in the database&quot;</span><span class="p">)]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create a new user in the system, it needs the database connection to be already</span>
+<span class="sd">    initialized.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<p>This is another way to document function parameters, in addition to two existing methods:</p>
+<ul>
+<li>in the docstring,</li>
+<li>and via inline comments.</li>
+</ul>
+<p>Let's compare those approaches.</p>
+<div class="admonition info">
+<p class="admonition-title">Scope</p>
+<p>I am intentionally leaving out other applications of <code>doc()</code> — annotation of variables and class fields. I believe that function signature annotations are much more often met in real code than the other use cases and thus will be most substantial to the overall developer experience.</p>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Docstrings</th>
+            <th>Inline comments</th>
+            <th><code>doc()</code></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Standardized?</th>
+            <td>🟡 Google, numpy, and a few more styles exist</td>
+            <td>🔴 No</td>
+            <td>🟢 Yes, by PEP 727</td>
+        </tr>
+        <tr>
+            <th>Looking at parameter definition, how easy it is to locate its description?</th>
+            <td>🟡 One has to scroll to the docstring and find it there</td>
+            <td>🟢 Right in place</td>
+            <td>🟢 Right in place</td>
+        </tr>
+        <tr>
+            <th>How verbose is function signature?</th>
+            <td>🟢 Not verbose</td>
+            <td>🔴 Significantly more verbose</td>
+            <td>🟡 A bit more verbose</td>
+        </tr>
+        <tr>
+            <th>How verbose is the docstring?</th>
+            <td>🔴 Verbose</td>
+            <td>🟢 Not verbose</td>
+            <td>🟢 Not verbose</td>
+        </tr>
+        <tr>
+            <th>How hard is it to extract parameter documentation programmatically?</th>
+            <td>
+                🔴 Very hard<br/>
+                <small>Support multiple standards and recognize which is used</small>
+            </td>
+            <td>
+                🟡 Moderately hard<br/>
+                <small>Forces to extract docs from Python AST</small>
+            </td>
+            <td>
+                🟢 Very easy<br/>
+                <small><code>something.__annotations__</code> gets the job done</small>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="more-ideas-for-annotations">More ideas for annotations</h2>
+<p>If you have a hammer ⇒ everything around looks like a nail.</p>
+<table>
+    <tbody>
+        <tr>
+            <td><code>Annotated[dict, MutatedArgument('Accumulator to store cached `Badabazinga` instances.')]</code></td>
+            <td>If argument of a function is mutated in the function, convey that information for documentation and linters. By default functions should not do that; but if they do — this should be very clearly evident.</td>
+        </tr>
+        <tr>
+            <td><code>Annotated[str, TODO('Use an `Enum` instead of a plain string.', ticket='PRJ-123')]</code></td>
+            <td>Make `TODO` and `FIXME` markers more semantic and integrate them into project docs. IDE might show this hint every time the user hovers over the annotated value, even at a completely different place in the code.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Do you have anything in mind? Feel free to <a href="https://github.com/anatoly-scherbakov/yeti.sh">submit a PR</a>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I do not care for increased verbosity that the reliance on <code>Annotated[]</code> introduces to type annotations for parameters, fields, and variables, as long as</p>
+<ul>
+<li>repetition is avoided,</li>
+<li>and the annotations provide both proteine- and silicon-based developers with semantically rich information about the code they are reading.</li>
+</ul>
+<p>I believe advantages are quite evident.</p>
+
+
+
+  
 
 
 
@@ -1335,21 +1659,21 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["header.autohide", "navigation.tabs", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
           <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
         
       
         
-          <script src="../../../../javascripts/tablesort.js"></script>
+          <script src="../../javascripts/tablesort.js"></script>
         
       
         
-          <script src="../../../../javascripts/mathjax.js"></script>
+          <script src="../../javascripts/mathjax.js"></script>
         
       
         
