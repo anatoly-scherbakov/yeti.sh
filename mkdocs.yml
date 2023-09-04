@@ -8,6 +8,7 @@ copyright: Copyright &copy; 2023 Anatoly Scherbakov
 markdown_extensions:
   - admonition
   - markdown_del_ins
+  - md_in_html
   - pymdownx.highlight:
       guess_lang: true
   - pymdownx.tasklist:
