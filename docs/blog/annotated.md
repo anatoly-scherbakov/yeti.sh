@@ -311,19 +311,23 @@ Let's compare those approaches.
 If you have a hammer ⇒ everything around looks like a nail.
 
 === "Argument is being mutated"
+
     ```python
     Annotated[dict, MutatedArgument('Accumulator to store cached `Badabazinga` instances.')]
     ```
     If the argument of a function is mutated in the function, convey that information for documentation and linters. By default, functions should not do that; but if they do — this should be very clearly evident.
 
 === ":material-pin: TODO & FIXME markers"
+
     ```python
     Annotated[str, TODO('Use an `Enum` instead of a plain string.', ticket='PRJ-123')]
     ```
     Make `TODO` and `FIXME` markers more semantic and integrate them into project docs. IDE might show this hint every time the user hovers over the annotated value, even at a completely different place in the code.
 
 === ":material-plus:"
+
     Do you have anything in mind? Feel free to [:material-github: submit a PR](https://github.com/anatoly-scherbakov/yeti.sh).
+
 
 ## Conclusion
 

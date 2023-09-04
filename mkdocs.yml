@@ -19,8 +19,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences
-  - pymdownx.arithmatex:
-      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search
