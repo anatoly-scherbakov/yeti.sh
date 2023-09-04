@@ -26,7 +26,7 @@ plugins:
   - search
   - blogging:
       dirs:
-        - articles
+        - blog
       theme:
         name: card
       time_format: "%d %B %Y"
