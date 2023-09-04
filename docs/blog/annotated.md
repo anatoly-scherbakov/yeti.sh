@@ -237,25 +237,51 @@ Let's compare those approaches.
     <tbody>
         <tr>
             <th>Standardized?</th>
-            <td>🟡 Google, numpy, and a few more styles exist</td>
-            <td>🔴 No</td>
-            <td>🟢 Yes, by PEP 727</td>
+            <td>
+                🟡 Multiple competing standards<br/>
+                <small>
+                    <a href="https://google.github.io/styleguide/pyguide.html">Google</a>,
+                    <a href="https://numpydoc.readthedocs.io/en/latest/format.html">numpy</a>, and more
+                </small>
+            </td>
+            <td>
+                🔴 No<br/>
+                <small>Or nothing I know of</small>
+            </td>
+            <td>
+                🟢 Yes<br/>
+                <small>
+                    by <a href="https://peps.python.org/pep-0727/">PEP 727</a>
+                </small>
+            </td>
         </tr>
         <tr>
             <th>Looking at parameter definition, how easy it is to locate its description?</th>
-            <td>🟡 One has to scroll to the docstring and find it there</td>
-            <td>🟢 Right in place</td>
-            <td>🟢 Right in place</td>
+            <td>
+                🟡 Moderately easy<br/>
+                <small>One has to scroll to the docstring and find it there</small>
+            </td>
+            <td>🟢 Very easy</td>
+            <td>🟢 Very easy</td>
         </tr>
         <tr>
             <th>How verbose is function signature?</th>
             <td>🟢 Not verbose</td>
-            <td>🔴 Significantly more verbose</td>
-            <td>🟡 A bit more verbose</td>
+            <td>
+                🟡 A bit more verbose<br/>
+                <small>Comments added</small>
+            </td>
+            <td style="background-color: #ff91001a">
+                🔴 Significantly more verbose<br/>
+                <small><code>Annotated[…, doc('…')]</code> can be lengthy</small>
+            </td>
         </tr>
         <tr>
             <th>How verbose is the docstring?</th>
-            <td>🔴 Verbose</td>
+            <td style="background-color: #ff91001a">
+                🔴 Verbose<br/>
+                <small>Every parameter has to be detailed there</small>
+            </td>
             <td>🟢 Not verbose</td>
             <td>🟢 Not verbose</td>
         </tr>
@@ -276,6 +302,9 @@ Let's compare those approaches.
         </tr>
     </tbody>
 </table>
+
+!!! warning "Verbosity"
+    Verbosity of function signature is the most prevalently articulated argument against using `Annotated[]` widely. However, it might be argued that verbosity does not appear out of the blue; it is just being moved from the docstring to the signature — and thus made arguably more manageable.
 
 ## More ideas for annotations
 
@@ -303,4 +332,4 @@ I do not care for increased verbosity that the reliance on `Annotated[]` introdu
 * repetition is avoided,
 * and the annotations provide both proteine- and silicon-based developers with semantically rich information about the code they are reading.
 
-I believe advantages are quite evident.
+Looking forward to making my code more readable and documentable then it ever was.
