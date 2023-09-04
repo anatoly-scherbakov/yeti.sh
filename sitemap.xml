@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://yeti.sh/blog/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://yeti.sh/blog/annotated/</loc>
          <lastmod>2023-09-04</lastmod>
          <changefreq>daily</changefreq>
@@ -37,66 +32,6 @@
     </url>
     <url>
          <loc>https://yeti.sh/blog/cs111/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/bounds-extremum-infimum/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/cantor-theorem/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/functions/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/max-and-min/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/relations/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/algebraic-structures/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/algebraic-structures/abelian-group/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/algebraic-structures/field/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/algebraic-structures/group/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/algebraic-structures/monoid/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/cs111/algebraic-structures/ring/</loc>
-         <lastmod>2023-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/gh-stack/</loc>
          <lastmod>2023-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
