@@ -3,6 +3,7 @@ title: "Annotated[]"
 description: "Annotated[] type arrived at Python 3.6 as per PEP 527. It is now getting more use cases."
 hide:
     - toc
+    - navigation
 ---
 
 # The power of `Annotated[]` is being unleashed

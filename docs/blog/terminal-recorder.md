@@ -1,4 +1,6 @@
 ---
+hide_from_blog: true
+
 $id: terminal-recorders
 title: Terminal recorder
 

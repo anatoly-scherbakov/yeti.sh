@@ -1,5 +1,8 @@
 ---
 title: Extract base name & extension in bash
+hide:
+    - navigation
+    - toc
 source:
     $id: https://stackoverflow.com/a/14703709/1245471
     title: Extract filename and extension in Bash | Stack Overflow

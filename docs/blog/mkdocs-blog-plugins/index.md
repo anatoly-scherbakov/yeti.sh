@@ -1,4 +1,5 @@
 ---
+hide_from_blog: true
 hide:
   - navigation
 

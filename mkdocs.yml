@@ -31,6 +31,7 @@ plugins:
         name: card
       time_format: "%d %B %Y"
   - iolanta
+  - awesome-pages
   - macros:
       on_error_fail: true
 
