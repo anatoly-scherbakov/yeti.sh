@@ -1,5 +1,5 @@
 ---
-hide_from_blog: true
+exclude_from_blog: true
 hide:
   - navigation
 

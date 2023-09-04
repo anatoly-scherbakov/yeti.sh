@@ -2,11 +2,12 @@
 title: CS111 Discrete Mathematics
 hide:
     - navigation
+description: In academic year 2022, I have enrolled at a bachelor Discrete Mathematics course at AUA.
 ---
 
 # `CS111` Discrete Mathematics
 
-In academic year 2022, I have enrolled at a bachelor Discrete Mathematics course at AUA.
+{{ page.meta.description }}
 
 I have drawn a few cheat sheets / visualizations during the course. Find them below.
 

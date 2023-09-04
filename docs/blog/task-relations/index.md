@@ -2,6 +2,7 @@
 title: Prefer task dependencies over subtasks
 description: Subtasks, dependencies, their pro & contra in software projects
 date: "2023-07-08"
+exclude_from_blog: true
 ---
 
 Planning a project means building a model of its future development, a model that will evolve as the project progresses. If the model is close enough then it should help us manage our efforts; but attempts to make it too close will mean we'll spend too much time on the model itself instead of putting the necessary effort into the real work.

@@ -7,6 +7,4 @@ hide:
     - toc
 ---
 
-![](tmux.png)
-
-See [in Whimsical](https://whimsical.com/tmux-9B3jw74JYN2REuQHqgYFPh).
+[![](tmux.png)](https://whimsical.com/tmux-9B3jw74JYN2REuQHqgYFPh).
