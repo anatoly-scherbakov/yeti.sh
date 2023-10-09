@@ -11,21 +11,20 @@ hide:
 
 ![](ld.png){ align=left width="300" }
 
-!!! example inline "YAML-LD"
+```mermaid
+graph LR
+    rdflib("rdflib") --> rdflibyamlld
+    yamlld("YAML-LD") --> pythonyamlld("python-yaml-ld") --> rdflibyamlld("rdflib-yaml-ld") --> iolanta("iolanta") --> adr("iolanta-adr")
+    iolanta --> tables("iolanta-tables")
 
-    [JSON-LD](https://json-ld.org) translated to [YAML](https://yaml.org) to bring it closer to real humans. [:material-github: `json-ld/yaml-ld`](https://github.com/json-ld/yaml-ld/)
-
-!!! example inline "python-yaml-ld"
-
-    YAML-LD specification implemented for Python [:material-github: `iolanta-tech/python-yaml-ld`](https://github.com/iolanta-tech/python-yaml-ld)
-
-!!! example inline "rdflib-yaml-ld"
-
-    YAML-LD plugin for [:material-github: `rdflib/rdflib`](https://github.com/rdflib/rdflib): [:material-github: `iolanta-tech/rdflib-yaml-ld`](https://github.com/iolanta-tech/rdflib-yaml-ld)
-
-!!! example inline "iolanta"
-
-    Linked Data knowledge workspace [iolanta.tech](https://iolanta.tech) & its plugins
+    click rdflib "https://rdflib.dev"
+    click rdflibyamlld "https://github.com/iolanta-tech/rdflib-yaml-ld"
+    click yamlld "https://github.com/json-ld/yaml-ld"
+    click pythonyamlld "https://github.com/iolanta-tech/python-yaml-ld"
+    click iolanta "https://iolanta.tech"
+    click adr "https://adr.iolanta.tech"
+    click tables "https://tables.iolanta.tech"
+```
 
 <br clear="both"/>
 
