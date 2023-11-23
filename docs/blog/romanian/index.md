@@ -66,28 +66,27 @@ title: Romanian
         <tbody>
             <tr class="person-first">
                 <th colspan="2">1<sup>st</sup></th>
-                <td>sunt</td>
-                <td>suntem</td>
+                <td>🙋 sunt</td>
+                <td>🙋🙋 suntem</td>
             </tr>
             <tr class="person-second">
                 <th colspan="2">2<sup>nd</sup></th>
-                <td>ești</td>
-                <td>sunteți</td>
+                <td>👤 ești</td>
+                <td>👥 sunteți</td>
             </tr>
             <tr class="feminine">
                 <th rowspan="2">3<sup>rd</sup></th>
                 <th>♀️</th>
-                <td>este</td>
-                <td>sunt</td>
+                <td>👩‍🦰 este</td>
+                <td>👩‍🦰👩‍🦰 sunt</td>
             </tr>
             <tr class="masculine">
                 <th>♂️</th>
-                <td>este</td>
-                <td>sunt</td>
+                <td>👨‍🦰 este</td>
+                <td>👨‍🦰👨‍🦰 sunt</td>
             </tr>
         </tbody>
     </table>
-
 
 === "a avea"
     <table>
@@ -101,24 +100,24 @@ title: Romanian
         <tbody>
             <tr class="person-first">
                 <th colspan="2">1<sup>st</sup></th>
-                <td>am</td>
-                <td>avem</td>
+                <td>🙋 am</td>
+                <td>🙋🙋 avem</td>
             </tr>
             <tr class="person-second">
                 <th colspan="2">2<sup>nd</sup></th>
-                <td>ai</td>
-                <td>aveți</td>
+                <td>👤 ai</td>
+                <td>👥 aveți</td>
             </tr>
             <tr class="feminine">
                 <th rowspan="2">3<sup>rd</sup></th>
                 <th>♀️</th>
-                <td>are</td>
-                <td>au</td>
+                <td>👩‍🦰 are</td>
+                <td>👩‍🦰👩‍🦰 au</td>
             </tr>
             <tr class="masculine">
                 <th>♂️</th>
-                <td>are</td>
-                <td>au</td>
+                <td>👨‍🦰 are</td>
+                <td>👨‍🦰👨‍🦰 au</td>
             </tr>
         </tbody>
     </table>
@@ -135,24 +134,24 @@ title: Romanian
         <tbody>
             <tr class="person-first">
                 <th colspan="2">1<sup>st</sup></th>
-                <td>beau</td>
-                <td>bem</td>
+                <td>🙋 beau</td>
+                <td>🙋🙋 bem</td>
             </tr>
             <tr class="person-second">
                 <th colspan="2">2<sup>nd</sup></th>
-                <td>bei</td>
-                <td>beți</td>
+                <td>👤 bei</td>
+                <td>👥 beți</td>
             </tr>
             <tr class="feminine">
                 <th rowspan="2">3<sup>rd</sup></th>
                 <th>♀️</th>
-                <td>bea</td>
-                <td>beau</td>
+                <td>👩‍🦰 bea</td>
+                <td>👩‍🦰👩‍🦰 beau</td>
             </tr>
             <tr class="masculine">
                 <th>♂️</th>
-                <td>bea</td>
-                <td>beau</td>
+                <td>👨‍🦰 bea</td>
+                <td>👨‍🦰👨‍🦰 beau</td>
             </tr>
         </tbody>
     </table>
