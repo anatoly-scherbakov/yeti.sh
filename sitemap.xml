@@ -2,92 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://yeti.sh/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/blog/annotated/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/blog/bash-basename/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/blog/terminal-recorder/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/blog/tmux/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/blog/walrus/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/blog/cs111/</loc>
-         <lastmod>2023-10-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yeti.sh/blog/gitmoji/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/blog/mkdocs-blog-plugins/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yeti.sh/blog/romanian/</loc>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/blog/task-relations/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/cv/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/interplanner/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/terry/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/terry/decisions/001-plugin-communication/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/terry/decisions/002-communication-format/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/ideas/terry/decisions/003-json-rpc-ld/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://yeti.sh/projects/</loc>
-         <lastmod>2023-10-09</lastmod>
+         <lastmod>2023-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
