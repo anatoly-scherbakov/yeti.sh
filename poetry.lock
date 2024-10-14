@@ -1151,13 +1151,13 @@ all = ["sh (>=2.0.4)"]
 
 [[package]]
 name = "jeeves-yeti-pyproject"
-version = "0.2.33"
+version = "0.2.36"
 description = "Opinionated Jeeves plugin for Python projects."
 optional = false
-python-versions = "<4.0,>=3.10"
+python-versions = "<3.12,>=3.10"
 files = [
-    {file = "jeeves_yeti_pyproject-0.2.33-py3-none-any.whl", hash = "sha256:1ad184d6f5d061a692779a31c3bb39f3bbefb291c9df5f2950cada6030bbae6d"},
-    {file = "jeeves_yeti_pyproject-0.2.33.tar.gz", hash = "sha256:6b580210ff24a64240d9c0b1d5fc16bfc9180655df0dd06a5fc8e49d497a7f72"},
+    {file = "jeeves_yeti_pyproject-0.2.36-py3-none-any.whl", hash = "sha256:43cae26b59d749d4c8ac57f39e60509da6c80cdd25e71b1eb5b8e0ab41e96e6a"},
+    {file = "jeeves_yeti_pyproject-0.2.36.tar.gz", hash = "sha256:d728033a1e9f271cabe1f988773d2229f27c2ca505e419968431dfddaeb4e6aa"},
 ]
 
 [package.dependencies]
@@ -2192,10 +2192,7 @@ files = [
 [package.dependencies]
 annotated-types = ">=0.6.0"
 pydantic-core = "2.23.4"
-typing-extensions = [
-    {version = ">=4.12.2", markers = "python_version >= \"3.13\""},
-    {version = ">=4.6.1", markers = "python_version < \"3.13\""},
-]
+typing-extensions = {version = ">=4.6.1", markers = "python_version < \"3.13\""}
 
 [package.extras]
 email = ["email-validator (>=2.0.0)"]
@@ -3309,5 +3306,5 @@ propcache = ">=0.2.0"
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">=3.10,<4.0"
-content-hash = "c4cc02f7586e514fbb48465746d60dd2c027cce7c2ec8a404e0fbd3749e1557d"
+python-versions = ">=3.10,<3.12"
+content-hash = "1c5f4d39d88416a3ffca63d0c901a00bc9bd77f819ee65d9631511f0ec53fef3"
