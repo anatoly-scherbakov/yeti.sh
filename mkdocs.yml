@@ -6,6 +6,8 @@ edit_uri: edit/master/docs/
 copyright: Copyright &copy; 2023 Anatoly Scherbakov
 
 markdown_extensions:
+  - abbr
+  - pymdownx.snippets
   - admonition
   - markdown_del_ins
   - md_in_html
@@ -14,9 +16,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+#  - pymdownx.emoji:
+#      emoji_index: !!python/name:materialx.emoji.twemoji
+#      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tabbed:
@@ -37,8 +39,8 @@ plugins:
         name: card
       time_format: "%d %B %Y"
       meta_time_format: '%Y-%m-%d'
-  - iolanta
   - awesome-pages
+  - iolanta
   - macros:
       on_error_fail: true
 
@@ -51,6 +53,7 @@ theme:
     - header.autohide
     - navigation.tabs
     - navigation.indexes
+    - content.tooltips
 
 extra_css:
   - assets/css/yeti-sh.css
