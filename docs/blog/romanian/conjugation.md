@@ -2,6 +2,16 @@
 exclude_from_blog: true
 ---
 
+<style>
+td[rowspan] {
+    vertical-align: middle !important;
+}
+
+td[colspan] {
+    text-align: center !important;
+}
+</style>
+
 # Conjugation
 
 === "🧑"
@@ -140,3 +150,66 @@ exclude_from_blog: true
         </tbody>
     </table>
 
+
+=== "🗣️ a vorbi"
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>Singular</th>
+                <th>Plural</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="person-first">
+                <th colspan="2">1<sup>st</sup></th>
+                <td>🙋 vorbesc</td>
+                <td>🙋🙋 vorbim</td>
+            </tr>
+            <tr class="person-second">
+                <th colspan="2">2<sup>nd</sup></th>
+                <td>👤 vorbești</td>
+                <td>👥 vorbiți</td>
+            </tr>
+            <tr class="feminine">
+                <th rowspan="2">3<sup>rd</sup></th>
+                <th>♀️</th>
+                <td rowspan="2">vorbește</td>
+                <td rowspan="2">vorbesc</td>
+            </tr>
+            <tr class="masculine">
+                <th>♂️</th>
+            </tr>
+        </tbody>
+    </table>
+
+=== "🍽️ a mânca"
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>Singular</th>
+                <th>Plural</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="person-first">
+                <th colspan="2">1<sup>st</sup></th>
+                <td>🙋 mănânc</td>
+                <td>🙋🙋 mâncăm</td>
+            </tr>
+            <tr class="person-second">
+                <th colspan="2">2<sup>nd</sup></th>
+                <td>👤 mănânci</td>
+                <td>👥 mâncați</td>
+            </tr>
+            <tr class="feminine">
+                <th rowspan="2">3<sup>rd</sup></th>
+                <th>♀️</th>
+                <td colspan="2" rowspan="2">mănâncă</td>
+            </tr>
+            <tr class="masculine">
+                <th>♂️</th>
+            </tr>
+        </tbody>
+    </table>
