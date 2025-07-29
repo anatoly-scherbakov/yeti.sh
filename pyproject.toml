@@ -12,7 +12,7 @@ iolanta-roadmap = "^0.1.0"
 iolanta-tables = "^0.1.7"
 markdown-del-ins = "^1.0.0"
 mkdocs-awesome-pages-plugin = "^2.9.2"
-iolanta = "^1.0.25"
+iolanta = "^1.2.11"
 mkdocs-iolanta = "^0.1.7"
 urlpath = "^1.2.0"
 
