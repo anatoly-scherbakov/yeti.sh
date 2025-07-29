@@ -12,6 +12,10 @@ hide: [navigation]
  .ipa {
      color: darkgray;
  }
+
+ .weekend {
+     color: red;
+ }
 </style>
 
 ## 🔤 Alphabet
@@ -37,7 +41,7 @@ hide: [navigation]
             <tr class="person-first">
                 <th>1<sup>st</sup></th>
                 <td>🙋 ես <span class="ipa">[jɛs]</span></td>
-                <td>🙋🙋 մենք <span class="ipa">[mɛnkʰ]</span></td>
+                <td>🙋🙋 ես <span class="ipa">[jɛs]</span></td>
             </tr>
             <tr class="person-second">
                 <th>2<sup>nd</sup></th>
@@ -64,7 +68,7 @@ hide: [navigation]
         <tbody>
             <tr class="person-first">
                 <th>1<sup>st</sup></th>
-                <td>🙋 իմ <span class="ipa">[im]</span></td>
+                <td>🙋 ինձ <span class="ipa">[im]</span></td>
                 <td>🙋🙋 մեր <span class="ipa">[mɛɾ]</span></td>
             </tr>
             <tr class="person-second">
@@ -79,3 +83,17 @@ hide: [navigation]
             </tr>
         </tbody>
     </table>
+
+## 📅 Days of the Week
+
+<table>
+  <tr>
+    <td>երկուշաբթի<br><span class="ipa">[jɛɾkuʃabˈti]</span></td>
+    <td>երեքշաբթի<br><span class="ipa">[jɛɾɛkʃabˈti]</span></td>
+    <td>չորեքշաբթի<br><span class="ipa">[tʃʰɔɾɛkʃabˈti]</span></td>
+    <td>հինգշաբթի<br><span class="ipa">[hiŋɡʃabˈti]</span></td>
+    <td>ուրբաթ<br><span class="ipa">[uɾˈbɑtʰ]</span></td>
+    <td class="weekend">շաբաթ<br><span class="ipa">[ʃɑˈpɑtʰ]</span></td>
+    <td class="weekend">կիրակի<br><span class="ipa">[kiˈɾɑki]</span></td>
+  </tr>
+</table>
