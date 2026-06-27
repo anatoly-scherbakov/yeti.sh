@@ -6,14 +6,11 @@ authors = ["Anatoly Scherbakov <altaisoft@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.15"
+python = ">=3.12,<3.15"
 mkdocs-blogging-plugin = "^1.4.0"
-iolanta-roadmap = "0.1.0"
-iolanta-tables = "0.1.7"
 markdown-del-ins = "^1.0.0"
 mkdocs-awesome-pages-plugin = "^2.9.2"
-iolanta = "1.0.25"
-mkdocs-iolanta = "0.1.7"
+iolanta = "^2.1.42"
 pyld = ">=2.0.4,<3.0.0"
 setuptools = "<81"
 urlpath = "^2.0.0"
