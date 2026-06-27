@@ -5,6 +5,6 @@ title: SPARQL
 exclude_from_blog: true
 ---
 
-SPARQL is a query language required for {{ render('supports-rdflib') }}, and is a component of canonical semantic technology stack.
+SPARQL is a query language required for {{ URIRef('supports-rdflib') | as('https://iolanta.tech/html') }}, and is a component of canonical semantic technology stack.
 
-{{ render('sparql-support') }}
+{{ URIRef('sparql-support') | as('https://iolanta.tech/html') }}
