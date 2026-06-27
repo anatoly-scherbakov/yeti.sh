@@ -40,7 +40,6 @@ plugins:
       time_format: "%d %B %Y"
       meta_time_format: '%Y-%m-%d'
   - awesome-pages
-  - iolanta
   - macros:
       on_error_fail: true
 
@@ -63,7 +62,6 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - javascripts/tablesort.js
   - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 #  - //code.jquery.com/jquery-3.6.0.min.js
 #  - //cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js
