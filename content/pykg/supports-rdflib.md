@@ -23,7 +23,7 @@ exclude_from_blog: true
 
 <img src="https://rdflib.dev/images/RDFlib-250.png" style="float: left" />
 
-{{ render('rdflib') }} <mark title="Opinion of the author">seems</mark> to be the de facto standard for knowledge graph management in Python. It is also easy to start with: in a few lines of code, one can create an in-memory graph, ingest data and query it.
+{{ URIRef('rdflib') | as('https://iolanta.tech/html') }} <mark title="Opinion of the author">seems</mark> to be the de facto standard for knowledge graph management in Python. It is also easy to start with: in a few lines of code, one can create an in-memory graph, ingest data and query it.
 
 This is how one may start building their KG oriented Python application, but applications require persistence and scalability - qualities found in mature knowledge graph database management systems.
 
