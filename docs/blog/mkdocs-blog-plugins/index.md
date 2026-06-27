@@ -82,4 +82,7 @@ description: "MkDocs was designed to manage software project documentation, but 
 
 {{ page.meta.description }}
 
-{{ render('mkdocs-blog-plugins') }}
+{# {{ URIRef('mkdocs-blog-plugins') | as('https://iolanta.tech/html') }} #}
+
+!!! warning "Iolanta table (temporarily unavailable)"
+    The MkDocs blogging plugins comparison table will be restored after migrating this page's YAML-LD to Iolanta 2.
