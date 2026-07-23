@@ -1,0 +1,1106 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Seven principles and ten evolutionary phenomena from Vanchurin, Wolf, Katsnelson & Koonin (PNAS 2022), formalized as linked data.">
+      
+      
+      
+        <link rel="canonical" href="https://yeti.sh/blog/evolution-as-multilevel-learning/">
+      
+      
+        <link rel="prev" href="../cs111/">
+      
+      
+        <link rel="next" href="../mkdocs-blog-plugins/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Evolution as multilevel learning (Vanchurin et al. 2022) - yeti.sh</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/yeti-sh.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#principles-p1p7" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="yeti.sh" class="md-header__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+      
+  <img src="../../images/yeti.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            yeti.sh
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Evolution as multilevel learning (Vanchurin et al. 2022)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/anatoly-scherbakov/yeti.sh" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeti.sh
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Anatoly Scherbakov
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projects/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cv/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  CV
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="yeti.sh" class="md-nav__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+      
+  <img src="../../images/yeti.png" alt="logo">
+
+    </a>
+    yeti.sh
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/anatoly-scherbakov/yeti.sh" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeti.sh
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anatoly Scherbakov
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../projects/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cv/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CV
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#principles-p1p7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principles (P1–P7)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evolutionary-phenomena-e1e10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evolutionary phenomena (E1–E10)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationship-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relationship diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principle-phenomenon-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principle → phenomenon links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phenomenon-phenomenon-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phenomenon → phenomenon links
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+  <h1>Evolution as multilevel learning (Vanchurin et al. 2022)</h1>
+
+<p>Vanchurin, Wolf, Katsnelson &amp; Koonin propose that biological evolution—including the origin of life—is multilevel learning: seven principles (P1–P7) that make a universe observable, and ten evolutionary phenomena (E1–E10) that follow from them. Primary source: <a href="https://doi.org/10.1073/pnas.2120037119">Toward a theory of evolution as multilevel learning</a> (PNAS 2022, DOI <a href="https://doi.org/10.1073/pnas.2120037119">10.1073/pnas.2120037119</a>). Local copy: <a href="vanchurin-et-al-2022-toward-a-theory-of-evolution-as-multilevel-learning.pdf">PDF</a>.</p>
+<h2 id="principles-p1p7">Principles (P1–P7)</h2>
+<p><strong>P1. Loss function.</strong> In any evolving system, there exists a loss function of time-dependent variables that is minimized during evolution.</p>
+<p><strong>P2. Hierarchy of scales.</strong> Evolving systems encompass multiple dynamical variables that change on different temporal scales (with different characteristic frequencies).</p>
+<p><strong>P3. Frequency gaps.</strong> Dynamical variables are split among distinct levels of organization separated by sufficiently wide frequency gaps.</p>
+<p><strong>P4. Renormalizability.</strong> Across the entire range of organization of evolving systems, a statistical description of faster-changing (higher-frequency) variables is feasible through the slower-changing (lower-frequency) variables.</p>
+<p><strong>P5. Extension.</strong> Evolving systems have the capacity to recruit additional variables that can be utilized to sustain the system and the ability to exclude variables that could destabilize the system.</p>
+<p><strong>P6. Replication.</strong> In evolving systems, replication and elimination of the corresponding information-processing units (IPUs) can take place on every level of organization.</p>
+<p><strong>P7. Information flow.</strong> In evolving systems, slower-changing levels absorb information from faster-changing levels during learning and pass information down to the faster levels for prediction of the state of the environment and the system itself.</p>
+<h2 id="evolutionary-phenomena-e1e10">Evolutionary phenomena (E1–E10)</h2>
+<p>Phenomena E1–E7 are generic (learning systems generally); E8–E10 are biological.[^generic]</p>
+<p><strong>E1. IPUs.</strong> Discrete information-processing units (self-vs. nonself-differentiation and discrimination) exist at all levels of organization.</p>
+<p><strong>E2. Frustration.</strong> Multidimensional and multiscale optimization problems generically lead to frustration from conflicting objectives at different scales.</p>
+<p><strong>E3. Multilevel hierarchy.</strong> The hierarchy of multiple levels of organization is an intrinsic feature of evolving biological systems in structure and in the substrate evolutionary forces act upon.</p>
+<p><strong>E4. Near optimality.</strong> Stochastic optimization tends to rapidly find local optima and keeps the system in their vicinity, sustaining the loss function at a near-optimal level.</p>
+<p><strong>E5. Diversity of near-optimal solutions.</strong> Solutions on loss-function landscapes span numerous local peaks of comparable heights.</p>
+<p><strong>E6. Separation of phenotype from genotype.</strong> Dedicated digital information storage media are separated from mostly analog processing devices, with asymmetric information flow from genotype to phenotype.</p>
+<p><strong>E7. Replication.</strong> Copying and sharing genomic information are essential for long-term persistence of IPUs beyond individual lifetimes.</p>
+<p><strong>E8. Natural selection.</strong> Darwinian evolution arises when distinct IPUs depend on stored information and can copy and share it, producing differential reproduction of genotypes.</p>
+<p><strong>E9. Parasitism.</strong> Parasites and host-parasite coevolution are ubiquitous across biological systems and indispensable for the evolution of life.</p>
+<p><strong>E10. Programmed death.</strong> Programmed (to various degrees) death is an intrinsic feature of life.</p>
+<h2 id="relationship-diagram">Relationship diagram</h2>
+<pre class="mermaid"><code>graph LR
+  Bcd0abbaeeead("⬜ E1. IPUs")
+  B9e65477db6b5("⬜ P2. Hierarchy of scales")
+  B2a42db9ffefe("⬜ E6. Separation of phenotype from genotype")
+  B2799440a060f("⬜ P5. Extension")
+  Bf5bb367d65b9("⬜ P6. Replication")
+  B8c4da29ae39f("⬜ E10. Programmed death")
+  Literal_bf1d305656ee[["Programmed (to various degrees) death is an intrinsic feature of life."]]
+  B14252a9be848("⬜ E1. IPUs")
+  https___doi_org_10_1073_pnas_2120037119("Toward a theory of evolution as multilevel learning")
+  click https___doi_org_10_1073_pnas_2120037119 "https://doi.org/10.1073/pnas.2120037119"
+  B30c1fde31ba7("⬜ E8. Natural selection")
+  Be312146506a1("⬜ P5. Extension")
+  Literal_f9da3439287e[["Discrete information-processing units (self-vs. nonself-differentiation and discrimination) exist at all levels of organization."]]
+  Bbaaf0e83ddbe("⬜ E2. Frustration")
+  Literal_9b5e5f873e6c[["Multidimensional and multiscale optimization problems generically lead to frustration from conflicting objectives at different scales."]]
+  Bd358df71da69("⬜ P1. Loss function")
+  B1c1f7cbfa71f("⬜ E9. Parasitism")
+  Bd28d411b9166("⬜ E5. Diversity of near-optimal solutions")
+  Literal_798406d2f2dd[["Solutions on loss-function landscapes span numerous local peaks of comparable heights."]]
+  B51759915214c("⬜ E10. Programmed death")
+  Bcafc7a3c034f("⬜ E7. Replication")
+  B43704ea1605c("⬜ P3. Frequency gaps")
+  Be92d5ba6162c("⬜ E6. Separation of phenotype from genotype")
+  Literal_f2aecfdf7c87[["Dedicated digital information storage media are separated from mostly analog processing devices, with asymmetric information flow from genotype to phenotype."]]
+  B8499dc145e94("⬜ E2. Frustration")
+  Bb9837f8755c4("⬜ P4. Renormalizability")
+  Bf544a116c0ea("⬜ E8. Natural selection")
+  B8abd996e57e0("⬜ P4. Renormalizability")
+  B83d98419adc9("⬜ E3. Multilevel hierarchy")
+  Literal_0927974f91ac[["The hierarchy of multiple levels of organization is an intrinsic feature of evolving biological systems in structure and in the substrate evolutionary forces act upon."]]
+  B4f54defb2388("⬜ E4. Near optimality")
+  Literal_17d8f7821f93[["Stochastic optimization tends to rapidly find local optima and keeps the system in their vicinity, sustaining the loss function at a near-optimal level."]]
+  Bd00f16bea640("⬜ E3. Multilevel hierarchy")
+  B0b6b0bd351bd("⬜ P7. Information flow")
+  Literal_ebbd6d9a9060[["Parasites and host-parasite coevolution are ubiquitous across biological systems and indispensable for the evolution of life."]]
+  B824a4566f636("⬜ P6. Replication")
+  Bda8b7c548599("⬜ E4. Near optimality")
+  B0637ac0cffe0("⬜ P1. Loss function")
+  B08e6c4273903("⬜ E7. Replication")
+  B6cec4f9d56da("⬜ P7. Information flow")
+  B4182a38f4e7c("⬜ P2. Hierarchy of scales")
+  Literal_56a21b745369[["Copying and sharing genomic information are essential for long-term persistence of IPUs beyond individual lifetimes."]]
+  B7776165f7846("⬜ P3. Frequency gaps")
+  Bf67658470c57("⬜ E5. Diversity of near-optimal solutions")
+  Literal_7c0d68ab02dc[["Evolving systems have the capacity to recruit additional variables that can be utilized to sustain the system and the ability to exclude variables that could destabilize the system."]]
+  Literal_19e68450f3c1[["In any evolving system, there exists a loss function of time-dependent variables that is minimized during evolution."]]
+  B4a97a52331eb("⬜ E9. Parasitism")
+  Literal_0d44733d1e56[["Evolving systems encompass multiple dynamical variables that change on different temporal scales (with different characteristic frequencies)."]]
+  Literal_47b134c1bb51[["Across the entire range of organization of evolving systems, a statistical description of faster-changing (higher-frequency) variables is feasible through the slower-changing (lower-frequency) variables."]]
+  Literal_092d269d36e1[["In evolving systems, replication and elimination of the corresponding information-processing units (IPUs) can take place on every level of organization."]]
+  Literal_45f71d7c5f2a[["Darwinian evolution arises when distinct IPUs depend on stored information and can copy and share it, producing differential reproduction of genotypes."]]
+  Literal_6e8e6757e92f[["Dynamical variables are split among distinct levels of organization separated by sufficiently wide frequency gaps."]]
+  Literal_5acc18c6d98b[["In evolving systems, slower-changing levels absorb information from faster-changing levels during learning and pass information down to the faster levels for prediction of the state of the environment and the system itself."]]
+  Bcd0abbaeeead --- Edge_2d5d36e0ac8c(["Requires"])--&gt; B9e65477db6b5
+  click Edge_2d5d36e0ac8c "http://purl.org/dc/terms/requires"
+  B2a42db9ffefe --- Edge_b1fc2a51110f(["Requires"])--&gt; B2799440a060f
+  click Edge_b1fc2a51110f "http://purl.org/dc/terms/requires"
+  Bcd0abbaeeead --- Edge_6e5c43c471ed(["Requires"])--&gt; Bf5bb367d65b9
+  click Edge_6e5c43c471ed "http://purl.org/dc/terms/requires"
+  B8c4da29ae39f --- Edge_203772b21e23(["comment"])--&gt; Literal_bf1d305656ee
+  click Edge_203772b21e23 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B14252a9be848 --- Edge_1f84a65cf537(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_1f84a65cf537 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B30c1fde31ba7 --- Edge_bf5ca896f495(["Requires"])--&gt; Be312146506a1
+  click Edge_bf5ca896f495 "http://purl.org/dc/terms/requires"
+  B14252a9be848 --- Edge_91a6c4f4c225(["comment"])--&gt; Literal_f9da3439287e
+  click Edge_91a6c4f4c225 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bbaaf0e83ddbe --- Edge_5c82fc49acdc(["comment"])--&gt; Literal_9b5e5f873e6c
+  click Edge_5c82fc49acdc "http://www.w3.org/2000/01/rdf-schema#comment"
+  B30c1fde31ba7 --- Edge_fc67d345ba46(["Requires"])--&gt; Bd358df71da69
+  click Edge_fc67d345ba46 "http://purl.org/dc/terms/requires"
+  B1c1f7cbfa71f --- Edge_b1f0cddd63eb(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_b1f0cddd63eb "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bd28d411b9166 --- Edge_9c13eebf576a(["comment"])--&gt; Literal_798406d2f2dd
+  click Edge_9c13eebf576a "http://www.w3.org/2000/01/rdf-schema#comment"
+  B51759915214c --- Edge_b4729b303016(["Requires"])--&gt; B2799440a060f
+  click Edge_b4729b303016 "http://purl.org/dc/terms/requires"
+  B8c4da29ae39f --- Edge_7bf0825c7152(["Requires"])--&gt; Be312146506a1
+  click Edge_7bf0825c7152 "http://purl.org/dc/terms/requires"
+  B30c1fde31ba7 --- Edge_621b5c5a317f(["Requires"])--&gt; Bcafc7a3c034f
+  click Edge_621b5c5a317f "http://purl.org/dc/terms/requires"
+  B51759915214c --- Edge_9417f38604a5(["comment"])--&gt; Literal_bf1d305656ee
+  click Edge_9417f38604a5 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B43704ea1605c --- Edge_7cd86af9b072(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_7cd86af9b072 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bcafc7a3c034f --- Edge_ff343f27e153(["w3.org/ns/prov#wasDerivedFrom"])--&gt; Be92d5ba6162c
+  click Edge_ff343f27e153 "http://www.w3.org/ns/prov#wasDerivedFrom"
+  Be312146506a1 --- Edge_9688d99114af(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_9688d99114af "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Be92d5ba6162c --- Edge_e5718d97e17e(["comment"])--&gt; Literal_f2aecfdf7c87
+  click Edge_e5718d97e17e "http://www.w3.org/2000/01/rdf-schema#comment"
+  B9e65477db6b5 --- Edge_4b6d69d8984d(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_4b6d69d8984d "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B8499dc145e94 --- Edge_20693ba8cbbf(["comment"])--&gt; Literal_9b5e5f873e6c
+  click Edge_20693ba8cbbf "http://www.w3.org/2000/01/rdf-schema#comment"
+  Be92d5ba6162c --- Edge_b2fde1a2e35a(["Requires"])--&gt; Bb9837f8755c4
+  click Edge_b2fde1a2e35a "http://purl.org/dc/terms/requires"
+  Bf544a116c0ea --- Edge_61b084a768cf(["Requires"])--&gt; B8abd996e57e0
+  click Edge_61b084a768cf "http://purl.org/dc/terms/requires"
+  B83d98419adc9 --- Edge_7ee147de089f(["comment"])--&gt; Literal_0927974f91ac
+  click Edge_7ee147de089f "http://www.w3.org/2000/01/rdf-schema#comment"
+  B4f54defb2388 --- Edge_5302da5e6e43(["comment"])--&gt; Literal_17d8f7821f93
+  click Edge_5302da5e6e43 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bcd0abbaeeead --- Edge_ee8e90059631(["Requires"])--&gt; B2799440a060f
+  click Edge_ee8e90059631 "http://purl.org/dc/terms/requires"
+  Bd00f16bea640 --- Edge_70355584b55f(["w3.org/ns/prov#wasDerivedFrom"])--&gt; B8499dc145e94
+  click Edge_70355584b55f "http://www.w3.org/ns/prov#wasDerivedFrom"
+  Be92d5ba6162c --- Edge_92b6106ba6b5(["Requires"])--&gt; B0b6b0bd351bd
+  click Edge_92b6106ba6b5 "http://purl.org/dc/terms/requires"
+  B8c4da29ae39f --- Edge_bf13bc82c738(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_bf13bc82c738 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B1c1f7cbfa71f --- Edge_94a34007b595(["comment"])--&gt; Literal_ebbd6d9a9060
+  click Edge_94a34007b595 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Be92d5ba6162c --- Edge_2df69ba73372(["Requires"])--&gt; B824a4566f636
+  click Edge_2df69ba73372 "http://purl.org/dc/terms/requires"
+  B51759915214c --- Edge_262c28fbc627(["Requires"])--&gt; Bf5bb367d65b9
+  click Edge_262c28fbc627 "http://purl.org/dc/terms/requires"
+  B2799440a060f --- Edge_e56464bc6124(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_e56464bc6124 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bda8b7c548599 --- Edge_75292ae1409a(["comment"])--&gt; Literal_17d8f7821f93
+  click Edge_75292ae1409a "http://www.w3.org/2000/01/rdf-schema#comment"
+  B83d98419adc9 --- Edge_3fcafe4dab28(["w3.org/ns/prov#wasDerivedFrom"])--&gt; Bbaaf0e83ddbe
+  click Edge_3fcafe4dab28 "http://www.w3.org/ns/prov#wasDerivedFrom"
+  Bf544a116c0ea --- Edge_febbd8dbd993(["Requires"])--&gt; Bf5bb367d65b9
+  click Edge_febbd8dbd993 "http://purl.org/dc/terms/requires"
+  B2a42db9ffefe --- Edge_9ff3287883fb(["Requires"])--&gt; B0637ac0cffe0
+  click Edge_9ff3287883fb "http://purl.org/dc/terms/requires"
+  B08e6c4273903 --- Edge_1c0e6b94fbde(["w3.org/ns/prov#wasDerivedFrom"])--&gt; B2a42db9ffefe
+  click Edge_1c0e6b94fbde "http://www.w3.org/ns/prov#wasDerivedFrom"
+  B8c4da29ae39f --- Edge_a37f7e2a5bb2(["Requires"])--&gt; B30c1fde31ba7
+  click Edge_a37f7e2a5bb2 "http://purl.org/dc/terms/requires"
+  B08e6c4273903 --- Edge_7c2dd25cd4b9(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_7c2dd25cd4b9 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bd00f16bea640 --- Edge_962f07abf28a(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_962f07abf28a "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B1c1f7cbfa71f --- Edge_7ed22053ea04(["Requires"])--&gt; B6cec4f9d56da
+  click Edge_7ed22053ea04 "http://purl.org/dc/terms/requires"
+  Bf544a116c0ea --- Edge_64a9ce82993a(["Requires"])--&gt; B08e6c4273903
+  click Edge_64a9ce82993a "http://purl.org/dc/terms/requires"
+  B30c1fde31ba7 --- Edge_f343085a0782(["Requires"])--&gt; B4182a38f4e7c
+  click Edge_f343085a0782 "http://purl.org/dc/terms/requires"
+  B0b6b0bd351bd --- Edge_80361dfd2315(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_80361dfd2315 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bd28d411b9166 --- Edge_b302db54873f(["Requires"])--&gt; B9e65477db6b5
+  click Edge_b302db54873f "http://purl.org/dc/terms/requires"
+  Bcafc7a3c034f --- Edge_9730da35f304(["comment"])--&gt; Literal_56a21b745369
+  click Edge_9730da35f304 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bd00f16bea640 --- Edge_d0e15523425f(["comment"])--&gt; Literal_0927974f91ac
+  click Edge_d0e15523425f "http://www.w3.org/2000/01/rdf-schema#comment"
+  B6cec4f9d56da --- Edge_dbc50dd60174(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_dbc50dd60174 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B2a42db9ffefe --- Edge_f52af0556506(["comment"])--&gt; Literal_f2aecfdf7c87
+  click Edge_f52af0556506 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B30c1fde31ba7 --- Edge_057393f47213(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_057393f47213 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B14252a9be848 --- Edge_71b94eb4449f(["Requires"])--&gt; B7776165f7846
+  click Edge_71b94eb4449f "http://purl.org/dc/terms/requires"
+  B8499dc145e94 --- Edge_0775a5e6291f(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_0775a5e6291f "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bf67658470c57 --- Edge_56b58913ace5(["comment"])--&gt; Literal_798406d2f2dd
+  click Edge_56b58913ace5 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B2a42db9ffefe --- Edge_0cc4eb43bf93(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_0cc4eb43bf93 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bf544a116c0ea --- Edge_4bfe089e45c8(["Requires"])--&gt; B2799440a060f
+  click Edge_4bfe089e45c8 "http://purl.org/dc/terms/requires"
+  Bd28d411b9166 --- Edge_0a09351d39aa(["Requires"])--&gt; B8499dc145e94
+  click Edge_0a09351d39aa "http://purl.org/dc/terms/requires"
+  Bd00f16bea640 --- Edge_3f22aacfb7e3(["Requires"])--&gt; B8abd996e57e0
+  click Edge_3f22aacfb7e3 "http://purl.org/dc/terms/requires"
+  B4f54defb2388 --- Edge_e5f73a5026f3(["Requires"])--&gt; Bd358df71da69
+  click Edge_e5f73a5026f3 "http://purl.org/dc/terms/requires"
+  B83d98419adc9 --- Edge_fa4253e3034c(["Requires"])--&gt; Bb9837f8755c4
+  click Edge_fa4253e3034c "http://purl.org/dc/terms/requires"
+  B7776165f7846 --- Edge_2e252409361d(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_2e252409361d "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bcd0abbaeeead --- Edge_a0591da94ff9(["Requires"])--&gt; B0637ac0cffe0
+  click Edge_a0591da94ff9 "http://purl.org/dc/terms/requires"
+  Be92d5ba6162c --- Edge_796ec5e4af27(["Requires"])--&gt; Be312146506a1
+  click Edge_796ec5e4af27 "http://purl.org/dc/terms/requires"
+  B30c1fde31ba7 --- Edge_a89b5c9d36eb(["Requires"])--&gt; B7776165f7846
+  click Edge_a89b5c9d36eb "http://purl.org/dc/terms/requires"
+  Be312146506a1 --- Edge_332fef949d6a(["comment"])--&gt; Literal_7c0d68ab02dc
+  click Edge_332fef949d6a "http://www.w3.org/2000/01/rdf-schema#comment"
+  Be92d5ba6162c --- Edge_2fe9db7a0b3c(["Requires"])--&gt; Bd358df71da69
+  click Edge_2fe9db7a0b3c "http://purl.org/dc/terms/requires"
+  B1c1f7cbfa71f --- Edge_f9a6e51a8a3a(["Requires"])--&gt; Bf5bb367d65b9
+  click Edge_f9a6e51a8a3a "http://purl.org/dc/terms/requires"
+  Bcafc7a3c034f --- Edge_9f93681050d2(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_9f93681050d2 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bf67658470c57 --- Edge_e78d02f756f2(["Requires"])--&gt; B4182a38f4e7c
+  click Edge_e78d02f756f2 "http://purl.org/dc/terms/requires"
+  B0637ac0cffe0 --- Edge_7aa67ce7b0b8(["comment"])--&gt; Literal_19e68450f3c1
+  click Edge_7aa67ce7b0b8 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B4a97a52331eb --- Edge_0698964a5f85(["Requires"])--&gt; Bf67658470c57
+  click Edge_0698964a5f85 "http://purl.org/dc/terms/requires"
+  B4182a38f4e7c --- Edge_13ed282a2a80(["comment"])--&gt; Literal_0d44733d1e56
+  click Edge_13ed282a2a80 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B8abd996e57e0 --- Edge_73070ee9068e(["comment"])--&gt; Literal_47b134c1bb51
+  click Edge_73070ee9068e "http://www.w3.org/2000/01/rdf-schema#comment"
+  B51759915214c --- Edge_91703aa00298(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_91703aa00298 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B4a97a52331eb --- Edge_99b73a015e6b(["Requires"])--&gt; B0b6b0bd351bd
+  click Edge_99b73a015e6b "http://purl.org/dc/terms/requires"
+  B8abd996e57e0 --- Edge_152fa8481287(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_152fa8481287 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B4a97a52331eb --- Edge_747f7b4f1562(["Requires"])--&gt; B824a4566f636
+  click Edge_747f7b4f1562 "http://purl.org/dc/terms/requires"
+  B2a42db9ffefe --- Edge_74e30e746890(["Requires"])--&gt; B8abd996e57e0
+  click Edge_74e30e746890 "http://purl.org/dc/terms/requires"
+  B2799440a060f --- Edge_feef168c0cc8(["comment"])--&gt; Literal_7c0d68ab02dc
+  click Edge_feef168c0cc8 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bf544a116c0ea --- Edge_c08417ec6a47(["Requires"])--&gt; Bcd0abbaeeead
+  click Edge_c08417ec6a47 "http://purl.org/dc/terms/requires"
+  Bcd0abbaeeead --- Edge_5874bae05a62(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_5874bae05a62 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B08e6c4273903 --- Edge_55995978a24b(["comment"])--&gt; Literal_56a21b745369
+  click Edge_55995978a24b "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bb9837f8755c4 --- Edge_64027463d5c2(["comment"])--&gt; Literal_47b134c1bb51
+  click Edge_64027463d5c2 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B824a4566f636 --- Edge_b7dd7ba8d5fa(["comment"])--&gt; Literal_092d269d36e1
+  click Edge_b7dd7ba8d5fa "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bb9837f8755c4 --- Edge_a4348938b319(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_a4348938b319 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B4182a38f4e7c --- Edge_0b6d1b97cbeb(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_0b6d1b97cbeb "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B824a4566f636 --- Edge_809ce79bc60e(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_809ce79bc60e "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B30c1fde31ba7 --- Edge_84699a956291(["comment"])--&gt; Literal_45f71d7c5f2a
+  click Edge_84699a956291 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B1c1f7cbfa71f --- Edge_cf3859306f52(["Requires"])--&gt; B2799440a060f
+  click Edge_cf3859306f52 "http://purl.org/dc/terms/requires"
+  B2a42db9ffefe --- Edge_38246e6ef734(["Requires"])--&gt; B6cec4f9d56da
+  click Edge_38246e6ef734 "http://purl.org/dc/terms/requires"
+  B14252a9be848 --- Edge_0a10a6d46fdd(["Requires"])--&gt; Bb9837f8755c4
+  click Edge_0a10a6d46fdd "http://purl.org/dc/terms/requires"
+  B51759915214c --- Edge_7e30c28e19cd(["Requires"])--&gt; B8abd996e57e0
+  click Edge_7e30c28e19cd "http://purl.org/dc/terms/requires"
+  B43704ea1605c --- Edge_d08c98f69fb4(["comment"])--&gt; Literal_6e8e6757e92f
+  click Edge_d08c98f69fb4 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bd358df71da69 --- Edge_d9375a4d1260(["comment"])--&gt; Literal_19e68450f3c1
+  click Edge_d9375a4d1260 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bcd0abbaeeead --- Edge_41479a94c99d(["comment"])--&gt; Literal_f9da3439287e
+  click Edge_41479a94c99d "http://www.w3.org/2000/01/rdf-schema#comment"
+  B14252a9be848 --- Edge_9c044baac578(["Requires"])--&gt; B0b6b0bd351bd
+  click Edge_9c044baac578 "http://purl.org/dc/terms/requires"
+  Bda8b7c548599 --- Edge_ce7b5e935d7a(["Requires"])--&gt; B0637ac0cffe0
+  click Edge_ce7b5e935d7a "http://purl.org/dc/terms/requires"
+  Bd358df71da69 --- Edge_cd3b2da27a0b(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_cd3b2da27a0b "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B0b6b0bd351bd --- Edge_36ae14a91e0e(["comment"])--&gt; Literal_5acc18c6d98b
+  click Edge_36ae14a91e0e "http://www.w3.org/2000/01/rdf-schema#comment"
+  B14252a9be848 --- Edge_2ee5eef6f746(["Requires"])--&gt; B824a4566f636
+  click Edge_2ee5eef6f746 "http://purl.org/dc/terms/requires"
+  Bf544a116c0ea --- Edge_9ed686d1b9e1(["Requires"])--&gt; B0637ac0cffe0
+  click Edge_9ed686d1b9e1 "http://purl.org/dc/terms/requires"
+  B08e6c4273903 --- Edge_46c057de0fa0(["Requires"])--&gt; Bf5bb367d65b9
+  click Edge_46c057de0fa0 "http://purl.org/dc/terms/requires"
+  Bf544a116c0ea --- Edge_9716740d3ec6(["Requires"])--&gt; B2a42db9ffefe
+  click Edge_9716740d3ec6 "http://purl.org/dc/terms/requires"
+  Bf5bb367d65b9 --- Edge_168a199f246e(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_168a199f246e "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Be92d5ba6162c --- Edge_14b9b81d6e0e(["Requires"])--&gt; B4182a38f4e7c
+  click Edge_14b9b81d6e0e "http://purl.org/dc/terms/requires"
+  Bcd0abbaeeead --- Edge_5331505a6c65(["Requires"])--&gt; B8abd996e57e0
+  click Edge_5331505a6c65 "http://purl.org/dc/terms/requires"
+  B30c1fde31ba7 --- Edge_94a66b868083(["Requires"])--&gt; Bb9837f8755c4
+  click Edge_94a66b868083 "http://purl.org/dc/terms/requires"
+  B9e65477db6b5 --- Edge_64c1c2347f20(["comment"])--&gt; Literal_0d44733d1e56
+  click Edge_64c1c2347f20 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B4f54defb2388 --- Edge_d03cc149e28b(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_d03cc149e28b "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B30c1fde31ba7 --- Edge_fec591d7b90a(["Requires"])--&gt; B0b6b0bd351bd
+  click Edge_fec591d7b90a "http://purl.org/dc/terms/requires"
+  B1c1f7cbfa71f --- Edge_9e7e785e450c(["Requires"])--&gt; Bd28d411b9166
+  click Edge_9e7e785e450c "http://purl.org/dc/terms/requires"
+  B30c1fde31ba7 --- Edge_428f9aa8234d(["Requires"])--&gt; B824a4566f636
+  click Edge_428f9aa8234d "http://purl.org/dc/terms/requires"
+  B7776165f7846 --- Edge_2f951e3bee28(["comment"])--&gt; Literal_6e8e6757e92f
+  click Edge_2f951e3bee28 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B2a42db9ffefe --- Edge_3f6eec114740(["Requires"])--&gt; B43704ea1605c
+  click Edge_3f6eec114740 "http://purl.org/dc/terms/requires"
+  B6cec4f9d56da --- Edge_48eaf226cc9b(["comment"])--&gt; Literal_5acc18c6d98b
+  click Edge_48eaf226cc9b "http://www.w3.org/2000/01/rdf-schema#comment"
+  Be92d5ba6162c --- Edge_d6413c8099e7(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_d6413c8099e7 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B8499dc145e94 --- Edge_24b1dcf39100(["Requires"])--&gt; B9e65477db6b5
+  click Edge_24b1dcf39100 "http://purl.org/dc/terms/requires"
+  Bbaaf0e83ddbe --- Edge_266620c86ad2(["Requires"])--&gt; B4182a38f4e7c
+  click Edge_266620c86ad2 "http://purl.org/dc/terms/requires"
+  Bf67658470c57 --- Edge_5c201fe6bfa4(["Requires"])--&gt; Bbaaf0e83ddbe
+  click Edge_5c201fe6bfa4 "http://purl.org/dc/terms/requires"
+  B8c4da29ae39f --- Edge_84cfe3746830(["Requires"])--&gt; Bb9837f8755c4
+  click Edge_84cfe3746830 "http://purl.org/dc/terms/requires"
+  Bf67658470c57 --- Edge_da093d057ce9(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_da093d057ce9 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bf544a116c0ea --- Edge_57d8f79ea7c6(["Requires"])--&gt; B6cec4f9d56da
+  click Edge_57d8f79ea7c6 "http://purl.org/dc/terms/requires"
+  B4a97a52331eb --- Edge_2d3a35472be5(["Requires"])--&gt; Be312146506a1
+  click Edge_2d3a35472be5 "http://purl.org/dc/terms/requires"
+  B83d98419adc9 --- Edge_b3b3a082c18d(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_b3b3a082c18d "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B2a42db9ffefe --- Edge_94b1042b6a0f(["Requires"])--&gt; B9e65477db6b5
+  click Edge_94b1042b6a0f "http://purl.org/dc/terms/requires"
+  B30c1fde31ba7 --- Edge_12aa8f25236c(["Requires"])--&gt; Be92d5ba6162c
+  click Edge_12aa8f25236c "http://purl.org/dc/terms/requires"
+  Bcd0abbaeeead --- Edge_d153b1013ac6(["Requires"])--&gt; B6cec4f9d56da
+  click Edge_d153b1013ac6 "http://purl.org/dc/terms/requires"
+  Bda8b7c548599 --- Edge_613b1788a082(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_613b1788a082 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B2a42db9ffefe --- Edge_0a2c52cf0db3(["Requires"])--&gt; Bf5bb367d65b9
+  click Edge_0a2c52cf0db3 "http://purl.org/dc/terms/requires"
+  B8c4da29ae39f --- Edge_b678ec2caa5a(["Requires"])--&gt; B824a4566f636
+  click Edge_b678ec2caa5a "http://purl.org/dc/terms/requires"
+  Bf544a116c0ea --- Edge_df60d6049282(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_df60d6049282 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B51759915214c --- Edge_6a749c2c2a05(["Requires"])--&gt; Bf544a116c0ea
+  click Edge_6a749c2c2a05 "http://purl.org/dc/terms/requires"
+  Bbaaf0e83ddbe --- Edge_846e1629cfeb(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_846e1629cfeb "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  B0637ac0cffe0 --- Edge_f892ea5cc278(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_f892ea5cc278 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Be92d5ba6162c --- Edge_313a94217438(["Requires"])--&gt; B7776165f7846
+  click Edge_313a94217438 "http://purl.org/dc/terms/requires"
+  Bcafc7a3c034f --- Edge_7b7026deec59(["Requires"])--&gt; B824a4566f636
+  click Edge_7b7026deec59 "http://purl.org/dc/terms/requires"
+  B4a97a52331eb --- Edge_f75350cd7ab8(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_f75350cd7ab8 "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bf544a116c0ea --- Edge_a8d2ef442294(["comment"])--&gt; Literal_45f71d7c5f2a
+  click Edge_a8d2ef442294 "http://www.w3.org/2000/01/rdf-schema#comment"
+  B30c1fde31ba7 --- Edge_6e73a0bee6a2(["Requires"])--&gt; B14252a9be848
+  click Edge_6e73a0bee6a2 "http://purl.org/dc/terms/requires"
+  B4a97a52331eb --- Edge_f3a1a4725b39(["comment"])--&gt; Literal_ebbd6d9a9060
+  click Edge_f3a1a4725b39 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bd28d411b9166 --- Edge_8bbabc9ed9bd(["isDefinedBy"])--&gt; https___doi_org_10_1073_pnas_2120037119
+  click Edge_8bbabc9ed9bd "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+  Bf544a116c0ea --- Edge_f906a8567625(["Requires"])--&gt; B43704ea1605c
+  click Edge_f906a8567625 "http://purl.org/dc/terms/requires"
+  Bcd0abbaeeead --- Edge_50b65fe82ea8(["Requires"])--&gt; B43704ea1605c
+  click Edge_50b65fe82ea8 "http://purl.org/dc/terms/requires"
+  B14252a9be848 --- Edge_b91e664fa1de(["Requires"])--&gt; Be312146506a1
+  click Edge_b91e664fa1de "http://purl.org/dc/terms/requires"
+  B14252a9be848 --- Edge_535eb5ea30b1(["Requires"])--&gt; B4182a38f4e7c
+  click Edge_535eb5ea30b1 "http://purl.org/dc/terms/requires"
+  Bf5bb367d65b9 --- Edge_515d922b5ab9(["comment"])--&gt; Literal_092d269d36e1
+  click Edge_515d922b5ab9 "http://www.w3.org/2000/01/rdf-schema#comment"
+  Bf544a116c0ea --- Edge_8e9e4ca3fe78(["Requires"])--&gt; B9e65477db6b5
+  click Edge_8e9e4ca3fe78 "http://purl.org/dc/terms/requires"
+  B14252a9be848 --- Edge_4db51e4bedc8(["Requires"])--&gt; Bd358df71da69
+  click Edge_4db51e4bedc8 "http://purl.org/dc/terms/requires"
+  classDef predicate fill:#1f2233,stroke:transparent,color:#f8fafc,stroke-width:0px;
+  classDef hidden fill:transparent,stroke:transparent,color:transparent,stroke-width:0px;
+  classDef nanopubdot fill:#0f172a,stroke:#0f172a,color:transparent,stroke-width:2px;
+  classDef transparent fill:transparent,stroke:transparent,color:transparent,stroke-width:0px;
+  class Edge_2d5d36e0ac8c,Edge_b1fc2a51110f,Edge_6e5c43c471ed,Edge_203772b21e23,Edge_1f84a65cf537,Edge_bf5ca896f495,Edge_91a6c4f4c225,Edge_5c82fc49acdc,Edge_fc67d345ba46,Edge_b1f0cddd63eb,Edge_9c13eebf576a,Edge_b4729b303016,Edge_7bf0825c7152,Edge_621b5c5a317f,Edge_9417f38604a5,Edge_7cd86af9b072,Edge_ff343f27e153,Edge_9688d99114af,Edge_e5718d97e17e,Edge_4b6d69d8984d,Edge_20693ba8cbbf,Edge_b2fde1a2e35a,Edge_61b084a768cf,Edge_7ee147de089f,Edge_5302da5e6e43,Edge_ee8e90059631,Edge_70355584b55f,Edge_92b6106ba6b5,Edge_bf13bc82c738,Edge_94a34007b595,Edge_2df69ba73372,Edge_262c28fbc627,Edge_e56464bc6124,Edge_75292ae1409a,Edge_3fcafe4dab28,Edge_febbd8dbd993,Edge_9ff3287883fb,Edge_1c0e6b94fbde,Edge_a37f7e2a5bb2,Edge_7c2dd25cd4b9,Edge_962f07abf28a,Edge_7ed22053ea04,Edge_64a9ce82993a,Edge_f343085a0782,Edge_80361dfd2315,Edge_b302db54873f,Edge_9730da35f304,Edge_d0e15523425f,Edge_dbc50dd60174,Edge_f52af0556506,Edge_057393f47213,Edge_71b94eb4449f,Edge_0775a5e6291f,Edge_56b58913ace5,Edge_0cc4eb43bf93,Edge_4bfe089e45c8,Edge_0a09351d39aa,Edge_3f22aacfb7e3,Edge_e5f73a5026f3,Edge_fa4253e3034c,Edge_2e252409361d,Edge_a0591da94ff9,Edge_796ec5e4af27,Edge_a89b5c9d36eb,Edge_332fef949d6a,Edge_2fe9db7a0b3c,Edge_f9a6e51a8a3a,Edge_9f93681050d2,Edge_e78d02f756f2,Edge_7aa67ce7b0b8,Edge_0698964a5f85,Edge_13ed282a2a80,Edge_73070ee9068e,Edge_91703aa00298,Edge_99b73a015e6b,Edge_152fa8481287,Edge_747f7b4f1562,Edge_74e30e746890,Edge_feef168c0cc8,Edge_c08417ec6a47,Edge_5874bae05a62,Edge_55995978a24b,Edge_64027463d5c2,Edge_b7dd7ba8d5fa,Edge_a4348938b319,Edge_0b6d1b97cbeb,Edge_809ce79bc60e,Edge_84699a956291,Edge_cf3859306f52,Edge_38246e6ef734,Edge_0a10a6d46fdd,Edge_7e30c28e19cd,Edge_d08c98f69fb4,Edge_d9375a4d1260,Edge_41479a94c99d,Edge_9c044baac578,Edge_ce7b5e935d7a,Edge_cd3b2da27a0b,Edge_36ae14a91e0e,Edge_2ee5eef6f746,Edge_9ed686d1b9e1,Edge_46c057de0fa0,Edge_9716740d3ec6,Edge_168a199f246e,Edge_14b9b81d6e0e,Edge_5331505a6c65,Edge_94a66b868083,Edge_64c1c2347f20,Edge_d03cc149e28b,Edge_fec591d7b90a,Edge_9e7e785e450c,Edge_428f9aa8234d,Edge_2f951e3bee28,Edge_3f6eec114740,Edge_48eaf226cc9b,Edge_d6413c8099e7,Edge_24b1dcf39100,Edge_266620c86ad2,Edge_5c201fe6bfa4,Edge_84cfe3746830,Edge_da093d057ce9,Edge_57d8f79ea7c6,Edge_2d3a35472be5,Edge_b3b3a082c18d,Edge_94b1042b6a0f,Edge_12aa8f25236c,Edge_d153b1013ac6,Edge_613b1788a082,Edge_0a2c52cf0db3,Edge_b678ec2caa5a,Edge_df60d6049282,Edge_6a749c2c2a05,Edge_846e1629cfeb,Edge_f892ea5cc278,Edge_313a94217438,Edge_7b7026deec59,Edge_f75350cd7ab8,Edge_a8d2ef442294,Edge_6e73a0bee6a2,Edge_f3a1a4725b39,Edge_8bbabc9ed9bd,Edge_f906a8567625,Edge_50b65fe82ea8,Edge_b91e664fa1de,Edge_535eb5ea30b1,Edge_515d922b5ab9,Edge_8e9e4ca3fe78,Edge_4db51e4bedc8 predicate
+</code></pre>
+<h2 id="principle-phenomenon-links">Principle → phenomenon links</h2>
+<table>
+<thead>
+<tr>
+<th>Phenomenon</th>
+<th>Predicated on principles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>P1, P2, P3, P4, P5, P6, P7</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>P4</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>P2</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>P1, P2, P3, P4, P5, P6, P7</td>
+</tr>
+<tr>
+<td>E7</td>
+<td>P6</td>
+</tr>
+<tr>
+<td>E8</td>
+<td>P1, P2, P3, P4, P5, P6, P7</td>
+</tr>
+<tr>
+<td>E9</td>
+<td>P5, P6, P7</td>
+</tr>
+<tr>
+<td>E10</td>
+<td>P4, P5, P6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="phenomenon-phenomenon-links">Phenomenon → phenomenon links</h2>
+<table>
+<thead>
+<tr>
+<th>Phenomenon</th>
+<th>Relationship</th>
+<th>Related phenomenon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E3</td>
+<td>consequence of</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>predicated on</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>E7</td>
+<td>consequence of</td>
+<td>E6</td>
+</tr>
+<tr>
+<td>E8</td>
+<td>predicated on</td>
+<td>E1, E6, E7</td>
+</tr>
+<tr>
+<td>E9</td>
+<td>predicated on</td>
+<td>E5</td>
+</tr>
+<tr>
+<td>E10</td>
+<td>predicated on</td>
+<td>E8</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>[^generic]: Phenomena E1–E7 are generic—they apply to all learning systems, including purely physical and prebiotic ones. Phenomena E8–E10 belong in the realm of biology; the onset of natural selection (E8) marks the origin of life.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Anatoly Scherbakov
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "navigation.tabs", "navigation.indexes", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tablesort.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

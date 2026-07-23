@@ -1,0 +1,887 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Design an Ortholinear, one-handed agentic keypad using only G20 Semiotic Standard legends — Linux action inventory for Cursor, Claude Code, and Codex over KVM.">
+      
+      
+      
+        <link rel="canonical" href="https://yeti.sh/blog/agentic-macro-pad/">
+      
+      
+        <link rel="prev" href="../walrus/">
+      
+      
+        <link rel="next" href="../cs111/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Agentic keypad with Semiotic Standard keycaps - yeti.sh</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/yeti-sh.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#why-a-pad" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="yeti.sh" class="md-header__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+      
+  <img src="../../images/yeti.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            yeti.sh
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Agentic keypad with Semiotic Standard keycaps
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/anatoly-scherbakov/yeti.sh" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeti.sh
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Anatoly Scherbakov
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projects/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cv/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  CV
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="yeti.sh" class="md-nav__button md-logo" aria-label="yeti.sh" data-md-component="logo">
+      
+  <img src="../../images/yeti.png" alt="logo">
+
+    </a>
+    yeti.sh
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/anatoly-scherbakov/yeti.sh" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yeti.sh
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anatoly Scherbakov
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../projects/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cv/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CV
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-a-pad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why a pad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semiotic-standard-keycaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semiotic Standard keycaps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conventions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+  <h1>Agentic keypad with Semiotic Standard keycaps</h1>
+
+<p>Design an Ortholinear, one-handed agentic keypad using only G20 Semiotic Standard legends — Linux action inventory for Cursor, Claude Code, and Codex over KVM.</p>
+<h2 id="why-a-pad">Why a pad</h2>
+<p>One machine does the typing; another runs an agent you can see on a shared monitor.
+A KVM lets you glance at that second screen, but you often do not want a full keyboard plugged into it.
+A small programmable macro pad is enough if it can send the few chords and sequences you actually use to steer, approve, stop, and exit.</p>
+<p>This post is that <strong>agentic keypad</strong>: personal high-frequency controls across Cursor, Claude Code, and Codex on <strong>Linux</strong>, mapped onto an <strong>Ortholinear</strong> pad with <strong>uni-profile <a href="https://spkeyboards.com/products/g20-semiotic-keycaps">Semiotic Standard</a></strong> legends.
+The pad is one-handed and never asks you to hold a modifier chord — macros may <em>emit</em> chords, but every physical key is a single press.</p>
+<h2 id="decisions">Decisions</h2>
+<ul>
+<li><strong>Ortholinear (all 1u).</strong> No pad-side key combinations means no need for 1.25u / 1.5u Shift or Ctrl blanks; stock pads with odd key widths make legend matching painful.</li>
+<li><strong>Uni-profile keycaps.</strong> Row-sculpted profiles (e.g. Cherry) lock which legend can sit in which row. Uni-profile sets — <a href="https://spkeyboards.com/products/g20-semiotic-keycaps">G20</a>, <a href="https://keebdepot.com/guides/keycap-profiles-compared">XDA</a>, <a href="https://keebdepot.com/guides/keycap-profiles-compared">DSA</a> — keep every key the same shape so layout stays free.</li>
+<li><strong>Semiotic Standard only.</strong> One legend vocabulary (<a href="https://spkeyboards.com/products/g20-semiotic-keycaps">G20 Semiotic</a>); every other keycap set is out of scope.</li>
+<li><strong>Mode cycle = one key.</strong> Using an encoder to spam <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-tab">Tab</kbd></span> both ways wastes an axis and misreads as continuous control. A dedicated pad key emits <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-tab">Tab</kbd></span> instead; the encoder is free for zoom.</li>
+</ul>
+<h2 id="semiotic-standard-keycaps">Semiotic Standard keycaps</h2>
+<p>1u symbol sheet from <a href="https://spkeyboards.com/products/g20-semiotic-keycaps">G20 Semiotic</a> (kits with wider caps omitted — Ortholinear pad uses 1u only). Click for the product page.</p>
+<p><a href="https://spkeyboards.com/products/g20-semiotic-keycaps"><img alt="G20 Semiotic symbol sheet" src="semiotic-set/semiotic-symbols.jpg" /></a></p>
+<h2 id="conventions">Conventions</h2>
+<ul>
+<li>Bindings are Linux defaults from current product docs (Cursor <span class="keys"><kbd class="key-command">Cmd</kbd></span> → <span class="keys"><kbd class="key-control">Ctrl</kbd></span>).</li>
+<li>Chords use <code>+</code> inside one key span: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-l">L</kbd></span>.</li>
+<li>Sequences of separate presses use <code>→</code>: <span class="keys"><kbd class="key-slash">/</kbd></span> → <code>plan</code> → <span class="keys"><kbd class="key-enter">Enter</kbd></span>.</li>
+<li>Alternates in the Tools columns are separated by <code>;</code>.</li>
+<li>An empty cell means the action is not applicable or has no documented binding / keycap fit.</li>
+<li>Several rows are <strong>cycles</strong> (mode, approval), not single toggles — a pad key may need to send the chord more than once.</li>
+<li><strong>Knob/Wheel</strong> marks analog pad controls: rotary encoder / scroll wheel (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m1 8h-2V4.1c.3-.1.7-.1 1-.1s.7 0 1 .1z"/></svg></span>) for scroll and zoom, or joystick (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m16.5 9-3 3 3 3H22V9M9 16.5V22h6v-5.5l-3-3M7.5 9H2v6h5.5l3-3M15 7.5V2H9v5.5l3 3z"/></svg></span>) for selection.</li>
+<li><strong>Semiotic</strong> is the only keycap legend set: <a href="https://spkeyboards.com/products/g20-semiotic-keycaps">G20 Semiotic</a> (Zslane / Signature Plastics). Icons are Cobb Semiotic Standard vectors (<a href="https://github.com/louh/semiotic-standard">louh/semiotic-standard</a>, CC BY 4.0), linked to that product page.</li>
+<li>A green row with <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> means that binding choice is <strong>decided</strong> (ADR-style).</li>
+</ul>
+<h2 id="actions">Actions</h2>
+<p>Tool columns link to each product’s shortcut docs. Identical bindings across tools share a cell.</p>
+<!-- md_in_html: every block tag needs markdown=; do not indent these tags -->
+<table>
+<thead>
+<tr>
+<th rowspan="2">Action</th>
+<th colspan="3">Tools</th>
+<th colspan="2">Controls</th>
+<th rowspan="2">Notes</th>
+</tr>
+<tr>
+<th><a href="https://cursor.com/docs/reference/keyboard-shortcuts">Cursor</a></th>
+<th><a href="https://code.claude.com/docs/en/interactive-mode">Claude Code</a></th>
+<th><a href="https://developers.openai.com/codex/cli/slash-commands">Codex</a></th>
+<th>Knob/Wheel</th>
+<th><a href="https://spkeyboards.com/products/g20-semiotic-keycaps">Semiotic</a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Scroll Content</td>
+<td colspan="3"></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m1 8h-2V4.1c.3-.1.7-.1 1-.1s.7 0 1 .1z"/></svg></span></td>
+<td></td>
+<td>Mouse-wheel scrolling works in each agent. Map to a rotary encoder — too sensitive for a discrete keycap, so no Semiotic legend.</td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Zoom in</td>
+<td colspan="3"><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd></kbd><span>+</span><kbd></kbd></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m1 8h-2V4.1c.3-.1.7-.1 1-.1s.7 0 1 .1z"/></svg></span></td>
+<td></td>
+<td rowspan="2">Terminal / agent-host zoom on one rotary: one direction emits <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd></kbd><span>+</span><kbd></kbd></span>, the other <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd>-</kbd></span>. Hosts may also honor plain <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd></kbd><span>+</span><kbd></kbd></span> / <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>-</kbd></span>; the pad sends the Shift variants. No Semiotic — knob only.</td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Zoom out</td>
+<td colspan="3"><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd>-</kbd></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m1 8h-2V4.1c.3-.1.7-.1 1-.1s.7 0 1 .1z"/></svg></span></td>
+<td></td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Plan Mode</td>
+<td colspan="3"><span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-tab">Tab</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Bulkhead Door"><img src="semiotic/006.BULKHEAD.DOOR.svg" alt="Bulkhead Door" width="28" height="28"></a></td>
+<td rowspan="2">One dedicated pad key for both rows: each press emits <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-tab">Tab</kbd></span>, which cycles modes in every tool. Keep two action rows for clarity (Plan vs Agent; on Claude Code the agent-side stop is <strong>Auto</strong>). Encoder left for zoom — not mode cycling.</td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Agent Mode</td>
+<td colspan="3"><span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-tab">Tab</kbd></span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Selection up</td>
+<td><span class="keys"><kbd class="key-arrow-up">Up</kbd></span></td>
+<td><span class="keys"><kbd class="key-arrow-up">Up</kbd></span>; <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-p">P</kbd></span></td>
+<td><span class="keys"><kbd class="key-arrow-up">Up</kbd></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m16.5 9-3 3 3 3H22V9M9 16.5V22h6v-5.5l-3-3M7.5 9H2v6h5.5l3-3M15 7.5V2H9v5.5l3 3z"/></svg></span></td>
+<td></td>
+<td rowspan="2">Joystick on the pad: up/down emit <span class="keys"><kbd class="key-arrow-up">Up</kbd></span> / <span class="keys"><kbd class="key-arrow-down">Down</kbd></span> (lists, pickers, plan choices, draft history). No Semiotic — stick only.</td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Selection down</td>
+<td><span class="keys"><kbd class="key-arrow-down">Down</kbd></span></td>
+<td><span class="keys"><kbd class="key-arrow-down">Down</kbd></span>; <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-n">N</kbd></span></td>
+<td><span class="keys"><kbd class="key-arrow-down">Down</kbd></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m16.5 9-3 3 3 3H22V9M9 16.5V22h6v-5.5l-3-3M7.5 9H2v6h5.5l3-3M15 7.5V2H9v5.5l3 3z"/></svg></span></td>
+<td></td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Choose option 1</td>
+<td colspan="3"><span class="keys"><kbd class="key-1">1</kbd></span></td>
+<td></td>
+<td></td>
+<td rowspan="3">Numbered alternatives map 1:1 to pad keys <span class="keys"><kbd class="key-1">1</kbd></span> / <span class="keys"><kbd class="key-2">2</kbd></span> / <span class="keys"><kbd class="key-3">3</kbd></span>. Prefer joystick <span class="keys"><kbd class="key-arrow-up">Up</kbd></span> / <span class="keys"><kbd class="key-arrow-down">Down</kbd></span> + Confirm when the menu is not numbered.</td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Choose option 2</td>
+<td colspan="3"><span class="keys"><kbd class="key-2">2</kbd></span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="decided">
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" title=":white_check_mark:" /> Choose option 3</td>
+<td colspan="3"><span class="keys"><kbd class="key-3">3</kbd></span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Open slash / command menu</td>
+<td colspan="3"><span class="keys"><kbd class="key-slash">/</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Computer Terminal"><img src="semiotic/030.COMPUTER.TERMINAL.svg" alt="Computer Terminal" width="28" height="28"></a></td>
+<td>Type at the start of the input (or empty composer) to open the command list, then navigate with <span class="keys"><kbd class="key-arrow-up">Up</kbd></span> / <span class="keys"><kbd class="key-arrow-down">Down</kbd></span>.</td>
+</tr>
+<tr>
+<td>Open Codex apps / <span class="keys"><kbd>$</kbd></span> insert</td>
+<td></td>
+<td></td>
+<td><span class="keys"><kbd>$</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Astronic System (Electronics)"><img src="semiotic/011.ASTRONIC.SYSTEM.(ELECTRONICS).svg" alt="Astronic System (Electronics)" width="28" height="28"></a></td>
+<td>Codex inserts app mentions as <code>$app-slug</code> (see <code>/apps</code>). Not a second slash menu — keep <span class="keys"><kbd class="key-slash">/</kbd></span> for slash commands.</td>
+</tr>
+<tr>
+<td>Mention file</td>
+<td colspan="3"><span class="keys"><kbd>@</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Storage, non-organic"><img src="semiotic/029.STORAGE.NON-ORGANIC.svg" alt="Storage, non-organic" width="28" height="28"></a></td>
+<td>Fuzzy file path mention / attach.</td>
+</tr>
+<tr>
+<td>Stop agent</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-backspace">Backspace</kbd></span></td>
+<td colspan="2"><span class="keys"><kbd class="key-escape">Esc</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Hazard Warning"><img src="semiotic/012.HAZARD.WARNING.svg" alt="Hazard Warning" width="28" height="28"></a></td>
+<td>Cursor: cancel generation. Claude Code / Codex: interrupt the current turn. On Claude Code permission dialogs, <span class="keys"><kbd class="key-escape">Esc</kbd></span> closes the dialog rather than interrupting.</td>
+</tr>
+<tr>
+<td>Exit agent session</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-w">W</kbd></span>; <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> → <code>View: Close Editor</code></td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span> → <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span>; <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-d">D</kbd></span> → <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-d">D</kbd></span></td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span> → <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span>; <span class="keys"><kbd class="key-slash">/</kbd></span> → <code>exit</code> → <span class="keys"><kbd class="key-enter">Enter</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Airlock"><img src="semiotic/005.AIRLOCK.svg" alt="Airlock" width="28" height="28"></a></td>
+<td>One pad “exit” key should expand to the tool-specific sequence. Claude Code / Codex require a double press within a short window.</td>
+</tr>
+<tr>
+<td>Mic on/off</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-space">Space</kbd></span>; <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-m">M</kbd></span></td>
+<td><span class="keys"><kbd class="key-space">Space</kbd></span> (hold or tap)</td>
+<td></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Intercom"><img src="semiotic/028.INTERCOM.svg" alt="Intercom" width="28" height="28"></a></td>
+<td>Cursor: toggle Voice Mode; <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-m">M</kbd></span> is hold-to-talk in the Agents Window. Claude Code: voice dictation when enabled (<code>/voice</code>).</td>
+</tr>
+<tr>
+<td>Confirm</td>
+<td colspan="3"><span class="keys"><kbd class="key-enter">Enter</kbd></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m1 8h-2V4.1c.3-.1.7-.1 1-.1s.7 0 1 .1z"/></svg></span></td>
+<td></td>
+<td>Submit, accept selection, or confirm a dialog. Cursor may also use <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> to force-send while typing. No Cobb SVG for EDS-style Enter on the G20 set.</td>
+</tr>
+<tr>
+<td>Approve tool</td>
+<td><span class="keys"><kbd class="key-enter">Enter</kbd></span> (on prompt); Allow in UI</td>
+<td><span class="keys"><kbd class="key-y">Y</kbd></span>; <span class="keys"><kbd class="key-enter">Enter</kbd></span></td>
+<td><span class="keys"><kbd class="key-y">Y</kbd></span>; <span class="keys"><kbd class="key-enter">Enter</kbd></span>; <span class="keys"><kbd class="key-slash">/</kbd></span> → <code>approve</code> → <span class="keys"><kbd class="key-enter">Enter</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Life Support System"><img src="semiotic/021.LIFE.SUPPORT.SYSTEM.svg" alt="Life Support System" width="28" height="28"></a></td>
+<td>Unblocks a waiting permission prompt. Codex <code>/approve</code> retries a recent auto-review denial.</td>
+</tr>
+<tr>
+<td>Reject tool</td>
+<td><span class="keys"><kbd class="key-escape">Esc</kbd></span> (on prompt); Deny in UI</td>
+<td colspan="2"><span class="keys"><kbd class="key-n">N</kbd></span>; <span class="keys"><kbd class="key-escape">Esc</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Radiation Hazard"><img src="semiotic/017.RADIATION.HAZARD.svg" alt="Radiation Hazard" width="28" height="28"></a></td>
+<td></td>
+</tr>
+<tr>
+<td>Accept diff / keep edits</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span></td>
+<td><span class="keys"><kbd class="key-y">Y</kbd></span>; <span class="keys"><kbd class="key-enter">Enter</kbd></span> (on edit prompt); <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-tab">Tab</kbd></span> → <code>acceptEdits</code></td>
+<td>Accept on prompt; <span class="keys"><kbd class="key-slash">/</kbd></span> → <code>diff</code> → <span class="keys"><kbd class="key-enter">Enter</kbd></span> to review</td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Maintenance"><img src="semiotic/026.MAINTENANCE.svg" alt="Maintenance" width="28" height="28"></a></td>
+<td>Cursor: accept all suggested changes when the review UI is active. Claude Code: confirm the edit prompt, or cycle into <code>acceptEdits</code> with <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-tab">Tab</kbd></span>.</td>
+</tr>
+<tr>
+<td>Reject diff / discard edits</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-backspace">Backspace</kbd></span></td>
+<td><span class="keys"><kbd class="key-n">N</kbd></span>; <span class="keys"><kbd class="key-escape">Esc</kbd></span> (on edit prompt)</td>
+<td>Decline on prompt</td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Exhaust"><img src="semiotic/015.EXHAUST.svg" alt="Exhaust" width="28" height="28"></a></td>
+<td>Cursor: reject all suggested changes. Does not always roll back files already written — use git / an explicit revert prompt when needed.</td>
+</tr>
+<tr>
+<td>Complete picker</td>
+<td colspan="3"><span class="keys"><kbd class="key-tab">Tab</kbd></span></td>
+<td></td>
+<td></td>
+<td>Accept autocomplete / slash / path suggestion. Codex: while a turn is running, <span class="keys"><kbd class="key-tab">Tab</kbd></span> queues a follow-up instead of interrupting.</td>
+</tr>
+<tr>
+<td>Focus agent panel</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-l">L</kbd></span>; <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-i">I</kbd></span></td>
+<td colspan="2"></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Bridge"><img src="semiotic/024.BRIDGE.svg" alt="Bridge" width="28" height="28"></a></td>
+<td>Cursor: toggle / focus the AI sidepanel (both chords are documented). Claude Code and Codex already own the terminal — no separate panel focus.</td>
+</tr>
+<tr>
+<td>Focus workspace</td>
+<td colspan="3"><span class="keys"><kbd class="key-windows">Win</kbd><span>+</span><kbd class="key-num-plus">Num +</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Ladderway"><img src="semiotic/027.LADDERWAY.svg" alt="Ladderway" width="28" height="28"></a></td>
+<td>i3 binding used to jump to the workspace where background agents run — window-manager level, not app-specific.</td>
+</tr>
+<tr>
+<td>Lock</td>
+<td colspan="3"><span class="keys"><kbd class="key-windows">Win</kbd><span>+</span><kbd class="key-l">L</kbd></span></td>
+<td></td>
+<td><a href="https://spkeyboards.com/products/g20-semiotic-keycaps" title="Pressure Suit Locker"><img src="semiotic/008.PRESSURE.SUIT.LOCKER.svg" alt="Pressure Suit Locker" width="28" height="28"></a></td>
+<td>Locks the machine running the agents (Super/Win + L) — OS-level, not app-specific.</td>
+</tr>
+</tbody>
+</table>
+<p>Bindings move between releases. For Codex, <code>/keymap</code> in a live session is authoritative for that build.</p>
+<h2 id="next">Next</h2>
+<p>Pick an Ortholinear all-1u pad with at least one encoder and a joystick, then lay out the decided rows under <a href="https://spkeyboards.com/products/g20-semiotic-keycaps">G20 Semiotic</a> legends. Cursor-only keys (mic, panel focus) can sit on a second layer or be labeled distinctly within the same set.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Anatoly Scherbakov
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "navigation.tabs", "navigation.indexes", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tablesort.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
