@@ -5,36 +5,52 @@ hide:
     - toc
 ---
 
-# Projects
+# :simple-opensourceinitiative: Open Source Projects
 
-## Linked Data
+## :simple-semanticweb: Linked Data
 
-![](ld.png){ align=left width="300" }
+<div class="grid cards cv-opensource" markdown>
 
-```mermaid
-graph LR
-    yamlld["YAML-LD"] --> iolanta["iolanta"]
-    pyld["PyLD"]
-    nanopub["nanopublishing"]
+-   __[YAML-LD](https://www.w3.org/TR/yaml-ld/)__ · Editor
 
-    click yamlld "https://www.w3.org/TR/yaml-ld/"
-    click iolanta "https://iolanta.tech"
-    click pyld "https://github.com/digitalbazaar/pyld"
-    click nanopub "https://nanopublishing.iolanta.tech"
-```
+    ---
 
-<br clear="both"/>
+    W3C specification for Linked Data in YAML. Edited as Invited Expert in the JSON-LD Working Group.
 
-## Development productivity tools
+-   __[PyLD](https://github.com/digitalbazaar/pyld)__ · Maintainer
 
-![](dev.png){ align=left width="300" }
+    ---
 
-!!! success inline "jeeves"
+    Overhauled documentation and document loaders; ongoing maintenance of the Python JSON-LD API implementation.
 
-    Pythonic replacement to :simple-gnu: GNU Make. [jeeves.sh](https://jeeves.sh)
+-   __[iolanta](https://iolanta.tech)__ · Author
 
-!!! success inline "documented"
+    ---
 
-    :material-language-python: docstrings with `{self.placeholders}` = user friendly exceptions *sans* boilerplate. [:material-github: `anatoly-scherbakov/documented`](https://github.com/anatoly-scherbakov/documented)
+    Browse and visualize Linked Data.
 
-<br clear="both"/>
+-   __[nanopublishing](https://nanopublishing.iolanta.tech)__ · Author
+
+    ---
+
+    Agent skills to craft, validate, and publish [nanopublications](https://nanopub.net/) from Markdown-LD.
+
+</div>
+
+## :material-tools: Development productivity tools
+
+<div class="grid cards cv-opensource" markdown>
+
+-   __[jeeves.sh](https://jeeves.sh)__ · Author
+
+    ---
+
+    Command runner. Pythonic alternative for GNU Make.
+
+-   __[documented](https://github.com/anatoly-scherbakov/documented)__ · Author
+
+    ---
+
+    Docstrings with `{self.placeholders}` = user friendly exceptions *sans* boilerplate.
+
+</div>
