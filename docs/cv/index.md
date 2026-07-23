@@ -1,113 +1,165 @@
 ---
 position: 10
-title: Anatoly Scherbakov | CV
+title: Curriculum Vitae
 hide:
     - navigation
     - toc
 ---
 
-<img src="/images/avatar.jpg" style="float:right; max-width: 128px">
+# Anatoly Scherbakov <small><em>Curriculum Vitae</em></small>
 
-## Key Expertise
+!!! info "**Yerevan, Armenia** 🇦🇲 · [:material-web: yeti.sh](https://yeti.sh) · :material-email: anatoly :dog: yeti.sh · [:fontawesome-brands-github: GitHub](https://github.com/anatoly-scherbakov) · [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/anatoly-scherbakov) · [:simple-orcid: ORCID](https://orcid.org/0009-0001-8740-4213) · [:material-hexagon-multiple: Nanodash](https://nanodash.knowledgepixels.com/user?0&id=https://orcid.org/0009-0001-8740-4213)"
 
-- Design and architecture of business automation software
-- Its implementation in Python programming language
-- Code review, peer programming
-- Keeping code clean & maintainable
+<img src="/images/avatar.jpg" style="float:right; max-width: 128px" alt="Anatoly Scherbakov">
 
-## `Currently` Software Developer at [Datafold](https://datafold.com)
-
-<img src="datafold.png" style="float:left; max-width: 128px">
-
-Creating solutions to make data engineers' life better.
+Software engineer building agentic systems, Linked Data infrastructure, and open-source developer tools. W3C Invited Expert and [YAML-LD](https://www.w3.org/TR/yaml-ld/) editor.
 
 <br clear="both"/>
 
-## Research
+## :material-briefcase-outline: Professional Experience
 
-Independent researcher/engineer in the field of Semantic Web & Linked Data, see [Projects](../projects/) for more details.
+<div class="grid cards cv-history" markdown>
 
-<div style="page-break-after: always; break-after: page;"></div>
+-   __[Datafold](https://datafold.com)__ · [:simple-ycombinator: S20](https://www.ycombinator.com/companies/datafold) · Software Development Engineer
 
-## Technologies
+    `since Jan 2022` :simple-python:{ title="Python" } :simple-rust:{ title="Rust" } :simple-fastapi:{ title="FastAPI" } :simple-neo4j:{ title="Neo4j" } :simple-clickhouse:{ title="ClickHouse" } :simple-claude:{ title="Claude Code" } :simple-cursor:{ title="Cursor" }
 
-!!! abstract inline ":material-language-python: Python"
+    ---
 
-    `mypy` `flake8` `pydantic` `click` `typer` `fastapi` `pandas` `ariadne` `flask` `django`
+    Backend and agentic systems engineer.
 
-!!! abstract inline ":material-database: Storage"
+-   __[RecallMasters](https://recallmasters.com)__ · Engineering Team Lead
 
-    `postgresql` `redis` `clickhouse` `neo4j` `redshift`
+    `Dec 2014 – Dec 2021` :simple-django:{ title="Django" } :material-aws:{ title="AWS S3, Redshift, SQS, λ, …" } :simple-terraform:{ title="Terraform" }
 
-!!! abstract inline ":material-cloud: Cloud"
+    ---
 
-    `lambda` `s3` `ec2` `ecs` `rds` `sqs` `stepfunctions` `eventbridge` `terraform`
+    California-based automotive safety company.
 
-!!! example inline ":material-graph: Linked Data"
+    Built an automation system to process vehicle recall data for staff and clients. Led a team of about 10 developers through growth of the product. Migrated the system from a monolith toward microservices to support that growth.
 
-    `rdf` `rdfs` `owl` `sparql` `rdflib` `owl-rl` `json-ld` `yaml-ld`
+-   __[Vboost](https://vboost.com)__ · Software Engineer
 
-<br clear="both"/>
+    `Sep 2012 – Dec 2014` :simple-flask:{ title="Flask" } :simple-xml:{ title="XML" }
 
-!!! abstract inline ":material-language-rust: Rust"
+    ---
 
-    A little bit of Rust programming
+    California-based automotive marketing company.
 
-!!! abstract inline ":material-tools: Tools"
+    Built a system to produce promotional videos and automate dealership marketing. Formed and mentored a small development team around the product.
 
-    `git` `linear` `jira` `pycharm` `vscode` `mkdocs`
+</div>
 
-<br clear="both"/>
+## :simple-opensourceinitiative: Standards & Open Source <small>(see also: [Projects](/projects/))</small>
 
-## Career
+<div class="grid cards cv-opensource" markdown>
 
-### `2012 … 2022` Senior Software Developer & Team Lead
+-   __[W3C](https://www.w3.org/)__ · Invited Expert @ JSON-LD Working Group
 
-!!! info inline ""
+    `Dec 2023 – present` :fontawesome-brands-w3c:{ title="W3C Standards Process" } :simple-json:{ title="JSON-LD" } :simple-yaml:{ title="YAML-LD" } :simple-semanticweb:{ title="Linked Data" } :material-file-document-outline:{ title="ReSpec" }
 
-    Recall Masters Inc (California, US) — An Automotive Safety Company — [recallmasters.com](http://recallmasters.com) 
+    ---
 
-Implemented the first MVP and, subsequently, the full fledged automation app on Django to support the company's business process. Built the internal development department supporting the system and moving forward together with the growing business. Handling the transfer from the monolith application to microservices based system.
+    [YAML-LD](https://www.w3.org/TR/yaml-ld/) editor since Feb 2026.
 
-<br clear="both"/>
+-   __[PyLD](https://github.com/digitalbazaar/pyld)__ · Maintainer
 
-### `2011 … 2014` Software Developer
+    `2025 – present` :simple-python:{ title="Python" } :simple-json:{ title="JSON-LD" }
 
-!!! abstract inline ""
-    
-    Vboost Inc (California, US) — An Automotive Marketing Company — [vboost.com](http://vboost.com) 
+    ---
 
-Built an MVP and then the full scaled business automation system on Python/Django. Invited developers and formed a small dev team to support the project.
+    Overhauled documentation and document loaders; ongoing maintenance of the Python JSON-LD API implementation.
 
-<br clear="both"/>
+-   __[iolanta](https://iolanta.tech)__ · Author
 
-### `2012` Freelance
+    `since Jan 2023` :simple-python:{ title="Python" } :simple-semanticweb:{ title="Linked Data" }
 
-!!! abstract inline ""
-    
-    [odesk.com](http://odesk.com) (now [upwork.com](http://upwork.com))
+    ---
 
-A number of projects, mostly in Python and Django.
+    Browse and visualize Linked Data.
 
-<br clear="both"/>
+-   __[jeeves.sh](https://jeeves.sh)__ · Author
 
-### `2008 … 2011` Web Developer
+    `Oct 2021 – present` :simple-gnu:{ title="GNU Make" }
 
-!!! warning inline ""
-    
-    OngNet Inc (Gorno-Altaysk, Russia) — Region scale broadband internet provider
+    ---
 
-Company website (in PHP and subsequently Python). Internal automation for billing system and routing.
+    Command runner. Pythonic alternative for GNU Make.
 
-<br clear="both"/>
+-   __[nanopublishing](https://nanopublishing.iolanta.tech)__ · Author
 
-### `2007 … 2013` University tudent
+    `since Jan 2026` :material-file-document-multiple-outline:{ title="Nanopublications" } :simple-markdown:{ title="Markdown-LD" } :material-robot-outline:{ title="OpenAI Codex" }
 
-!!! danger inline ""
-    Tomsk University of Control Systems and Microelectronics
+    ---
 
-- **Major:** Applied Computer Science in Economics
-- **Degree:** *specialist/engineer, with honors*
-- **Thesis:** *Discrete Event Simulation of Business Processes*
-    - Kind of childish one, actually
-- Online education
+    Agent skills to craft, validate, and publish [nanopublications](https://nanopub.net/) from Markdown-LD.
+
+</div>
+
+## :material-human-male-board: Teaching
+
+<div class="grid cards cv-history" markdown>
+
+-   __[KGC|Learn](https://www.knowledgegraph.tech/knowledge-graph-learning-program/)__ · Teaching Assistant
+
+    `2026 – present` :simple-semanticweb:{ title="Knowledge Graphs" } :material-human-male-board:{ title="Teaching Assistant" }
+
+    ---
+
+    Continuing Education Team.
+
+</div>
+
+## :material-school-outline: Education
+
+<div class="grid cards cv-history" markdown>
+
+-   __TUSUR__ · Specialist — Applied Computer Science & Economics
+
+    `Jun 2007 – Jun 2013` :material-chart-gantt:{ title="Discrete Event Simulation" } :fontawesome-solid-university:{ title="Applied Computer Science & Economics" }
+
+    ---
+
+    Tomsk State University of Control Systems and Radioelectronics. Thesis: *Discrete Event Simulation of Business Processes*.
+
+</div>
+
+## :material-book-education-outline: Additional Education
+
+<div class="grid cards cv-history" markdown>
+
+-   __[AUA](https://aua.am/)__ · [CS111 Discrete Mathematics](/blog/cs111/)
+
+    `2022` :material-function-variant:{ title="Discrete Mathematics" }
+
+    ---
+
+    Bachelor-level Discrete Mathematics course at the American University of Armenia.
+
+</div>
+
+## :material-heart-outline: Hobbies
+
+<div class="grid cards" markdown>
+
+-   __Barnaul College of Music__ · Voice and Opera
+
+    `Sep 2018 – Oct 2019` :material-microphone:{ title="Voice" } :material-drama-masks:{ title="Opera" }
+
+-   __Retrocomputing__
+
+    :material-calculator:{ title="Classic scientific calculators" } :material-desktop-classic:{ title="Vintage computers" }
+
+    ---
+
+    Tinkering with older hardware.
+
+-   __[:fontawesome-brands-github: webgmc](https://github.com/anatoly-scherbakov/webgmc)__
+
+    :simple-javascript:{ title="JavaScript" } :material-serial-port:{ title="WebSerial" } :material-radioactive:{ title="GQ GMC-800 dosimeter" }
+
+    ---
+
+    Static WebSerial app for GQ GMC-800 dosimeters.
+
+</div>
