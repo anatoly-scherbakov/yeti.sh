@@ -2,3 +2,149 @@
 .md-typeset table:not([class]) th a {
     color: var(--md-typeset-a-color);
 }
+
+/* Shared / spanning cells read better when centered. */
+.md-typeset table:not([class]) th[colspan],
+.md-typeset table:not([class]) td[colspan] {
+    text-align: center;
+}
+
+/* Decided action rows — Material success tint (ADR :white_check_mark: spirit). */
+.md-typeset table:not([class]) tr.decided > td {
+    background-color: color-mix(in srgb, #00c853 14%, transparent);
+}
+
+/* Homepage identity strip */
+.identity {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin: 0 0 1.5rem;
+}
+
+.identity__avatar {
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* MkDocs may wrap a lone <img> in <p> — keep flex layout */
+.identity > p {
+    margin: 0;
+}
+
+.identity__text {
+    min-width: 0;
+}
+
+.identity__text h1 {
+    margin: 0 0 0.25rem;
+}
+
+.identity__text p {
+    margin: 0.15rem 0;
+}
+
+.identity + .md-button {
+    margin-bottom: 1.5rem;
+}
+
+/* CV: open-source / standards cards in two columns when space allows */
+@media screen and (min-width: 60em) {
+    .md-typeset .grid.cards.cv-opensource {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CV: employment, teaching, education stacked vertically */
+.md-typeset .grid.cards.cv-history {
+    grid-template-columns: 1fr;
+}
+
+/* CV: tech skill icons inside cards.
+   Material sets `.md-typeset svg { height:auto; max-width:100% }`, which
+   lets Font Awesome’s 512×512 viewBoxes expand to the card width. */
+.md-typeset .cv-skills {
+    --md-icon-size: 1.25em;
+    margin: 0.75em 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.md-typeset .grid.cards .cv-skills .twemoji {
+    display: inline-flex !important;
+    width: var(--md-icon-size) !important;
+    height: var(--md-icon-size) !important;
+    flex: 0 0 var(--md-icon-size);
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.md-typeset .grid.cards .cv-skills .twemoji svg,
+.md-typeset .grid.cards .cv-skills svg {
+    width: var(--md-icon-size) !important;
+    height: var(--md-icon-size) !important;
+    max-width: var(--md-icon-size) !important;
+    max-height: var(--md-icon-size) !important;
+}
+
+/* Cleaner browser print → PDF for CV (and rest of site) */
+@media print {
+    .md-header,
+    .md-tabs,
+    .md-sidebar,
+    .md-footer,
+    .md-top,
+    .md-dialog,
+    .md-annotation,
+    header,
+    nav {
+        display: none !important;
+    }
+
+    .md-main__inner,
+    .md-content,
+    .md-content__inner {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: none !important;
+    }
+
+    .md-typeset {
+        font-size: 11pt;
+    }
+
+    /* Flatten card grids so Chromium can keep each card on one page.
+       break-inside is unreliable on CSS Grid children. */
+    .md-typeset .grid.cards,
+    .md-typeset .grid.cards > ul,
+    .md-typeset .grid.cards > ol {
+        display: block !important;
+    }
+
+    .md-typeset .grid.cards > ul > li,
+    .md-typeset .grid.cards > ol > li {
+        display: block !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 0.75em;
+    }
+
+    .md-typeset h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .md-typeset .cv-skills {
+        display: flex !important;
+    }
+
+    .md-typeset .cv-skills .twemoji {
+        opacity: 1;
+    }
+}
