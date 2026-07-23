@@ -9,16 +9,17 @@ markdown_extensions:
   - abbr
   - pymdownx.snippets
   - admonition
-  - markdown_del_ins
+  # pymdownx.keys uses ++…++; do not enable markdown_del_ins (same syntax)
+  - pymdownx.keys
   - md_in_html
   - pymdownx.highlight:
       guess_lang: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - attr_list
-#  - pymdownx.emoji:
-#      emoji_index: !!python/name:materialx.emoji.twemoji
-#      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tabbed:
