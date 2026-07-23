@@ -128,6 +128,14 @@ Software engineer building agentic systems, Linked Data infrastructure, and open
 
 <div class="grid cards cv-history" markdown>
 
+-   __[KGC|Learn](https://www.knowledgegraph.tech/knowledge-graph-learning-program/)__ · KG Builder
+
+    `2026` :simple-semanticweb:{ title="Knowledge Graphs" }
+
+    ---
+
+    Builder certificate from The Knowledge Graph Conference learning program.
+
 -   __[AUA](https://aua.am/)__ · [CS111 Discrete Mathematics](/blog/cs111/)
 
     `2022` :material-function-variant:{ title="Discrete Mathematics" }
