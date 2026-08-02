@@ -1,6 +1,7 @@
 ---
 position: 10
 title: Curriculum Vitae
+icon: material/file-account-outline
 hide:
     - navigation
     - toc
