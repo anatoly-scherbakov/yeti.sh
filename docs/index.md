@@ -1,5 +1,6 @@
 ---
 title: Anatoly Scherbakov
+icon: material/account-circle-outline
 render_macros: false
 hide:
     - navigation
@@ -13,6 +14,7 @@ hide:
 <p>Software Development Engineer at <a href="https://datafold.com">Datafold</a></p>
 <p><a href="/cv/">CV</a> · <a href="/projects/">Projects</a></p>
 </div>
+<img class="identity__logo" src="/assets/images/logo-shell.png" alt="yeti.sh mountain and yeti emblem">
 </div>
 
 [🇦🇲 Armenian language](/armenian/){ .md-button }
