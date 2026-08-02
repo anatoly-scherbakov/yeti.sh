@@ -48,7 +48,23 @@ plugins:
 theme:
   name: material
   # custom_dir: templates
-  logo: images/yeti.png
+  icon:
+    logo: material/console-line
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Use dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Use light mode
   features:
     - header.autohide
     - navigation.tabs
