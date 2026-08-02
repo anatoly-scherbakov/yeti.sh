@@ -1,5 +1,6 @@
 ---
 title: Projects
+icon: material/source-repository-multiple
 hide:
     - navigation
     - toc
@@ -28,6 +29,12 @@ hide:
     ---
 
     Browse and visualize Linked Data.
+
+-   __[sparqld](https://github.com/iolanta-tech/sparqld)__ · Author
+
+    ---
+
+    Serve RDF files through a live, read-only SPARQL endpoint.
 
 -   __[nanopublishing](https://nanopublishing.iolanta.tech)__ · Author
 
