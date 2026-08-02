@@ -37,7 +37,17 @@
 }
 
 .identity__text {
+    flex: 1 1 12rem;
     min-width: 0;
+}
+
+.identity__logo {
+    flex: 0 1 176px;
+    width: clamp(112px, 16vw, 176px);
+    min-width: 112px;
+    margin: 0 0 0 auto;
+    border-radius: 8px;
+    object-fit: contain;
 }
 
 .identity__text h1 {
@@ -50,6 +60,20 @@
 
 .identity + .md-button {
     margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 44.984375em) {
+    .identity {
+        display: grid;
+        grid-template-columns: 96px minmax(0, 1fr);
+    }
+
+    .identity__logo {
+        grid-column: 1 / -1;
+        width: 112px;
+        margin: 0;
+        justify-self: center;
+    }
 }
 
 /* CV: open-source / standards cards in two columns when space allows */
