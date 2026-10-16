@@ -166,9 +166,33 @@
 
     .md-typeset .cv-skills {
         display: flex !important;
+        gap: 0.3em 0.45em;
+        margin: 0.4em 0 0;
     }
 
     .md-typeset .cv-skills .twemoji {
         opacity: 1;
+    }
+
+    /* Compact the CV cards while keeping their contents together on a page. */
+    .md-typeset .grid.cards.cv-history > ul > li,
+    .md-typeset .grid.cards.cv-opensource > ul > li {
+        padding: 0.55em 0.75em !important;
+        margin-bottom: 0.4em !important;
+    }
+
+    .md-typeset .grid.cards.cv-history li > p,
+    .md-typeset .grid.cards.cv-opensource li > p {
+        margin: 0.4em 0;
+    }
+
+    .md-typeset .grid.cards.cv-history li > hr,
+    .md-typeset .grid.cards.cv-opensource li > hr {
+        margin: 0.45em 0;
+    }
+
+    .md-typeset h2 {
+        margin-top: 0.8em;
+        margin-bottom: 0.35em;
     }
 }
