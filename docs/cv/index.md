@@ -27,17 +27,21 @@ Software engineer building agentic systems, Linked Data infrastructure, and open
 
     ---
 
-    Backend and agentic systems engineer.
+    Develop graph-based data lineage and dependency analysis, BI integrations, and graph data models for database assets and pipelines. Implement and optimise graph queries across Python and Rust.
+
+    Build agentic migration workflows, configure execution constraints and validation feedback, and improve workflow reliability, monitoring and CI/CD.
 
 -   __[RecallMasters](https://recallmasters.com)__ · Engineering Team Lead
 
-    `Dec 2014 – Dec 2021` :simple-django:{ title="Django" } :material-aws:{ title="AWS S3, Redshift, SQS, λ, …" } :simple-terraform:{ title="Terraform" }
+    `Dec 2014 – Dec 2021` :simple-django:{ title="Django" } :material-aws:{ title="AWS EC2, RDS, Lambda, SQS" } :simple-terraform:{ title="Terraform" }
 
     ---
 
     California-based automotive safety company.
 
     Built an automation system to process vehicle recall data for staff and clients. Led a team of about 10 developers through growth of the product. Migrated the system from a monolith toward microservices to support that growth.
+
+    Used AWS EC2, RDS, Lambda, and SQS for the product's infrastructure.
 
 -   __[Vboost](https://vboost.com)__ · Software Engineer
 
@@ -51,13 +55,13 @@ Software engineer building agentic systems, Linked Data infrastructure, and open
 
 </div>
 
-## :simple-opensourceinitiative: Standards & Open Source <small>(see also: [Projects](/projects/))</small>
+## :simple-opensourceinitiative: Standards & Open Source <small>(see also: [Projects](https://yeti.sh/projects/))</small>
 
 <div class="grid cards cv-opensource" markdown>
 
 -   __[W3C](https://www.w3.org/)__ · Invited Expert @ JSON-LD Working Group
 
-    `Dec 2023 – present` :fontawesome-brands-w3c:{ title="W3C Standards Process" } :simple-json:{ title="JSON-LD" } :simple-yaml:{ title="YAML-LD" } :simple-semanticweb:{ title="Linked Data" } :material-file-document-outline:{ title="ReSpec" }
+    `since Dec 2023` :fontawesome-brands-w3c:{ title="W3C Standards Process" } :simple-json:{ title="JSON-LD" } :simple-yaml:{ title="YAML-LD" } :simple-semanticweb:{ title="Linked Data" } :material-file-document-outline:{ title="ReSpec" }
 
     ---
 
@@ -65,11 +69,11 @@ Software engineer building agentic systems, Linked Data infrastructure, and open
 
 -   __[PyLD](https://github.com/digitalbazaar/pyld)__ · Maintainer
 
-    `2025 – present` :simple-python:{ title="Python" } :simple-json:{ title="JSON-LD" }
+    `since 2025` :simple-python:{ title="Python" } :simple-json:{ title="JSON-LD" }
 
     ---
 
-    Overhauled documentation and document loaders; ongoing maintenance of the Python JSON-LD API implementation.
+    Built the command-line interface and overhauled documentation and document loaders for the Python JSON-LD implementation; ongoing maintenance.
 
 -   __[iolanta](https://iolanta.tech)__ · Author
 
@@ -79,13 +83,21 @@ Software engineer building agentic systems, Linked Data infrastructure, and open
 
     Browse and visualize Linked Data.
 
--   __[jeeves.sh](https://jeeves.sh)__ · Author
+-   __[sparqld](https://github.com/iolanta-tech/sparqld)__ · Author
 
-    `Oct 2021 – present` :simple-gnu:{ title="GNU Make" }
+    :simple-rust:{ title="Rust" } :simple-semanticweb:{ title="SPARQL and Linked Data" }
 
     ---
 
-    Command runner. Pythonic alternative for GNU Make.
+    Built a Rust SPARQL endpoint and Model Context Protocol (MCP) server over RDF files, including JSON-LD and YAML-LD. Keeps the graph updated as files change, exposing read-only queries to AI agents and other SPARQL clients.
+
+-   __[jeeves.sh](https://jeeves.sh)__ · Author
+
+    `since Oct 2021` :simple-python:{ title="Python" } :simple-typer:{ title="Typer" }
+
+    ---
+
+    Command runner built with Python and Typer; an alternative to GNU Make.
 
 -   __[nanopublishing](https://nanopublishing.iolanta.tech)__ · Author
 
@@ -103,7 +115,7 @@ Software engineer building agentic systems, Linked Data infrastructure, and open
 
 -   __[KGC|Learn](https://www.knowledgegraph.tech/knowledge-graph-learning-program/)__ · Teaching Assistant
 
-    `2026 – present` :simple-semanticweb:{ title="Knowledge Graphs" } :material-human-male-board:{ title="Teaching Assistant" }
+    `since 2026` :simple-semanticweb:{ title="Knowledge Graphs" } :material-human-male-board:{ title="Teaching Assistant" }
 
     ---
 
@@ -137,7 +149,7 @@ Software engineer building agentic systems, Linked Data infrastructure, and open
 
     Builder certificate from The Knowledge Graph Conference learning program.
 
--   __[AUA](https://aua.am/)__ · [CS111 Discrete Mathematics](/blog/cs111/)
+-   __[AUA](https://aua.am/)__ · [CS111 Discrete Mathematics](https://yeti.sh/blog/cs111/)
 
     `2022` :material-function-variant:{ title="Discrete Mathematics" }
 
