@@ -52,7 +52,7 @@ hide:
 
     ---
 
-    Command runner. Pythonic alternative for GNU Make.
+    Command runner built with Python and Typer; an alternative to GNU Make.
 
 -   __[documented](https://github.com/anatoly-scherbakov/documented)__ · Author
 
