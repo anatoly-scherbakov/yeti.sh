@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An ontology inside a coding harness</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/index.css">
+    <link rel="stylesheet" href="highlight.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>An ontology inside a coding harness</h1>
+        <p>Anatoly Scherbakov · Semantic Backbone Council · 22 October 2026</p>
+    </header>
+    <section class="slide" id="idea">
+        <h2>User story</h2>
+        <pre class="code-example document-example"><code><span class="nn">---</span>
+<span class="s">&quot;@context&quot;</span><span class="p p-Indicator">:</span>
+<span class="w">  </span><span class="s">&quot;@import&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://json-ld.org/contexts/dollar-convenience.jsonld</span>
+<span class="w">  </span><span class="s">&quot;@vocab&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.org/software-project/</span>
+<span class="w">  </span><span class="s">&quot;@base&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.org/software-project/</span>
+<span class="w">  </span><span class="nt">requires</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&#39;@type&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;@id&#39;</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">mustRecord</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&#39;@type&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;@id&#39;</span><span class="p p-Indicator">}</span>
+<span class="nt">$id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ExportInvoices</span>
+<span class="nt">$type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UserStory</span>
+<span class="nt">requires</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FinanceRole</span>
+<span class="nt">mustRecord</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AuditEvent</span>
+<span class="nn">---</span></code></pre>
+        <p class="story-text">As an accountant, I want a CSV invoice export so I can reconcile payments.</p>
+        <p class="slide-source">Illustrative Markdown + YAML-LD excerpt · examples/invoice-export.yamlld</p>
+        <aside>
+            <p>About 50 seconds. The proposal is a coding harness that can query
+            the relationships between familiar development artifacts. This story
+            names a user outcome: an accountant wants CSV invoices to reconcile
+            payments. Acceptance criteria make that outcome checkable.</p>
+            <p>The document excerpt combines Markdown prose with YAML-LD frontmatter.
+            Its links point to the finance role and audit requirement. The full
+            canonical graph includes the prose and all criteria too. The build
+            generates these views from that one graph. Precise project relations
+            use an illustrative vocabulary, while names, descriptions, and
+            document state reuse Schema.org terms.</p>
+        </aside>
+    </section>
+    <section class="slide" id="example">
+        <h2>ADR as linked data</h2>
+        <pre class="code-example document-example"><code><span class="nn">---</span>
+<span class="s">&quot;@context&quot;</span><span class="p p-Indicator">:</span>
+<span class="w">  </span><span class="s">&quot;@import&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://json-ld.org/contexts/dollar-convenience.jsonld</span>
+<span class="w">  </span><span class="s">&quot;@vocab&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.org/software-project/</span>
+<span class="w">  </span><span class="s">&quot;@base&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.org/software-project/</span>
+<span class="w">  </span><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://schema.org/creativeWorkStatus</span>
+<span class="w">  </span><span class="nt">establishes</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&#39;@type&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;@id&#39;</span><span class="p p-Indicator">}</span>
+<span class="nt">$id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UseRepositoryAbstraction</span>
+<span class="nt">$type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ArchitectureDecision</span>
+<span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">decided</span>
+<span class="nt">establishes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RepositoryBoundary</span>
+<span class="nn">---</span></code></pre>
+        <p class="slide-source">Illustrative ADR excerpt · examples/invoice-export.yamlld</p>
+        <aside>
+            <p>About 50 seconds. This is an excerpt illustrating how an ADR could
+            carry linked data. It represents a fictional decided choice, not a
+            decision adopted for this presentation project. The complete example
+            also records the alternative of direct database-adapter access.</p>
+            <p>The rationale stays readable as Markdown. Frontmatter connects the
+            decision to the boundary it establishes. This borrows from my ADR and
+            semantify workflows: model the decision's meaning and relationships,
+            alongside the prose explaining why it was made.</p>
+        </aside>
+    </section>
+    <section class="slide" id="decision-rationale">
+        <h2>Use a repository interface for invoice access</h2>
+        <dl class="decision-prose">
+            <dt>Decision</dt><dd>Application code accesses invoices through a domain repository interface.</dd>
+            <dt>Rationale</dt><dd>Keep the export use case independent of the database adapter.</dd>
+            <dt>Alternative</dt><dd>Let the export handler call the database adapter directly.</dd>
+        </dl>
+        <p class="slide-source">Illustrative ADR body · examples/invoice-export.yamlld</p>
+        <aside>
+            <p>The previous slide shows the machine-readable relationships.
+            This is the same decision's readable body: chosen action, rationale,
+            and considered alternative. Both views come from the canonical example.
+            Spend about 20 seconds here and 30 on the frontmatter slide.</p>
+        </aside>
+    </section>
+    <section class="slide" id="architecture">
+        <h2>Architecture as a queryable model</h2>
+        <pre class="code-example"><code><span class="s">&quot;@context&quot;</span><span class="p p-Indicator">:</span>
+<span class="w">  </span><span class="s">&quot;@import&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://json-ld.org/contexts/dollar-convenience.jsonld</span>
+<span class="w">  </span><span class="s">&quot;@vocab&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.org/software-project/</span>
+<span class="w">  </span><span class="s">&quot;@base&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.org/software-project/</span>
+<span class="w">  </span><span class="nt">sourceLayer</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&#39;@type&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;@id&#39;</span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="nt">forbiddenTargetLayer</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&#39;@type&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;@id&#39;</span><span class="p p-Indicator">}</span>
+<span class="nt">$id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RepositoryBoundary</span>
+<span class="nt">$type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DependencyConstraint</span>
+<span class="nt">sourceLayer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ApplicationLayer</span>
+<span class="nt">forbiddenTargetLayer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">InfrastructureLayer</span></code></pre>
+        <p class="response">Application code uses the domain repository interface.</p>
+        <p class="check">Layer mappings identify the Python modules to check.</p>
+        <p class="slide-source">YAML-LD excerpt · examples/invoice-export.yamlld</p>
+        <aside>
+            <p>About 45 seconds. The ADR establishes an explicit dependency
+            constraint. ApplicationLayer maps to invoice_demo.application and
+            InfrastructureLayer maps to invoice_demo.infrastructure. The canonical
+            graph stores these module prefixes as well.</p>
+            <p>The runnable export function imports the InvoiceRepository protocol
+            from the domain module. Tests supply an in-memory implementation from
+            the infrastructure module. This makes the dependency direction visible
+            in both the model and the code.</p>
+        </aside>
+    </section>
+    <section class="slide" id="linting">
+        <h2>A linter checks the boundary</h2>
+        <pre class="code-example"><code><span class="k">def</span> <span class="nf">violations</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">forbidden</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">sorted</span><span class="p">({</span>
+        <span class="n">name</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">imports</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="n">forbidden</span>
+        <span class="ow">or</span> <span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">forbidden</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+    <span class="p">})</span></code></pre>
+        <p class="response">The runner reads the layer mappings from YAML-LD.</p>
+        <pre class="command"><code>python3 examples/check_architecture.py</code></pre>
+        <p class="check">PASS invoice_demo.application: boundary respected</p>
+        <p class="slide-source">Runnable function excerpt · examples/check_architecture.py</p>
+        <aside>
+            <p>About 45 seconds. This is the core comparison function from the
+            runnable linter. The omitted runner reads the source and forbidden
+            target from the YAML-LD graph, resolves the corresponding application
+            file, and parses its imports through Python's AST.</p>
+            <p>The imports helper handles absolute import and from-import forms.
+            Relative imports explicitly fail in this small fixture. The check
+            covers static imports in the mapped application module. Dynamic
+            imports and whole-project architectural conformance would require a
+            broader linter. A separate rejection check verifies both a direct
+            forbidden module and a descendant module fail this rule.</p>
+        </aside>
+    </section>
+    <section class="slide" id="testing">
+        <h2>Tests check the story</h2>
+        <pre class="code-example test-example"><code><span class="k">def</span> <span class="nf">test_selected_invoices_become_csv</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">export_invoices</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">repository</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;finance&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">audit</span><span class="p">)</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">result</span><span class="p">)))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="p">[{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;25.00&quot;</span><span class="p">}])</span>
+
+<span class="k">def</span> <span class="nf">test_export_requires_finance_role</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">PermissionError</span><span class="p">):</span>
+        <span class="n">export_invoices</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">repository</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;guest&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">audit</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">audit</span><span class="p">,</span> <span class="p">[])</span></code></pre>
+        <p class="slide-source">Runnable unittest method excerpts · examples/test_invoice_export.py</p>
+        <aside>
+            <p>About 50 seconds. These are two actual test methods. The
+            omitted setUp method creates a repository containing two invoices and
+            an empty audit list for each test. The CSV test selects invoice two
+            and checks the parsed output. The authorization test rejects a guest.
+            A third method in the same file checks the audit event.</p>
+            <p>Run python3 -m unittest discover -s examples -p test_invoice_export.py -v
+            from the project root. All three tests exercise the included Python
+            fixture. These are local demonstration results, not a claim that a
+            production export system or an ontology-driven harness is complete.</p>
+        </aside>
+    </section>
+    <section class="slide" id="discussion">
+        <h2>The harness connects these artifacts</h2>
+        <ol>
+            <li>Query the story, decided ADR, and layer constraint.</li>
+            <li>Plan the feature using the repository interface.</li>
+            <li>Run the linked linter and acceptance tests.</li>
+            <li>Record results against the changed revision.</li>
+        </ol>
+        <p class="question">Does this help enough to justify maintaining the links?</p>
+        <p class="slide-source">Proposed harness workflow</p>
+        <aside>
+            <p>About 40 seconds, then discussion. The individual checks run today.
+            The proposed harness would retrieve their relationships from the
+            graph, use them when planning a change, then execute the checks.</p>
+            <p>A link to a check definition does not assert that it passed. The
+            harness would need to record the command, source revision, and observed
+            result separately. That integration and result model remain proposed.</p>
+            <p>We could compare an agent using ordinary instructions and tests
+            with one receiving this graph as additional context. Does it find and
+            respect the relevant requirements? Who maintains the links when code
+            moves or an ADR changes? Those costs belong in the experiment too.</p>
+        </aside>
+    </section>
+    <div class="progress"></div>
+    <script src="shower/shower.js"></script>
+</body>
+</html>
