@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+"""Build slide excerpts and notes from canonical model and runnable examples."""
+from pathlib import Path
+from html.parser import HTMLParser
+import ast
+import re
+import textwrap
+import yaml
+from jinja2 import Environment, FileSystemLoader, StrictUndefined
+from markupsafe import Markup
+from pygments import highlight
+from pygments.lexers import get_lexer_by_name
+from pygments.formatters import HtmlFormatter
+
+root = Path(__file__).resolve().parent
+model = yaml.safe_load((root / "examples/invoice-export.yamlld").read_text())
+nodes = {node['$id']: node for node in model['$included']}
+formatter = HtmlFormatter(nowrap=True)
+(root / "slides/highlight.css").write_text(formatter.get_style_defs('.code-example'))
+
+
+def code(text, language):
+    return Markup(highlight(text.rstrip(), get_lexer_by_name(language), formatter).rstrip())
+
+
+def linked_data(identifier, fields):
+    node = nodes[identifier]
+    context = {key: value for key, value in model['@context'].items()
+               if key.startswith('@') or key in fields}
+    data = {'@context': context, '$id': identifier}
+    data.update({key: node[key] for key in fields})
+    lines = ['\"@context\":']
+    for key, value in data.pop('@context').items():
+        rendered = yaml.safe_dump(value, default_flow_style=True, sort_keys=False).strip()
+        rendered = rendered.removesuffix('\n...')
+        key = '\"' + key + '\"' if key.startswith('@') else key
+        lines.append('  ' + key + ': ' + rendered)
+    for key, value in data.items():
+        rendered = yaml.safe_dump(value, default_flow_style=True, sort_keys=False).strip()
+        rendered = rendered.removesuffix('\n...')
+        key = '"' + key + '"' if key.startswith('@') else key
+        lines.append(key + ': ' + rendered)
+    return '\n'.join(lines)
+
+
+def functions(filename, names):
+    source = (root / 'examples' / filename).read_text()
+    lines = source.splitlines()
+    found = {node.name: node for node in ast.walk(ast.parse(source))
+             if isinstance(node, ast.FunctionDef)}
+    return '\n\n'.join(textwrap.dedent('\n'.join(
+        lines[found[name].lineno - 1:found[name].end_lineno])) for name in names)
+
+
+story = nodes['ExportInvoices']
+story_excerpt = '---\n' + linked_data('ExportInvoices', ['$type', 'requires', 'mustRecord'])
+story_excerpt += '\n---'
+adr = nodes['UseRepositoryAbstraction']
+adr_frontmatter = '---\n' + linked_data('UseRepositoryAbstraction', ['$type', 'status', 'establishes']) + '\n---'
+adr_excerpt = adr_frontmatter + '\n# ' + adr['title'] + '\n\n' + adr['rationale']
+architecture = linked_data('RepositoryBoundary', ['$type', 'sourceLayer', 'forbiddenTargetLayer'])
+linter = functions('check_architecture.py', ['violations'])
+tests = functions('test_invoice_export.py', [
+    'test_selected_invoices_become_csv',
+    'test_export_requires_finance_role',
+])
+environment = Environment(loader=FileSystemLoader(root / 'templates'),
+    undefined=StrictUndefined, autoescape=True, keep_trailing_newline=True)
+html = environment.get_template('index.html.jinja').render(
+    story=code(story_excerpt, 'yaml'), story_text=story['description'],
+    adr=code(adr_frontmatter, 'yaml'), adr_title=adr['title'], adr_rationale=adr['rationale'],
+    adr_decision=adr['decision'], adr_alternative=adr['consideredAlternative'],
+    architecture=code(architecture, 'yaml'), linter=code(linter, 'python'),
+    tests=code(tests, 'python'))
+(root / 'slides/index.html').write_text(html)
+
+
+class Notes(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.capture = False
+        self.heading = False
+        self.parts = ["# Speaker notes\n\nFive minutes of presentation, then discussion.\n"]
+
+    def handle_starttag(self, tag, attributes):
+        if tag == "h2":
+            self.heading = True
+            self.parts.append("\n## ")
+        elif tag == "aside":
+            self.capture = True
+        elif tag == "p" and self.capture:
+            self.parts.append("\n\n")
+
+    def handle_endtag(self, tag):
+        if tag == "h2":
+            self.heading = False
+            self.parts.append("\n")
+        elif tag == "aside":
+            self.capture = False
+            self.parts.append("\n")
+
+    def handle_data(self, data):
+        if self.capture or self.heading:
+            self.parts.append(" ".join(data.split()) + " ")
+
+
+notes = Notes()
+notes.feed(html)
+notes_text = "\n".join(line.rstrip() for line in "".join(notes.parts).splitlines())
+notes_text = re.sub(r"\n{3,}", "\n\n", notes_text)
+(root / "speaker-notes.md").write_text(notes_text.rstrip() + "\n")
+print("Rendered slides/index.html and speaker-notes.md")
