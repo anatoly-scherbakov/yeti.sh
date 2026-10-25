@@ -1,0 +1,142 @@
+"@context":
+  "@import": https://json-ld.org/contexts/dollar-convenience.jsonld
+  "@vocab": https://example.org/software-project/
+  "@base": https://example.org/software-project/
+  $: http://schema.org/name
+  description: http://schema.org/description
+  title: http://schema.org/name
+  status: http://schema.org/creativeWorkStatus
+  realizes: {"@type": "@id"}
+  governedBy: {"@type": "@id"}
+  implementedIn: {"@type": "@id"}
+  verifiedBy: {"@type": "@id"}
+  handles: {"@type": "@id"}
+  requires: {"@type": "@id"}
+  mustRecord: {"@type": "@id"}
+  establishes: {"@type": "@id"}
+  mayDependOn: {"@type": "@id"}
+  constrainedBy: {"@type": "@id"}
+  sourceLayer: {"@type": "@id"}
+  forbiddenTargetLayer: {"@type": "@id"}
+  enforces: {"@type": "@id"}
+  covers: {"@type": "@id"}
+$included:
+- $id: InvoiceExport
+  $: Invoice export feature
+  realizes: ExportInvoices
+  governedBy: UseRepositoryAbstraction
+  implementedIn: ApplicationLayer
+  verifiedBy:
+  - RepositoryBoundaryLint
+  - InvoiceExportTests
+- $id: ExportInvoices
+  $: Export invoices
+  $type: UserStory
+  description: As an accountant, I want a CSV invoice export so I can reconcile payments.
+  handles: FinancialRecord
+  requires: FinanceRole
+  mustRecord: AuditEvent
+  acceptanceCriteria:
+  - A finance user can download a CSV matching the selected invoices.
+  - A caller without the finance role cannot export invoices.
+  - A successful export records an audit event.
+- $id: UseRepositoryAbstraction
+  $type: ArchitectureDecision
+  title: Use a repository interface for invoice access
+  status: decided
+  decision: Application code accesses invoices through a domain repository interface.
+  rationale: Keep the export use case independent of the database adapter.
+  consideredAlternative: Let the export handler call the database adapter directly.
+  establishes: RepositoryBoundary
+- $id: ApplicationLayer
+  $: Invoice application layer
+  $type: ArchitectureLayer
+  mayDependOn: DomainLayer
+  constrainedBy: RepositoryBoundary
+  modulePrefix: invoice_demo.application
+- $id: RepositoryBoundary
+  $: Invoice repository dependency boundary
+  $type: DependencyConstraint
+  sourceLayer: ApplicationLayer
+  forbiddenTargetLayer: InfrastructureLayer
+- $id: RepositoryBoundaryLint
+  $: Invoice repository boundary linter
+  $type: Linter
+  enforces: RepositoryBoundary
+  checks: Application modules must not import infrastructure modules.
+  command: python3 examples/check_architecture.py
+- $id: InvoiceExportTests
+  $: Invoice export acceptance tests
+  $type: TestSuite
+  covers: ExportInvoices
+  checks:
+  - CSV contents match the selected invoices.
+  - A caller without the finance role receives a rejection.
+  - A successful export emits an audit event.
+  command: python3 -m unittest discover -s examples -p test_invoice_export.py -v
+- $id: InfrastructureLayer
+  $: Invoice infrastructure layer
+  $type: ArchitectureLayer
+  modulePrefix: invoice_demo.infrastructure
+- $id: DomainLayer
+  $: Invoice domain layer
+- $id: FinancialRecord
+  $: Invoice financial record
+- $id: FinanceRole
+  $: Invoice export finance role
+- $id: AuditEvent
+  $: Successful invoice export audit event
+- $id: UserStory
+  $: Invoice demo user story
+- $id: ArchitectureDecision
+  $: Invoice demo architecture decision
+- $id: ArchitectureLayer
+  $: Invoice demo architecture layer
+- $id: DependencyConstraint
+  $: Invoice demo dependency constraint
+- $id: Linter
+  $: Invoice demo linter
+- $id: TestSuite
+  $: Invoice demo test suite
+- $id: realizes
+  $: implements the invoice story
+- $id: governedBy
+  $: follows the invoice architecture decision
+- $id: implementedIn
+  $: is implemented in the invoice layer
+- $id: verifiedBy
+  $: has a linked invoice check definition
+- $id: handles
+  $: handles the invoice record kind
+- $id: requires
+  $: requires the invoice caller role
+- $id: mustRecord
+  $: requires emission of the invoice audit event
+- $id: establishes
+  $: establishes the invoice dependency boundary
+- $id: mayDependOn
+  $: permits an invoice layer dependency
+- $id: constrainedBy
+  $: is subject to the invoice dependency constraint
+- $id: sourceLayer
+  $: selects the invoice import source layer
+- $id: forbiddenTargetLayer
+  $: selects the prohibited invoice import target layer
+- $id: enforces
+  $: checks the invoice dependency constraint
+- $id: covers
+  $: checks the invoice story acceptance criteria
+- $id: acceptanceCriteria
+  $: states an invoice story acceptance criterion
+- $id: decision
+  $: states the invoice architecture choice
+- $id: rationale
+  $: states the invoice architecture rationale
+- $id: consideredAlternative
+  $: states an alternative invoice architecture choice
+- $id: modulePrefix
+  $: identifies the invoice layer Python module prefix
+- $id: checks
+  $: states the invoice check expectation
+- $id: command
+  $: gives the invoice check shell command
