@@ -1,4 +1,5 @@
 ---
+exclude_from_blog: true
 title: Anatoly Scherbakov
 icon: material/account-circle-outline
 render_macros: false
