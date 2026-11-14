@@ -1,3 +1,7 @@
+---
+exclude_from_blog: true
+---
+
 # Speaker notes
 
 Five minutes of presentation, then discussion.
