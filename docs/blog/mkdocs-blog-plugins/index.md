@@ -73,16 +73,9 @@ $included:
       $id: last-commit
       rdfs:comment: Last commit on the main branch
       title: Last Commit
-      iolanta:hasDefaultFacet:
-        $id: python://octadocs.facets.DateLiteral
 
 title: MkDocs plugins for blogging
 description: "MkDocs was designed to manage software project documentation, but in fact it is a very wide purpose static site generator. Can you use it to write your personal blog? Yes, most assuredly. Here are a few plugins for that."
 ---
 
 {{ page.meta.description }}
-
-{# {{ URIRef('mkdocs-blog-plugins') | as('https://iolanta.tech/html') }} #}
-
-!!! warning "Iolanta table (temporarily unavailable)"
-    The MkDocs blogging plugins comparison table will be restored after migrating this page's YAML-LD to Iolanta 2.
