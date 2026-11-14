@@ -1,3 +1,7 @@
+---
+exclude_from_blog: true
+---
+
 # Ribbon theme for Shower
 [![Test status](https://github.com/shower/ribbon/workflows/Test/badge.svg)](https://github.com/shower/ribbon/actions/workflows/test.yml)
 
