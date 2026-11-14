@@ -1,4 +1,5 @@
 ---
+exclude_from_blog: true
 position: 10
 title: Curriculum Vitae
 icon: material/file-account-outline
