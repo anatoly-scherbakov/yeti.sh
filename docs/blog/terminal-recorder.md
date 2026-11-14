@@ -55,8 +55,3 @@ table:order-by:
   - table:self
 
 ---
-
-{# {{ URIRef('terminal-recorders') | as('https://iolanta.tech/html') }} #}
-
-!!! warning "Iolanta table (temporarily unavailable)"
-    The terminal recorder comparison table will be restored after migrating this page's YAML-LD to Iolanta 2.
