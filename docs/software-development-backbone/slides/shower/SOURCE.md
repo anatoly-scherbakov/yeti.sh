@@ -1,3 +1,7 @@
+---
+exclude_from_blog: true
+---
+
 Vendored from npm on 2026-09-07:
 
 - `@shower/core@3.6.0` → `shower.js` (the package `dist/index.js` IIFE bundle)
