@@ -1,4 +1,5 @@
 ---
+exclude_from_blog: true
 title: Communication Format
 assumes: plugin-communication
 description: Plugins will exchange with JSON-RPC messages.
