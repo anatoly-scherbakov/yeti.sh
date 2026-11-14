@@ -1,3 +1,7 @@
+---
+exclude_from_blog: true
+---
+
 # Asset provenance
 
 Copied from `~/projects/streaming-demo/slides` on 19 October 2026:
