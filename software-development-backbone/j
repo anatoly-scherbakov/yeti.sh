@@ -80,7 +80,7 @@ class Notes(HTMLParser):
         super().__init__()
         self.capture = False
         self.heading = False
-        self.parts = ["# Speaker notes\n\nFive minutes of presentation, then discussion.\n"]
+        self.parts = ["---\nexclude_from_blog: true\n---\n\n# Speaker notes\n\nFive minutes of presentation, then discussion.\n"]
 
     def handle_starttag(self, tag, attributes):
         if tag == "h2":
