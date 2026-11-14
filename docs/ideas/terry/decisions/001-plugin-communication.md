@@ -1,4 +1,5 @@
 ---
+exclude_from_blog: true
 id: plugin-communication
 title: Communicate with plugins via stdin & stdout
 description: The main `terry` executable will communicate with language-specific and scheduler-specific plugins sending text-based messages to their stdin and reading analogous messages from their stdout.
