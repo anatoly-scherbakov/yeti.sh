@@ -1,3 +1,7 @@
+---
+exclude_from_blog: true
+---
+
 # An ontology inside a coding harness
 
 Seven slides for the Semantic Backbone Council discussion on 22 October 2026.
