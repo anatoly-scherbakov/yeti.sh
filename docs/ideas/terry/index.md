@@ -1,4 +1,5 @@
 ---
+exclude_from_blog: true
 title: Terry
 target-audience: software-developers
 ---
