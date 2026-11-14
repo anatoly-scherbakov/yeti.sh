@@ -15,11 +15,11 @@ A very subjective comparison of the user interfaces of AI agent systems by param
 
     :material-check-circle-outline: Supported
 
-    :material-close-circle-outline:{ .unsupported } Not supported
+    :material-close-circle-outline:{ .unsupported } Maybe not
 
 <table markdown="1" data-no-sort>
 <thead markdown="1">
-<tr markdown="1"><th>©</th><th markdown="1">:material-robot-outline: Agent</th><th markdown="1">:material-comment-edit-outline: Diff review comments</th><th markdown="1">:material-clipboard-list-outline: Plan mode</th></tr>
+<tr markdown="1"><th>©</th><th markdown="1">:material-robot-outline: Agent</th><th markdown="1">[:material-comment-edit-outline: Diff review comments](#diff-review-comments)</th><th markdown="1">[:material-clipboard-list-outline: Plan mode](#plan-mode)</th></tr>
 </thead>
 <tbody markdown="1">
 <tr markdown="1">
@@ -95,3 +95,19 @@ A very subjective comparison of the user interfaces of AI agent systems by param
 </tr>
 </tbody>
 </table>
+
+## :material-comment-edit-outline: Diff review comments
+
+![A comment editor attached to a line in a diff](diff-review-comment.png){ align=right }
+
+Whenever I review code an agent has written, and even more so when it is text, I see issues that are opportunities to learn. Every single time.
+
+These issues can lead to new checks, linters, guidance, or skills. I want to comment on a specific line in the diff and give the agent feedback there. Often, I immediately ask it to `/retro` the issue: my skill turns a mistake into improved guidance.
+
+## :material-clipboard-list-outline: Plan mode { style="clear: both;" }
+
+![A plan to conquer the world as a doughnut](plan.png){ align=right }
+
+[Robert Martin argues](https://howmanyctospod.com/episodes/81-theres-a-pattern-to-follow-an-interview-with-robert-uncle-bob-martin) that large specifications written up front bring back the problems of waterfall. I agree, and I no longer write specs. I do write plans quite a bit.
+
+One reason is to split the work: a smarter agent can write a plan, and a team of lighter models can implement it. This resembles the [orchestrator–workers pattern](https://agentpatterns.org/patterns/orchestrator-workers/), where an agent divides work among other agents.
