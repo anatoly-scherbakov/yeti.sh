@@ -1,4 +1,5 @@
 ---
+exclude_from_blog: true
 title: JSON-RPC messages are annotated with LD contexts
 description: "@context declarations allow to modify the message format within certain bounds without breaking compatibility."
 ---
