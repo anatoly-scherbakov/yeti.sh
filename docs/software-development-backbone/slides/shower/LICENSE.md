@@ -1,3 +1,7 @@
+---
+exclude_from_blog: true
+---
+
 # The MIT License
 
 Copyright © 2010–2024 Vadim Makeev, http://pepelsbey.net/
