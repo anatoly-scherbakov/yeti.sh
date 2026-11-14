@@ -38,14 +38,8 @@ decision: code2flow
 
 ## Context
 
-{# {{ URIRef('call-graph-libraries') | as('https://iolanta.tech/html') }} #}
-
-!!! warning "Iolanta table (temporarily unavailable)"
-    The call-graph library comparison table will be restored after migrating this page's YAML-LD to Iolanta 2.
+The alternatives considered are listed in the decision metadata above.
 
 ## Decision
 
-{# {{ URIRef('code2flow') | as('https://iolanta.tech/html') }} #}
-
-!!! warning "Iolanta table (temporarily unavailable)"
-    The chosen-alternative table will be restored after migrating this page's YAML-LD to Iolanta 2.
+The selected alternative is `code2flow`.
