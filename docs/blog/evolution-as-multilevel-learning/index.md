@@ -179,12 +179,6 @@ Phenomena E1–E7 are generic (learning systems generally); E8–E10 are biologi
 
 **E10. Programmed death.** Programmed (to various degrees) death is an intrinsic feature of life.
 
-## Relationship diagram
-
-```mermaid
-{{ (docs / 'blog/evolution-as-multilevel-learning/index.md') | as('mermaid') }}
-```
-
 ## Principle → phenomenon links
 
 | Phenomenon | Predicated on principles |
