@@ -25,7 +25,7 @@ def to_local():
 
 
 def serve():
-    mkdocs('serve', '-a', 'localhost:9657', _fg=True)
+    mkdocs('serve', '-a', '0.0.0.0:9657', _fg=True)
 
 
 def _footprint_per_version() -> Iterable[tuple[str, str]]:
