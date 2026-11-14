@@ -38,11 +38,6 @@ This will:
 
 ## Should a supertask have an associated pull request?
 
-{# {{ (docs / 'blog/task-relations/supertask-roles.yaml') | as('https://iolanta.tech/html') }} #}
-
-!!! warning "Iolanta table (temporarily unavailable)"
-    The supertask-roles comparison table will be restored after migrating this page's YAML-LD to Iolanta 2.
-
 If we're treating supertasks as containers then, theoretically, we can automatically close a supertask as soon as each of its subtasks is closed. In reality, however, I wouldn't be so bold:
 
 * New circumstances reveal themselves, more work needs to be done
@@ -60,21 +55,8 @@ Instead of parent-to-child relations, we can keep all tasks on one level — and
 * No need for container tasks
 * The end goal — the purple task — should contain any validation or verification work and has its own assignee who is not necessarily responsible for all of its dependencies
 
-{# <div>{{ URIRef('write-paper-about-task-relations') | as('https://iolanta.tech/html') }}</div> #}
-
-!!! warning "Iolanta roadmap (temporarily unavailable)"
-    The task-dependencies roadmap diagram will be restored after migrating this page's YAML-LD to Iolanta 2.
-
 How does this approach compare against subtasks?
-
-{# {{ (docs / 'blog/task-relations/subtasks-vs-dependencies.yaml') | as('https://iolanta.tech/html') }} #}
-
-!!! warning "Iolanta table (temporarily unavailable)"
-    The subtasks-vs-dependencies comparison table will be restored after migrating this page's YAML-LD to Iolanta 2.
 
 ## Dependencies support in project management software
 
-{# {{ (docs / 'blog/task-relations/dependencies-software-support.yaml') | as('https://iolanta.tech/html') }} #}
-
-!!! warning "Iolanta table (temporarily unavailable)"
-    The dependencies software support table will be restored after migrating this page's YAML-LD to Iolanta 2.
+The availability of dependency support varies across project management software.
