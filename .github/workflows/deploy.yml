@@ -13,9 +13,11 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v4
         with:
-          python-version: "3.12"
+          python-version: "3.13"
+      - uses: dtolnay/rust-toolchain@1.89
       - run: sudo apt-get install -y graphviz graphviz-dev
       - run: pip install -q poetry
       - run: poetry config virtualenvs.create false --local
       - run: poetry install --no-root
+      - run: cargo install sparqld --version 0.1.8 --locked
       - run: mkdocs gh-deploy --force --clean --verbose
