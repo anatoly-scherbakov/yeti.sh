@@ -123,21 +123,21 @@ A row suggests a correspondence between constructs that serve similar modeling p
 <th markdown="1" colspan="4" scope="rowgroup">Generated artifacts</th>
 </tr>
 <tr markdown="1">
-<td markdown="1">Generate schemas</td>
+<td markdown="1">Schemas</td>
 <td markdown="1">[:simple-graphql: GraphQL](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)<br>[:simple-apacheavro: Avro](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)</td>
 <td markdown="1">[:material-help-circle-outline:](https://www.palantir.com/docs/foundry/dev-toolchain "Schema generation not established in the cited documentation")</td>
 <td markdown="1">[:material-help-circle-outline:](https://github.com/NVIDIA/auto-ontology "Schema generation not established in the cited documentation")</td>
 </tr>
 <tr markdown="1">
-<td markdown="1">Generate code or SDKs</td>
-<td markdown="1">[Generated :fontawesome-brands-java: Java API](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)</td>
+<td markdown="1">Code or SDKs</td>
+<td markdown="1">[:fontawesome-brands-java: Java API](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)</td>
 <!-- vale Vale.Terms = NO -->
 <td markdown="1">[:simple-python: Python](https://www.palantir.com/docs/foundry/ontology-sdk/python-osdk)<br>[:fontawesome-brands-java: Java](https://www.palantir.com/docs/foundry/ontology-sdk/java-osdk)<br>[:simple-typescript: TypeScript](https://www.palantir.com/docs/foundry/ontology-sdk/typescript-osdk)</td>
 <!-- vale Vale.Terms = YES -->
 <td markdown="1">[:material-help-circle-outline:](https://github.com/NVIDIA/auto-ontology "SDK generation not established in the cited documentation")</td>
 </tr>
 <tr markdown="1">
-<td markdown="1">Create data containers</td>
+<td markdown="1">Data containers</td>
 <td markdown="1">[Iceberg tables<br>Data Mesh sources](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)</td>
 <td markdown="1">[:material-help-circle-outline:](https://www.palantir.com/docs/foundry/object-link-types/create-object-type "Data container generation not established in the cited documentation")</td>
 <td markdown="1">[:material-help-circle-outline:](https://github.com/NVIDIA/auto-ontology "Data container generation not established in the cited documentation")</td>
