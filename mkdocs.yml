@@ -49,6 +49,7 @@ plugins:
   - awesome-pages
   - macros:
       on_error_fail: true
+      modules: [mkdocs_macros_sparqld]
 
 
 theme:
