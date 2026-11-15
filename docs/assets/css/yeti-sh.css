@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+.md-typeset table:not([class]) th[scope="rowgroup"] {
+    text-align: left;
+    background-color: var(--md-default-fg-color--lightest);
+}
+
 /* Decided action rows — Material success tint (ADR :white_check_mark: spirit). */
 .md-typeset table:not([class]) tr.decided > td {
     background-color: color-mix(in srgb, #00c853 14%, transparent);
