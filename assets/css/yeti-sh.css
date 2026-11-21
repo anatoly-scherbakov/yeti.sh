@@ -205,3 +205,15 @@
 .md-typeset .unsupported {
   color: #d32f2f;
 }
+
+.md-typeset table:not([class]) td.status-supported {
+    background-color: color-mix(in srgb, #00c853 20%, transparent);
+}
+
+.md-typeset table:not([class]) td.status-maybe-not {
+    background-color: color-mix(in srgb, #f44336 20%, transparent);
+}
+
+[data-md-color-scheme="slate"] .md-typeset td.status-maybe-not .unsupported {
+    color: #ff8a80;
+}

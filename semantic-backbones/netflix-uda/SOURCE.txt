@@ -1,0 +1,4 @@
+Source: https://github.com/Netflix-Skunkworks/uda
+Revision: 9627a97fcd972a41ec910be3f928ea7692d38714
+Retrieved: 2026-11-15
+The upstream repository does not include a license file.
