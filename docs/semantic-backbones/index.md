@@ -53,6 +53,12 @@ A row suggests a correspondence between constructs that serve similar modeling p
 <td markdown="1">[Term](https://github.com/NVIDIA/auto-ontology/blob/main/auto_ontology/server/models.py#L490-L505)</td>
 </tr>
 <tr markdown="1">
+<td markdown="1">Shared entity contract</td>
+<td markdown="1">[:material-help-circle-outline:](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d "A shared entity contract is not established in the UDA overview")</td>
+<td markdown="1">[Interface](https://www.palantir.com/docs/foundry/interfaces/interface-overview)</td>
+<td markdown="1">[:material-help-circle-outline:](https://github.com/NVIDIA/auto-ontology/blob/main/skills/nvidia-ontology-management/references/modeling.md "A shared entity contract is not established in the modeling guide")</td>
+</tr>
+<tr markdown="1">
 <td markdown="1">Attribute</td>
 <td markdown="1">[`upper:Attribute`](https://github.com/Netflix-Skunkworks/uda/blob/9627a97fcd972a41ec910be3f928ea7692d38714/uda-intro-blog/onepiece.ttl#L39)</td>
 <td markdown="1">[Property](https://www.palantir.com/docs/foundry/object-link-types/properties-overview)</td>
@@ -113,9 +119,33 @@ A row suggests a correspondence between constructs that serve similar modeling p
 </tr>
 <tr markdown="1">
 <td markdown="1">Change an entity</td>
-<td markdown="1">[:material-close-circle-outline:](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d "No instance change mechanism described in the UDA overview")</td>
+<td markdown="1">[:material-help-circle-outline:](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d "An instance change mechanism is not established in the UDA overview")</td>
 <td markdown="1">[Action type](https://www.palantir.com/docs/foundry/action-types/overview)</td>
-<td markdown="1">[:material-close-circle-outline:](https://nvidia.github.io/auto-ontology/ "No instance change operation found in the public API")</td>
+<td markdown="1">[:material-help-circle-outline:](https://nvidia.github.io/auto-ontology/ "An instance change operation is not established in the public API")</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">Business logic</td>
+<td markdown="1">[:material-help-circle-outline:](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d "Executable business logic is not established in the UDA overview")</td>
+<td markdown="1">[Functions](https://www.palantir.com/docs/foundry/functions/overview)</td>
+<td markdown="1">[SQL attributes](https://github.com/NVIDIA/auto-ontology#how-it-works)</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">Agent access</td>
+<td markdown="1">[Observability agents<br>Upper integration planned](https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf)</td>
+<td markdown="1">[Ontology MCP](https://www.palantir.com/docs/foundry/dev-toolchain/overview#ontology-mcp)</td>
+<td markdown="1">[MCP<br>CLI<br>API](https://github.com/NVIDIA/auto-ontology#auto-ontology)</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">Security</td>
+<td markdown="1">[:material-help-circle-outline:](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d "Access controls are not established in the UDA overview")</td>
+<td markdown="1">[Ontology permissions](https://www.palantir.com/docs/foundry/object-permissioning/ontology-permissions)</td>
+<td markdown="1">[Role-based access control](https://github.com/NVIDIA/auto-ontology#key-features)</td>
+</tr>
+<tr markdown="1">
+<td markdown="1">Model exchange</td>
+<td markdown="1">[:material-help-circle-outline:](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d "Ontology model import or export is not established in the UDA overview")</td>
+<td markdown="1">[:material-help-circle-outline:](https://www.palantir.com/docs/foundry/ontology/overview "Ontology model exchange is not established in the cited overview")</td>
+<td markdown="1">[Native YAML<br>Apache Ossie YAML](https://github.com/NVIDIA/auto-ontology/blob/main/skills/nvidia-ontology-management/references/write-api.md#model-interchange)</td>
 </tr>
 </tbody>
 <tbody markdown="1">
